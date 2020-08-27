@@ -41,60 +41,6 @@
       </tags>
   </entry>
   <entry>
-    <title>test</title>
-    <url>/2020/08/26/Git%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93%20-%20%E5%89%AF%E6%9C%AC/</url>
-    <content><![CDATA[<blockquote>
-<p>主要介绍Git运作的基本流程以及相关常用命令</p>
-</blockquote>
-<a id="more"></a>
-<h3 id="什么是Git？"><a href="#什么是Git？" class="headerlink" title="什么是Git？"></a>什么是Git？</h3><p>Git:是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。<br><img src="https://s1.ax1x.com/2020/08/26/dfFQBT.png" alt="artara"></p>
-<h4 id="Git的名词"><a href="#Git的名词" class="headerlink" title="Git的名词"></a>Git的名词</h4><p>工作区：它持有实际文件<br>缓存区（Index）：它像个缓存区域，临时保存你的改动<br>Head：指向你最近一次提交后的结果。  </p>
-<h4 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h4><p>1、改动添加到缓存区</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add &lt;filename&gt;</span><br><span class="line"><span class="comment"># 常用filename:.表示本级目录下的全部文件  </span></span><br></pre></td></tr></table></figure>
-<p>2、改动提交到Head</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提价信息&quot;</span></span><br></pre></td></tr></table></figure>
-<p>3、推送改动信息</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 假如还没有链接远端服务器，则需要下面命令添加</span></span><br><span class="line">git remote add origin &lt;server&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="Git分支的进一步理解"><a href="#Git分支的进一步理解" class="headerlink" title="Git分支的进一步理解"></a>Git分支的进一步理解</h3><h4 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h4><ul>
-<li>分支：分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。<br><img src="https://s1.ax1x.com/2020/08/26/dfZZ6A.png" alt="artara"></li>
-<li>相关命令<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建一个新的分支“featuer_x”</span></span><br><span class="line">git checkout -b featuer_x</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换到主分支</span></span><br><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 删除新分支</span></span><br><span class="line">git branch -d feature_x</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将本地分支推送到远端仓库</span></span><br><span class="line">git push origin &lt;branch&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="分支的更新与合并"><a href="#分支的更新与合并" class="headerlink" title="分支的更新与合并"></a>分支的更新与合并</h4></li>
-<li>更新本地仓库到最新改动<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure></li>
-<li>以在你的工作目录中 获取（fetch） 并 合并（merge） 远端的改动。要合并其他分支到你的当前分支（例如 master）。<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge &lt;branch&gt;</span><br></pre></td></tr></table></figure></li>
-<li>合并后，冲突怎么办？—自己更改，自己合并相关文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在更改后添加</span></span><br><span class="line">git add &lt;filename&gt;</span><br></pre></td></tr></table></figure></li>
-<li>查看合并后的改动<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git diff &lt;source_branch&gt; &lt;target_branch&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="远程分支管理"><a href="#远程分支管理" class="headerlink" title="远程分支管理"></a>远程分支管理</h3></li>
-<li>查看本地分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git bash</span><br></pre></td></tr></table></figure></li>
-<li>查看远程分支<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git branch -r</span><br></pre></td></tr></table></figure></li>
-<li>删除远程分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin:&lt;name&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4></li>
-<li>从服务器上拉取代码<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;拉取SSH&gt;</span><br></pre></td></tr></table></figure></li>
-<li>初始化(不经常使用，一般克隆后就会生产.git文件)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></li>
-<li>从远程获取最新版本到本地(不会自动merge)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure>
-<h4 id="走过的坑"><a href="#走过的坑" class="headerlink" title="走过的坑"></a>走过的坑</h4>报错类型<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">! [rejected]   master -&gt; master (non-fast-forward)</span><br></pre></td></tr></table></figure>
-分析：出现原因在于：git仓库中已经有一部分代码，所以它不允许你直接把你的代码覆盖上去。<br>解决方案<br>1、强推<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 即利用强覆盖方式用你本地的代码替代git仓库内的内容</span></span><br><span class="line">git push -f</span><br></pre></td></tr></table></figure>
-2、先把git的东西fetch到你本地然后merge后再push<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 报错：refusing to merge unrelated histories</span></span><br><span class="line"><span class="comment"># 解决方案如下</span></span><br><span class="line">git pull origin master --allow-unrelated-histories</span><br></pre></td></tr></table></figure>
-然后依次执行以下命令  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提交信息&quot;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure>
-最后执行<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-<h4 id="文件-gitignore相关命令"><a href="#文件-gitignore相关命令" class="headerlink" title="文件.gitignore相关命令"></a>文件.gitignore相关命令</h4><img src="https://s1.ax1x.com/2020/08/26/dflMWV.png" alt="artara"></li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git学习总结</title>
     <url>/2020/08/26/Git%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<blockquote>
