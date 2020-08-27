@@ -6,7 +6,7 @@
   <link href="https://siwuxei.github.io/atom.xml" rel="self"/>
   
   <link href="https://siwuxei.github.io/"/>
-  <updated>2020-08-26T15:02:46.829Z</updated>
+  <updated>2020-08-27T23:46:34.864Z</updated>
   <id>https://siwuxei.github.io/</id>
   
   <author>
@@ -17,15 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何对Hexo博客进行优化</title>
+    <link href="https://siwuxei.github.io/articles/7793c3e2/"/>
+    <id>https://siwuxei.github.io/articles/7793c3e2/</id>
+    <published>2020-08-28T00:00:00.000Z</published>
+    <updated>2020-08-27T23:46:34.864Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本文主要讲解如何对Hexo驱动下的博客网站进行优化，主要从网站加载速度、网站稳定性、网站扩散方法进行探讨。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://siwuxei.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Hexo" scheme="https://siwuxei.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Git学习总结</title>
     <link href="https://siwuxei.github.io/articles/acd4e1/"/>
     <id>https://siwuxei.github.io/articles/acd4e1/</id>
     <published>2020-08-26T13:21:56.000Z</published>
-    <updated>2020-08-26T15:02:46.829Z</updated>
+    <updated>2020-08-27T23:46:47.054Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;主要介绍Git运作的基本流程以及相关常用命令&lt;/p&gt;
+&lt;p&gt;主要介绍Git运作的基本流程以及相关常用命令。&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
     
     
@@ -42,7 +63,7 @@
     <link href="https://siwuxei.github.io/articles/9c4101a6/"/>
     <id>https://siwuxei.github.io/articles/9c4101a6/</id>
     <published>2020-08-24T11:58:47.000Z</published>
-    <updated>2020-08-26T17:40:09.276Z</updated>
+    <updated>2020-08-27T21:33:46.533Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -60,7 +81,7 @@
     <link href="https://siwuxei.github.io/articles/5d43f63/"/>
     <id>https://siwuxei.github.io/articles/5d43f63/</id>
     <published>2020-08-23T23:21:56.000Z</published>
-    <updated>2020-08-27T15:24:37.775Z</updated>
+    <updated>2020-08-27T21:33:46.536Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -82,7 +103,7 @@
     <link href="https://siwuxei.github.io/articles/419fe643/"/>
     <id>https://siwuxei.github.io/articles/419fe643/</id>
     <published>2020-08-23T17:21:56.000Z</published>
-    <updated>2020-08-25T10:06:39.825Z</updated>
+    <updated>2020-08-27T21:33:46.539Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
