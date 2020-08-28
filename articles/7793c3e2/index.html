@@ -125,9 +125,7 @@ ga('send', 'pageview');
 <a id="more"></a>
 
 <h3 id="提升网站加载速度"><a href="#提升网站加载速度" class="headerlink" title="提升网站加载速度"></a>提升网站加载速度</h3><p>由于大部分人基于GitHub进行建立博客，而GitHub的服务器不在国内，别墙的厉害，所以博客的加载速度会显得异常缓慢，如果你的Blog主页内有大量高清图片时，那速度…，等它加载完，我们火锅都吃完了。这里提供两种方案，仅供参考。</p>
-<h4 id="转移博客至Gitee"><a href="#转移博客至Gitee" class="headerlink" title="转移博客至Gitee"></a>转移博客至Gitee</h4><p>Gitee服务器在国内，加载速度较GitHub快的不是一点半点，建议进行博客的转移，一劳永逸，Gitee搭建的博客较GitHub搭建的，当然也有不足之处，Gitee所提供的Gitee Pages服务不支持自动部署。这是什么概念呢？就是说之前用GitHub搭建博客，我们对博客进行修改后 hexo d 就完事了，Github会帮我们自动更新，但Gitee的免费用户不支持此项功能，需我们对其修改后进行手动更新。</p>
-<p><img src="https://gitee.com/siwuxei/blogpicture/raw/master/img/image-20200828061556416.png" alt="image-20200828061556416"></p>
-<p>具体要不要进行转移看个人取舍了</p>
+<h4 id="转移博客至Gitee"><a href="#转移博客至Gitee" class="headerlink" title="转移博客至Gitee"></a>转移博客至Gitee</h4><p>Gitee服务器在国内，加载速度较GitHub快的不是一点半点，建议进行博客的转移，一劳永逸，Gitee搭建的博客较GitHub搭建的，当然也有不足之处，Gitee所提供的Gitee Pages服务不支持自动部署。这是什么概念呢？就是说之前用GitHub搭建博客，我们对博客进行修改后 hexo d 就完事了，Github会帮我们自动更新，但Gitee的免费用户不支持此项功能，需我们对其修改后进行手动更新。<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010345.png" alt="image-20200828061556416">具体要不要进行转移看个人取舍了</p>
 <h4 id="优化博客"><a href="#优化博客" class="headerlink" title="优化博客"></a>优化博客</h4><p>对于不想进行转移的，剩下的方法我们只有对博客进行优化了，我采取了对代码进行压缩的方式进行</p>
 <h5 id="代码压缩策略"><a href="#代码压缩策略" class="headerlink" title="代码压缩策略"></a>代码压缩策略</h5><p>可以使用<strong>gulp</strong>进行，本文以 <a target="_blank" rel="noopener" href="https://github.com/chenzhutian/hexo-all-minifier">hexo-all-minifier</a>进行讲解，这个插件集成了对html，css，js，image的优化，合并重复代码，去除多余空格，用算法压缩图片。压缩后的博客，在加载速度上会有较大的提升。</p>
 <p>插件安装</p>
@@ -154,10 +152,8 @@ ga('send', 'pageview');
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
 <p>此时，进入<font color='orange'>public</font>目录，你会发现里面有<font color='orange'>sitemap.xml</font>和<font color='orange'>baidusitemap.xml</font>两个文件，这就是生成的站点地图。里面包含了网站上所有页面的链接，搜索引擎通过这两个文件来抓取网站页面。</p>
-<h5 id="百度站长平台提交"><a href="#百度站长平台提交" class="headerlink" title="百度站长平台提交"></a>百度站长平台提交</h5><p>注册并并登录 <a target="_blank" rel="noopener" href="http://zhanzhang.baidu.com/">百度站长平台</a>，添加站点</p>
-<p><img src="https://gitee.com/siwuxei/blogpicture/raw/master/img/image-20200828071109971.png" alt="image-20200828071109971"></p>
-<p>站点验证</p>
-<p><img src="https://gitee.com/siwuxei/blogpicture/raw/master/img/image-20200828071208317.png" alt="image-20200828071208317"></p>
+<h5 id="百度站长平台提交"><a href="#百度站长平台提交" class="headerlink" title="百度站长平台提交"></a>百度站长平台提交</h5><p>注册并并登录 <a target="_blank" rel="noopener" href="http://zhanzhang.baidu.com/">百度站长平台</a>，添加站点<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010438.png" alt="image-20200828071109971"></p>
+<p>站点验证<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010502.png" alt="image-20200828071208317"></p>
 <p>我们选择<font color='red'>文件验证</font>，下载验证文件到本地，放置在<font color='orange'>themes/next/source</font>目录下。执行生成和部署命令 </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
@@ -179,19 +175,18 @@ ga('send', 'pageview');
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> bp = <span class="built_in">document</span>.createElement(<span class="string">&#x27;script&#x27;</span>);</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> curProtocol = <span class="built_in">window</span>.location.protocol.split(<span class="string">&#x27;:&#x27;</span>)[<span class="number">0</span>];</span></span><br><span class="line"><span class="javascript">    <span class="keyword">if</span> (curProtocol === <span class="string">&#x27;https&#x27;</span>) &#123;</span></span><br><span class="line"><span class="javascript">        bp.src = <span class="string">&#x27;https://zz.bdstatic.com/linksubmit/push.js&#x27;</span>;        </span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="javascript">    <span class="keyword">else</span> &#123;</span></span><br><span class="line"><span class="javascript">        bp.src = <span class="string">&#x27;http://push.zhanzhang.baidu.com/push.js&#x27;</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> s = <span class="built_in">document</span>.getElementsByTagName(<span class="string">&quot;script&quot;</span>)[<span class="number">0</span>];</span></span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h5 id="sitemap提交"><a href="#sitemap提交" class="headerlink" title="sitemap提交"></a>sitemap提交</h5><p>在界面</p>
-<p><img src="https://gitee.com/siwuxei/blogpicture/raw/master/img/image-20200828072539693.png" alt="image-20200828072539693"></p>
-<p>输入</p>
+<p>输入<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010528.png" alt="image-20200828072539693"></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 你的网站url/baidusitemap.xml</span></span><br><span class="line">https://siwuxei.gitee.io/baidusitemap.xml <span class="comment">#这是我的</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="Google站长平台提交"><a href="#Google站长平台提交" class="headerlink" title="Google站长平台提交"></a>Google站长平台提交</h4><p>登录<a target="_blank" rel="noopener" href="https://link.jianshu.com/?t=https://www.google.com/webmasters/#?modal_active=none">Google网站站长</a>，进入<code>Search Console</code>，点击<code>添加属性</code>进行站点添加</p>
 <h5 id="验证站点"><a href="#验证站点" class="headerlink" title="验证站点"></a>验证站点</h5><p>方法与百度类似</p>
-<p><img src="https://gitee.com/siwuxei/blogpicture/raw/master/img/image-20200828073131083.png" alt="image-20200828073131083"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010627.png" alt="image-20200828073131083"></p>
 <p>安装百度相同的方法验证后，会出现</p>
-<p><img src="https://gitee.com/siwuxei/blogpicture/raw/master/img/image-20200828073220488.png" alt="image-20200828073220488"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010627.png" alt="image-20200828073220488"></p>
 <p>点击左侧站点地图，输入站点地图网址，确认提交。</p>
-<p><img src="https://gitee.com/siwuxei/blogpicture/raw/master/img/image-20200828073258341.png" alt="image-20200828073258341"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010647.png" alt="image-20200828073258341"></p>
 <h5 id="验证站点是否进行了收录"><a href="#验证站点是否进行了收录" class="headerlink" title="验证站点是否进行了收录"></a>验证站点是否进行了收录</h5><p>点击左侧网址检查，输入网站域名下的任意网址，查看显示结果</p>
-<p><img src="https://gitee.com/siwuxei/blogpicture/raw/master/img/image-20200828073443009.png" alt="image-20200828073443009"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010659.png" alt="image-20200828073443009"></p>
 <p>在Google中输入<font color='orange'>site:&lt;域名&gt;</font>查看搜索结果。</p>
 <h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a><strong>参考资料</strong></h4><p><a target="_blank" rel="noopener" href="https://indexmoon.com/articles/1153730074/">Hexo基础教程(四)：功能添加与优化</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/f8ec422ebd52">Hexo博客提交百度和Google收录</a></p>
