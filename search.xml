@@ -49,9 +49,9 @@
 <h3 id="初识Markdown"><a href="#初识Markdown" class="headerlink" title="初识Markdown"></a>初识Markdown</h3><p>在学习Jupyter的时候才知道有Markdown这个东西，当时认为其语法复杂，怎么还有人用这种东西，但…万事都逃不了真香定律，太香了!</p>
 <h3 id="好用的Markdown工具推荐"><a href="#好用的Markdown工具推荐" class="headerlink" title="好用的Markdown工具推荐"></a>好用的Markdown工具推荐</h3><h4 id="PC端"><a href="#PC端" class="headerlink" title="PC端"></a>PC端</h4><p>1、VScode</p>
 <p>VScode太强大了，其插件无所不能</p>
-<p><font color='cornflowerblue'>markdownlint插件</font>：是vscode上一款非常好用的 Markdown 格式检查扩展工具，它规定了许多规则并实时对文档进行检查，防止一些语法错误，同时维持文档风格的统一，使用此工具有助于形成一个良好的写作习惯和规范。但因其规则较多，写文档时很容易就出错（或不符合规则），所以需要对工具的规则有一个详细的了解，另外，有时工作要求的文档风格与markdownlint工具规定的规则并不相同，比如标题、列表的创建格式，缩进的空格数等等，这时就需要对规则进行一定的设置。</p>
+<p><font color='orange'>markdownlint</font>插件：是vscode上一款非常好用的 Markdown 格式检查扩展工具，它规定了许多规则并实时对文档进行检查，防止一些语法错误，同时维持文档风格的统一，使用此工具有助于形成一个良好的写作习惯和规范。但因其规则较多，写文档时很容易就出错（或不符合规则），所以需要对工具的规则有一个详细的了解，另外，有时工作要求的文档风格与markdownlint工具规定的规则并不相同，比如标题、列表的创建格式，缩进的空格数等等，这时就需要对规则进行一定的设置。</p>
 <p><img src="https://gitee.com/siwuxei/blogpicture/raw/master/img/image-20200828082309848.png" alt="image-20200828082309848"></p>
-<p><font color='cornflowerblue'>markdownlint插件</font></p>
+<p><font color='orange'>markdownlint</font>插件</p>
 <p><img src="https://gitee.com/siwuxei/blogpicture/raw/master/img/image-20200828082627410.png" alt="image-20200828082627410"></p>
 <p>目录、批注、合并单元格、插入 LaTeX 公式、用纯文本绘图、运行代码、导入和导出、制作幻灯片….你说还有啥它不会？</p>
 <p>2、<a href="https://github.com/Molunerfinn/PicGo">PicGo</a></p>
@@ -155,7 +155,7 @@
 
 <p>(3)、将文件保存为ahk后缀的文件，如TyporaHotKey.ahk</p>
 <p>(4)、在Typora软件里就可以使用快捷键：如按<code>Ctrl+Alt+O</code>添加橙色，Ctrl+Alt+R 红色，按<code>Ctrl+\</code>取消样式！</p>
-<h4 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h4><p>1、MWeb（推荐，60解锁高级版）</p>
+<h4 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h4><p>1、<font color='cornflowerblue'>MWeb</font>（推荐，60解锁高级版）</p>
 <p>MWeb 是专业的 Markdown 写作、记笔记、静态博客生成软件，目前已支持 Mac，iPad 和 iPhone。iOS 版 MWeb 功能特点如下：</p>
 <p>* 全面支持 Github Flavored Markdown 语法和常用扩展语法，如 TOC、Table、Fenced code block、LaTeX、Task lists、Footnote 等。</p>
 <p>* 根据 iOS 系统的特点，自定义 Markdown 语法输入/编辑键盘。</p>
@@ -167,7 +167,7 @@
 <p>* 支持文档大纲，以方便快速定位文档。</p>
 <p>* 支持导出为图片、PDF</p>
 <p><img src="https://gitee.com/siwuxei/blogpicture/raw/master/img/image-20200828085512524.png" alt="image-20200828085512524"></p>
-<p>2、Markdown-图文并茂，高效写作（68解锁高级版）</p>
+<p>2、<font color='cornflowerblue'>Markdown-图文并茂，高效写作</font>（68解锁高级版）</p>
 <p>深色模式护眼，键盘工具条辅助，分屏预览等功能一应俱全，同时还具有以下功能：</p>
 <p>• 支持iCloud Drive</p>
 <p>• 支持夜间模式，以及多种主题</p>
