@@ -1,43 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>思无邪</title>
-    <url>/articles/5d43f63/</url>
+    <title>Git学习总结</title>
+    <url>/articles/acd4e1/</url>
     <content><![CDATA[<blockquote>
-<p>浩浩汤汤历史长河五千载，多少文人骚客的诗赋，多少民间流传的辞章，宛如珍珠般在华夏的阳光下闪耀。侧耳倾听，伴着历史的车轮呼啸而来的，是经典回响的声音。<a id="more"></a></p>
+<p>主要介绍Git运作的基本流程以及相关常用命令。</p>
 </blockquote>
-<div align=center>
-
- <img src="https://s1.ax1x.com/2020/08/24/dDQygP.jpg" width = "800" height = "500" alt="图片名称" align=center />
-
-</div>
-
-<p>&emsp;&emsp;<strong>常思而无邪</strong></p>
-<p>&emsp;&emsp;《诗经》，中国诗歌的源头。对于我们来说，也许它太久远了，久远到如果没有注释，我们将寸步难行。其实，它只是民歌，是我们普通人的歌，并没有想像中的那么疏远不可亲近。千百年来，它就如盛开在彼岸的花，即使无法摘取，也一直存活于心。只是往往在不经意间，就被我们遗落在另一个时代。</p>
-<p>&emsp;&emsp;当我们用诗的清雅去寻找，用经的深邃去看待，用朝圣的虔诚去倾听，它也许是前世的前世，我们心底曾经响过的声音，我们在一起唱过的歌谣，我们前生无邪的记忆。</p>
-<p>&emsp;&emsp;<strong>诗三百，一言以蔽之，曰思无邪。</strong></p>
-<p>&emsp;&emsp;雎鸠，是离爱情最近的鸟；蒹葭，是离爱情最近的草。三千多年过去了，雎鸠在河畔的“关关”叫声依然如在耳畔，仿佛男子在轻声呼唤所爱女子的芳名，如此深情，却又质朴；三千多年过去了，在水一方的伊人恐早已老去，可那比玫瑰平易却更繁芜的蒹葭，早已长在了心里。千年风雨，琴瑟未调，钟鼓未敲；千年风雨，秋水汤汤，芦苇大片大片寂寞地开过。我们把自己的声音留在了前世，徒留记忆的空壳在今生辗转。为何在渡河的时候不回首眺望，采采那参差的荇菜，赏赏那凝成霜的白露。</p>
-<p>&emsp;&emsp;现在的都市多了太多的躁动与不安，连爱情也少了几分期许中的美丽与浪漫。看了太多玫瑰与巧克力的故事，突然想起了雎鸠与蒹葭，那平凡得已逐渐被人淡忘的美好。何时我们的生活，能重拾那一份朴实的诗意？</p>
-<p>&emsp;&emsp;《关雎》与《蒹葭》，是爱情的极致。</p>
-<p>&emsp;&emsp;《诗经》，不仅仅讲述爱情，它也记录那个不安稳的年代所有的动乱。兴盛衰亡，那些浓得化不开的哀伤，在尘封已久的诗句中，读来令人唏嘘感叹。</p>
-<p>&emsp;&emsp;彼黍离离。</p>
-<p>&emsp;&emsp;世间最残忍的四个字莫过于“物是人非”。当年周室东迁后，一个周大夫回到故都镐京，追想往日繁盛，而今日所见，满目荒凉，不禁悲从中来。宫殿王城皆已成废墟，废墟之上是郁茂的黍苗。此后的千百年，故宫禾黍就成为亡国之思的代名词。从曹植唱《情》诗到向秀赋《思旧》，从刘禹锡的《乌衣巷》到姜夔的《扬州慢》，“黍离之悲”浸染着我们的诗文辞赋，与《诗经》血脉相承。</p>
-<p>&emsp;&emsp;知我者谓我心忧，不知我者谓我何求。</p>
-<p>&emsp;&emsp;这是一个清醒的人恳切直白的自问。他行迈靡靡，中心摇摇，在时光的轮回里疲惫苍老。</p>
-<p>&emsp;&emsp;其实早在周朝之前，历史就给我们讲了另一个故事，一个因不肯食周粟而饿死首阳山上的故事。伯夷和叔齐在死前作了一首歌，曰：“登彼西山兮，采其薇矣。已暴易暴兮，不知其非矣……”，这是关于采薇最早的记录。</p>
-<p>&emsp;&emsp;《诗经》中的《采薇》，是一首征夫思归的诗。</p>
-<p>&emsp;&emsp;你听，他在唱：“采薇采薇，薇亦柔止。曰归曰归，心亦忧止。忧心烈烈，载饥载渴。我戍未定，靡使归聘。”</p>
-<p>&emsp;&emsp;靡使归聘。战乱的年代，何物最为珍贵？烽火连三月，家书抵万金。岑参也写道：“马上相逢无纸笔，凭君传语报平安。”征战在外，漂泊不定，生死难料，一封家信也成奢望，于是思念插上了翅膀。</p>
-<p>&emsp;&emsp;《黍离》和《采薇》，如今读来，只剩一句轻叹……</p>
-<p>&emsp;&emsp;夜阑人静，当我们凭几而坐，用从容珍重的心态来品一品《诗经》，或许我们能重新溯流而上到三千年前的小洲兰沚边，找回我们前世遗落的声音。生命如河，我们怎能在遗忘中度过？</p>
-<p>&emsp;&emsp;《诗经》不仅是一部经典，它更是一种信念。我们文化的河流，从来没有断过。</p>
+<a id="more"></a>
+<h3 id="什么是Git？"><a href="#什么是Git？" class="headerlink" title="什么是Git？"></a>什么是Git？</h3><p>Git:是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。<br><img src="https://s1.ax1x.com/2020/08/26/dfFQBT.png" alt="artara"></p>
+<h4 id="Git的名词"><a href="#Git的名词" class="headerlink" title="Git的名词"></a>Git的名词</h4><p>工作区：它持有实际文件<br>缓存区（Index）：它像个缓存区域，临时保存你的改动<br>Head：指向你最近一次提交后的结果。  </p>
+<h4 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h4><p>1、改动添加到缓存区</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add &lt;filename&gt;</span><br><span class="line"><span class="comment"># 常用filename:.表示本级目录下的全部文件  </span></span><br></pre></td></tr></table></figure>
+<p>2、改动提交到Head</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提价信息&quot;</span></span><br></pre></td></tr></table></figure>
+<p>3、推送改动信息</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 假如还没有链接远端服务器，则需要下面命令添加</span></span><br><span class="line">git remote add origin &lt;server&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="Git分支的进一步理解"><a href="#Git分支的进一步理解" class="headerlink" title="Git分支的进一步理解"></a>Git分支的进一步理解</h3><h4 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h4><ul>
+<li>分支：分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。<br><img src="https://s1.ax1x.com/2020/08/26/dfZZ6A.png" alt="artara"></li>
+<li>相关命令<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建一个新的分支“featuer_x”</span></span><br><span class="line">git checkout -b featuer_x</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换到主分支</span></span><br><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 删除新分支</span></span><br><span class="line">git branch -d feature_x</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将本地分支推送到远端仓库</span></span><br><span class="line">git push origin &lt;branch&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="分支的更新与合并"><a href="#分支的更新与合并" class="headerlink" title="分支的更新与合并"></a>分支的更新与合并</h4></li>
+<li>更新本地仓库到最新改动<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure></li>
+<li>以在你的工作目录中 获取（fetch） 并 合并（merge） 远端的改动。要合并其他分支到你的当前分支（例如 master）。<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge &lt;branch&gt;</span><br></pre></td></tr></table></figure></li>
+<li>合并后，冲突怎么办？—自己更改，自己合并相关文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在更改后添加</span></span><br><span class="line">git add &lt;filename&gt;</span><br></pre></td></tr></table></figure></li>
+<li>查看合并后的改动<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git diff &lt;source_branch&gt; &lt;target_branch&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="远程分支管理"><a href="#远程分支管理" class="headerlink" title="远程分支管理"></a>远程分支管理</h3></li>
+<li>查看本地分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git bash</span><br></pre></td></tr></table></figure></li>
+<li>查看远程分支<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git branch -r</span><br></pre></td></tr></table></figure></li>
+<li>删除远程分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin:&lt;name&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4></li>
+<li>从服务器上拉取代码<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;拉取SSH&gt;</span><br></pre></td></tr></table></figure></li>
+<li>初始化(不经常使用，一般克隆后就会生产.git文件)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></li>
+<li>从远程获取最新版本到本地(不会自动merge)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure>
+<h4 id="走过的坑"><a href="#走过的坑" class="headerlink" title="走过的坑"></a>走过的坑</h4>报错类型<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">! [rejected]   master -&gt; master (non-fast-forward)</span><br></pre></td></tr></table></figure>
+分析：出现原因在于：git仓库中已经有一部分代码，所以它不允许你直接把你的代码覆盖上去。<br>解决方案<br>1、强推<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 即利用强覆盖方式用你本地的代码替代git仓库内的内容</span></span><br><span class="line">git push -f</span><br></pre></td></tr></table></figure>
+2、先把git的东西fetch到你本地然后merge后再push<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 报错：refusing to merge unrelated histories</span></span><br><span class="line"><span class="comment"># 解决方案如下</span></span><br><span class="line">git pull origin master --allow-unrelated-histories</span><br></pre></td></tr></table></figure>
+然后依次执行以下命令  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提交信息&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure>
+最后执行<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<h4 id="文件-gitignore相关命令"><a href="#文件-gitignore相关命令" class="headerlink" title="文件.gitignore相关命令"></a>文件.gitignore相关命令</h4><img src="https://s1.ax1x.com/2020/08/26/dflMWV.png" alt="artara"></li>
+</ul>
 ]]></content>
       <categories>
-        <category>随笔</category>
+        <category>学习</category>
       </categories>
       <tags>
-        <tag>诗经</tag>
-        <tag>旅行</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -188,141 +202,6 @@
       </tags>
   </entry>
   <entry>
-    <title>如何对Hexo博客进行优化</title>
-    <url>/articles/7793c3e2/</url>
-    <content><![CDATA[<blockquote>
-<p>本文主要讲解如何对Hexo驱动下的博客网站进行优化，主要从网站加载速度、网站稳定性、网站扩散方法进行探讨。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="提升网站加载速度"><a href="#提升网站加载速度" class="headerlink" title="提升网站加载速度"></a>提升网站加载速度</h3><p>由于大部分人基于GitHub进行建立博客，而GitHub的服务器不在国内，别墙的厉害，所以博客的加载速度会显得异常缓慢，如果你的Blog主页内有大量高清图片时，那速度…，等它加载完，我们火锅都吃完了。这里提供两种方案，仅供参考。</p>
-<h4 id="转移博客至Gitee"><a href="#转移博客至Gitee" class="headerlink" title="转移博客至Gitee"></a>转移博客至Gitee</h4><p>Gitee服务器在国内，加载速度较GitHub快的不是一点半点，建议进行博客的转移，一劳永逸，Gitee搭建的博客较GitHub搭建的，当然也有不足之处，Gitee所提供的Gitee Pages服务不支持自动部署。这是什么概念呢？就是说之前用GitHub搭建博客，我们对博客进行修改后 hexo d 就完事了，Github会帮我们自动更新，但Gitee的免费用户不支持此项功能，需我们对其修改后进行手动更新。<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010345.png" alt="image-20200828061556416">具体要不要进行转移看个人取舍了</p>
-<h4 id="优化博客"><a href="#优化博客" class="headerlink" title="优化博客"></a>优化博客</h4><p>对于不想进行转移的，剩下的方法我们只有对博客进行优化了，我采取了对代码进行压缩的方式进行</p>
-<h5 id="代码压缩策略"><a href="#代码压缩策略" class="headerlink" title="代码压缩策略"></a>代码压缩策略</h5><p>可以使用<strong>gulp</strong>进行，本文以 <a href="https://github.com/chenzhutian/hexo-all-minifier">hexo-all-minifier</a>进行讲解，这个插件集成了对html，css，js，image的优化，合并重复代码，去除多余空格，用算法压缩图片。压缩后的博客，在加载速度上会有较大的提升。</p>
-<p>插件安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure>
-
-<p>在站点的配置文件_<font color='orange'>config.yml</font>将下面代码加入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#文件压缩</span></span><br><span class="line">html_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  ignore_error: <span class="literal">false</span></span><br><span class="line">  exclude:</span><br><span class="line"></span><br><span class="line">css_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;*.min.css&#x27;</span></span><br><span class="line"></span><br><span class="line">js_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  mangle: <span class="literal">true</span></span><br><span class="line">  output:</span><br><span class="line">  compress:</span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;*.min.js&#x27;</span></span><br><span class="line"></span><br><span class="line">image_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  interlaced: <span class="literal">false</span></span><br><span class="line">  multipass: <span class="literal">false</span></span><br><span class="line">  optimizationLevel: 2</span><br><span class="line">  pngquant: <span class="literal">false</span></span><br><span class="line">  progressive: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="扩展性优化"><a href="#扩展性优化" class="headerlink" title="扩展性优化"></a>扩展性优化</h3><h4 id="文章链接唯一化"><a href="#文章链接唯一化" class="headerlink" title="文章链接唯一化"></a>文章链接唯一化</h4><p>什么是文章链接唯一化呢？默认情况下，Hexo生成的超链接都是绝对链接。更改文章标题，变更文章所属分类，发布时间等都可能导致文章链接改变，不利于搜索引擎收录，也不利于分享。唯一的永久链接显然是更好的选择。</p>
-<p>安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-
-<p>在站点配置文件中，找到permalink进行修改</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">permalink: articles/:abbrlink/ <span class="comment"># 此处可以自己设置，也可以直接使用 :/abbrlink</span></span><br><span class="line">abbrlink:</span><br><span class="line">    alg: crc32   <span class="comment">#算法： crc16(default) and crc32</span></span><br><span class="line">    rep: hex     <span class="comment">#进制： dec(default) and hex</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="Hexo博客提交到百度"><a href="#Hexo博客提交到百度" class="headerlink" title="Hexo博客提交到百度"></a>Hexo博客提交到百度</h4><h5 id="生成站点地图"><a href="#生成站点地图" class="headerlink" title="生成站点地图"></a>生成站点地图</h5><p>站点地图即<a href="https://link.jianshu.com/?t=https://baike.baidu.com/item/sitemap/6241567?fr=aladdin">sitemap</a>， 是一个页面，上面放置了网站上需要搜索引擎抓取的所有页面的链接。站点地图可以告诉搜索引擎网站上有哪些可供抓取的网页，以便搜索引擎可以更加智能地抓取网站。</p>
-<p>安装插件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
-
-<p>修改配置文件<font color='orange'>_config.yml</font>,追加以下代码</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 自动生成sitemap</span></span><br><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml</span><br><span class="line">baidusitemap:</span><br><span class="line">  path: baidusitemap.xml</span><br></pre></td></tr></table></figure>
-
-<p>生产与部署</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>此时，进入<font color='orange'>public</font>目录，你会发现里面有<font color='orange'>sitemap.xml</font>和<font color='orange'>baidusitemap.xml</font>两个文件，这就是生成的站点地图。里面包含了网站上所有页面的链接，搜索引擎通过这两个文件来抓取网站页面。</p>
-<h5 id="百度站长平台提交"><a href="#百度站长平台提交" class="headerlink" title="百度站长平台提交"></a>百度站长平台提交</h5><p>注册并并登录 <a href="http://zhanzhang.baidu.com/">百度站长平台</a>添加站点<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829011650.png" alt="image-20200829011649980">站点验证<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010502.png" alt="image-20200828071208317"></p>
-<p>我们选择<font color='red'>文件验证</font>，下载验证文件到本地，放置在<font color='orange'>themes/next/source</font>目录下。执行生成和部署命令 </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>提交即可</p>
-<h5 id="链接提交"><a href="#链接提交" class="headerlink" title="链接提交"></a>链接提交</h5><p>为了使网站更容易被搜索引擎收录，获得更高<font color='orange'>SEO</font>，需要提供百度搜索引擎的自动推送服务。</p>
-<p>插件安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
-
-<p>修改站点配置文件<font color='orange'>config.yml</font>，添加以下内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">  count: 5 <span class="comment">## 提交最新的五个链接</span></span><br><span class="line">  host: www.hui-wang.info <span class="comment">## 百度站长平台中注册的域名</span></span><br><span class="line">  token: your_token <span class="comment">## 准入秘钥</span></span><br><span class="line">  path: baidu_urls.txt <span class="comment">## 文本文档的地址， 新链接会保存在此文本文档里</span></span><br></pre></td></tr></table></figure>
-
-<p>修改配置文件的<font color='orange'>url</font>值</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line">url: <span class="comment">#填写你的网站url</span></span><br><span class="line">root: /</span><br><span class="line">permalink: :year/:month/:day/:title.xml</span><br></pre></td></tr></table></figure>
-
-<p>加入新的<font color='orange'>deploy</font></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">- <span class="built_in">type</span>: git <span class="comment">## 这是我原来的deployer</span></span><br><span class="line">  repo:</span><br><span class="line">  branch:</span><br><span class="line">- <span class="built_in">type</span>: baidu_url_submitter <span class="comment">## 添加这里内容即可</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="自动推送"><a href="#自动推送" class="headerlink" title="自动推送"></a>自动推送</h5><p>安装自动推送JS代码的网页，在页面被访问时，页面URL将立即被推送给百度。修改主题目录下的<code>layout/post.swig</code>文件，末尾添加自动推送代码，代码如下</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">(function()&#123;</span><br><span class="line">    <span class="keyword">var</span> bp = document.createElement(<span class="string">&#x27;script&#x27;</span>);</span><br><span class="line">    <span class="keyword">var</span> curProtocol = window.location.protocol.split(<span class="string">&#x27;:&#x27;</span>)[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">if</span> (curProtocol === <span class="string">&#x27;https&#x27;</span>) &#123;</span><br><span class="line">        bp.src = <span class="string">&#x27;https://zz.bdstatic.com/linksubmit/push.js&#x27;</span>;        </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        bp.src = <span class="string">&#x27;http://push.zhanzhang.baidu.com/push.js&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> s = document.getElementsByTagName(<span class="string">&quot;script&quot;</span>)[<span class="number">0</span>];</span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-<h5 id="sitemap提交"><a href="#sitemap提交" class="headerlink" title="sitemap提交"></a>sitemap提交</h5><p>在界面</p>
-<p>输入<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010528.png" alt="image-20200828072539693"></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 你的网站url/baidusitemap.xml</span></span><br><span class="line">https://siwuxei.gitee.io/baidusitemap.xml <span class="comment">#这是我的</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="Google站长平台提交"><a href="#Google站长平台提交" class="headerlink" title="Google站长平台提交"></a>Google站长平台提交</h4><p>登录<a href="https://link.jianshu.com/?t=https://www.google.com/webmasters/#?modal_active=none">Google网站站长</a>，进入<code>Search Console</code>，点击<code>添加属性</code>进行站点添加</p>
-<h5 id="验证站点"><a href="#验证站点" class="headerlink" title="验证站点"></a>验证站点</h5><p>方法与百度类似</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010627.png" alt="image-20200828073131083"></p>
-<p>安装百度相同的方法验证后，会出现</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010627.png" alt="image-20200828073220488"></p>
-<p>点击左侧站点地图，输入站点地图网址，确认提交。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010647.png" alt="image-20200828073258341"></p>
-<h5 id="验证站点是否进行了收录"><a href="#验证站点是否进行了收录" class="headerlink" title="验证站点是否进行了收录"></a>验证站点是否进行了收录</h5><p>点击左侧网址检查，输入网站域名下的任意网址，查看显示结果</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010659.png" alt="image-20200828073443009"></p>
-<p>在Google中输入<font color='orange'>site:&lt;域名&gt;</font>查看搜索结果。</p>
-<h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a><strong>参考资料</strong></h4><p><a href="https://indexmoon.com/articles/1153730074/">Hexo基础教程(四)：功能添加与优化</a></p>
-<p><a href="https://www.jianshu.com/p/f8ec422ebd52">Hexo博客提交百度和Google收录</a></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git学习总结</title>
-    <url>/articles/acd4e1/</url>
-    <content><![CDATA[<blockquote>
-<p>主要介绍Git运作的基本流程以及相关常用命令。</p>
-</blockquote>
-<a id="more"></a>
-<h3 id="什么是Git？"><a href="#什么是Git？" class="headerlink" title="什么是Git？"></a>什么是Git？</h3><p>Git:是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。<br><img src="https://s1.ax1x.com/2020/08/26/dfFQBT.png" alt="artara"></p>
-<h4 id="Git的名词"><a href="#Git的名词" class="headerlink" title="Git的名词"></a>Git的名词</h4><p>工作区：它持有实际文件<br>缓存区（Index）：它像个缓存区域，临时保存你的改动<br>Head：指向你最近一次提交后的结果。  </p>
-<h4 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h4><p>1、改动添加到缓存区</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add &lt;filename&gt;</span><br><span class="line"><span class="comment"># 常用filename:.表示本级目录下的全部文件  </span></span><br></pre></td></tr></table></figure>
-<p>2、改动提交到Head</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提价信息&quot;</span></span><br></pre></td></tr></table></figure>
-<p>3、推送改动信息</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 假如还没有链接远端服务器，则需要下面命令添加</span></span><br><span class="line">git remote add origin &lt;server&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="Git分支的进一步理解"><a href="#Git分支的进一步理解" class="headerlink" title="Git分支的进一步理解"></a>Git分支的进一步理解</h3><h4 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h4><ul>
-<li>分支：分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。<br><img src="https://s1.ax1x.com/2020/08/26/dfZZ6A.png" alt="artara"></li>
-<li>相关命令<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建一个新的分支“featuer_x”</span></span><br><span class="line">git checkout -b featuer_x</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换到主分支</span></span><br><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 删除新分支</span></span><br><span class="line">git branch -d feature_x</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将本地分支推送到远端仓库</span></span><br><span class="line">git push origin &lt;branch&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="分支的更新与合并"><a href="#分支的更新与合并" class="headerlink" title="分支的更新与合并"></a>分支的更新与合并</h4></li>
-<li>更新本地仓库到最新改动<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure></li>
-<li>以在你的工作目录中 获取（fetch） 并 合并（merge） 远端的改动。要合并其他分支到你的当前分支（例如 master）。<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge &lt;branch&gt;</span><br></pre></td></tr></table></figure></li>
-<li>合并后，冲突怎么办？—自己更改，自己合并相关文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在更改后添加</span></span><br><span class="line">git add &lt;filename&gt;</span><br></pre></td></tr></table></figure></li>
-<li>查看合并后的改动<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git diff &lt;source_branch&gt; &lt;target_branch&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="远程分支管理"><a href="#远程分支管理" class="headerlink" title="远程分支管理"></a>远程分支管理</h3></li>
-<li>查看本地分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git bash</span><br></pre></td></tr></table></figure></li>
-<li>查看远程分支<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git branch -r</span><br></pre></td></tr></table></figure></li>
-<li>删除远程分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin:&lt;name&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4></li>
-<li>从服务器上拉取代码<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;拉取SSH&gt;</span><br></pre></td></tr></table></figure></li>
-<li>初始化(不经常使用，一般克隆后就会生产.git文件)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></li>
-<li>从远程获取最新版本到本地(不会自动merge)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure>
-<h4 id="走过的坑"><a href="#走过的坑" class="headerlink" title="走过的坑"></a>走过的坑</h4>报错类型<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">! [rejected]   master -&gt; master (non-fast-forward)</span><br></pre></td></tr></table></figure>
-分析：出现原因在于：git仓库中已经有一部分代码，所以它不允许你直接把你的代码覆盖上去。<br>解决方案<br>1、强推<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 即利用强覆盖方式用你本地的代码替代git仓库内的内容</span></span><br><span class="line">git push -f</span><br></pre></td></tr></table></figure>
-2、先把git的东西fetch到你本地然后merge后再push<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 报错：refusing to merge unrelated histories</span></span><br><span class="line"><span class="comment"># 解决方案如下</span></span><br><span class="line">git pull origin master --allow-unrelated-histories</span><br></pre></td></tr></table></figure>
-然后依次执行以下命令  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提交信息&quot;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure>
-最后执行<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-<h4 id="文件-gitignore相关命令"><a href="#文件-gitignore相关命令" class="headerlink" title="文件.gitignore相关命令"></a>文件.gitignore相关命令</h4><img src="https://s1.ax1x.com/2020/08/26/dflMWV.png" alt="artara"></li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>如何在GitHub上搭建属于自己的博客</title>
     <url>/articles/419fe643/</url>
     <content><![CDATA[<blockquote>
@@ -409,5 +288,121 @@
 
 </div>
 ]]></content>
+  </entry>
+  <entry>
+    <title>如何对Hexo博客进行优化</title>
+    <url>/articles/7793c3e2/</url>
+    <content><![CDATA[<blockquote>
+<p>本文主要讲解如何对Hexo驱动下的博客网站进行优化，主要从网站加载速度、网站稳定性、网站扩散方法进行探讨。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="提升网站加载速度"><a href="#提升网站加载速度" class="headerlink" title="提升网站加载速度"></a>提升网站加载速度</h3><p>由于大部分人基于GitHub进行建立博客，而GitHub的服务器不在国内，别墙的厉害，所以博客的加载速度会显得异常缓慢，如果你的Blog主页内有大量高清图片时，那速度…，等它加载完，我们火锅都吃完了。这里提供两种方案，仅供参考。</p>
+<h4 id="转移博客至Gitee"><a href="#转移博客至Gitee" class="headerlink" title="转移博客至Gitee"></a>转移博客至Gitee</h4><p>Gitee服务器在国内，加载速度较GitHub快的不是一点半点，建议进行博客的转移，一劳永逸，Gitee搭建的博客较GitHub搭建的，当然也有不足之处，Gitee所提供的Gitee Pages服务不支持自动部署。这是什么概念呢？就是说之前用GitHub搭建博客，我们对博客进行修改后 hexo d 就完事了，Github会帮我们自动更新，但Gitee的免费用户不支持此项功能，需我们对其修改后进行手动更新。<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010345.png" alt="image-20200828061556416">具体要不要进行转移看个人取舍了</p>
+<h4 id="优化博客"><a href="#优化博客" class="headerlink" title="优化博客"></a>优化博客</h4><p>对于不想进行转移的，剩下的方法我们只有对博客进行优化了，我采取了对代码进行压缩的方式进行</p>
+<h5 id="代码压缩策略"><a href="#代码压缩策略" class="headerlink" title="代码压缩策略"></a>代码压缩策略</h5><p>可以使用<strong>gulp</strong>进行，本文以 <a href="https://github.com/chenzhutian/hexo-all-minifier">hexo-all-minifier</a>进行讲解，这个插件集成了对html，css，js，image的优化，合并重复代码，去除多余空格，用算法压缩图片。压缩后的博客，在加载速度上会有较大的提升。</p>
+<p>插件安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure>
+
+<p>在站点的配置文件_<font color='orange'>config.yml</font>将下面代码加入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#文件压缩</span></span><br><span class="line">html_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  ignore_error: <span class="literal">false</span></span><br><span class="line">  exclude:</span><br><span class="line"></span><br><span class="line">css_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;*.min.css&#x27;</span></span><br><span class="line"></span><br><span class="line">js_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  mangle: <span class="literal">true</span></span><br><span class="line">  output:</span><br><span class="line">  compress:</span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;*.min.js&#x27;</span></span><br><span class="line"></span><br><span class="line">image_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  interlaced: <span class="literal">false</span></span><br><span class="line">  multipass: <span class="literal">false</span></span><br><span class="line">  optimizationLevel: 2</span><br><span class="line">  pngquant: <span class="literal">false</span></span><br><span class="line">  progressive: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="扩展性优化"><a href="#扩展性优化" class="headerlink" title="扩展性优化"></a>扩展性优化</h3><h4 id="文章链接唯一化"><a href="#文章链接唯一化" class="headerlink" title="文章链接唯一化"></a>文章链接唯一化</h4><p>什么是文章链接唯一化呢？默认情况下，Hexo生成的超链接都是绝对链接。更改文章标题，变更文章所属分类，发布时间等都可能导致文章链接改变，不利于搜索引擎收录，也不利于分享。唯一的永久链接显然是更好的选择。</p>
+<p>安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+
+<p>在站点配置文件中，找到permalink进行修改</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">permalink: articles/:abbrlink/ <span class="comment"># 此处可以自己设置，也可以直接使用 :/abbrlink</span></span><br><span class="line">abbrlink:</span><br><span class="line">    alg: crc32   <span class="comment">#算法： crc16(default) and crc32</span></span><br><span class="line">    rep: hex     <span class="comment">#进制： dec(default) and hex</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Hexo博客提交到百度"><a href="#Hexo博客提交到百度" class="headerlink" title="Hexo博客提交到百度"></a>Hexo博客提交到百度</h4><h5 id="生成站点地图"><a href="#生成站点地图" class="headerlink" title="生成站点地图"></a>生成站点地图</h5><p>站点地图即<a href="https://link.jianshu.com/?t=https://baike.baidu.com/item/sitemap/6241567?fr=aladdin">sitemap</a>， 是一个页面，上面放置了网站上需要搜索引擎抓取的所有页面的链接。站点地图可以告诉搜索引擎网站上有哪些可供抓取的网页，以便搜索引擎可以更加智能地抓取网站。</p>
+<p>安装插件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+
+<p>修改配置文件<font color='orange'>_config.yml</font>,追加以下代码</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 自动生成sitemap</span></span><br><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml</span><br><span class="line">baidusitemap:</span><br><span class="line">  path: baidusitemap.xml</span><br></pre></td></tr></table></figure>
+
+<p>生产与部署</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>此时，进入<font color='orange'>public</font>目录，你会发现里面有<font color='orange'>sitemap.xml</font>和<font color='orange'>baidusitemap.xml</font>两个文件，这就是生成的站点地图。里面包含了网站上所有页面的链接，搜索引擎通过这两个文件来抓取网站页面。</p>
+<h5 id="百度站长平台提交"><a href="#百度站长平台提交" class="headerlink" title="百度站长平台提交"></a>百度站长平台提交</h5><p>注册并并登录 <a href="http://zhanzhang.baidu.com/">百度站长平台</a>添加站点<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829011650.png" alt="image-20200829011649980">站点验证<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010502.png" alt="image-20200828071208317"></p>
+<p>我们选择<font color='red'>文件验证</font>，下载验证文件到本地，放置在<font color='orange'>themes/next/source</font>目录下。执行生成和部署命令 </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>提交即可</p>
+<h5 id="链接提交"><a href="#链接提交" class="headerlink" title="链接提交"></a>链接提交</h5><p>为了使网站更容易被搜索引擎收录，获得更高<font color='orange'>SEO</font>，需要提供百度搜索引擎的自动推送服务。</p>
+<p>插件安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
+
+<p>修改站点配置文件<font color='orange'>config.yml</font>，添加以下内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">  count: 5 <span class="comment">## 提交最新的五个链接</span></span><br><span class="line">  host: www.hui-wang.info <span class="comment">## 百度站长平台中注册的域名</span></span><br><span class="line">  token: your_token <span class="comment">## 准入秘钥</span></span><br><span class="line">  path: baidu_urls.txt <span class="comment">## 文本文档的地址， 新链接会保存在此文本文档里</span></span><br></pre></td></tr></table></figure>
+
+<p>修改配置文件的<font color='orange'>url</font>值</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line">url: <span class="comment">#填写你的网站url</span></span><br><span class="line">root: /</span><br><span class="line">permalink: :year/:month/:day/:title.xml</span><br></pre></td></tr></table></figure>
+
+<p>加入新的<font color='orange'>deploy</font></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">- <span class="built_in">type</span>: git <span class="comment">## 这是我原来的deployer</span></span><br><span class="line">  repo:</span><br><span class="line">  branch:</span><br><span class="line">- <span class="built_in">type</span>: baidu_url_submitter <span class="comment">## 添加这里内容即可</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="自动推送"><a href="#自动推送" class="headerlink" title="自动推送"></a>自动推送</h5><p>安装自动推送JS代码的网页，在页面被访问时，页面URL将立即被推送给百度。修改主题目录下的<code>layout/post.swig</code>文件，末尾添加自动推送代码，代码如下</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">(function()&#123;</span><br><span class="line">    <span class="keyword">var</span> bp = document.createElement(<span class="string">&#x27;script&#x27;</span>);</span><br><span class="line">    <span class="keyword">var</span> curProtocol = window.location.protocol.split(<span class="string">&#x27;:&#x27;</span>)[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">if</span> (curProtocol === <span class="string">&#x27;https&#x27;</span>) &#123;</span><br><span class="line">        bp.src = <span class="string">&#x27;https://zz.bdstatic.com/linksubmit/push.js&#x27;</span>;        </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        bp.src = <span class="string">&#x27;http://push.zhanzhang.baidu.com/push.js&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> s = document.getElementsByTagName(<span class="string">&quot;script&quot;</span>)[<span class="number">0</span>];</span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="sitemap提交"><a href="#sitemap提交" class="headerlink" title="sitemap提交"></a>sitemap提交</h5><p>在界面</p>
+<p>输入<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010528.png" alt="image-20200828072539693"></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 你的网站url/baidusitemap.xml</span></span><br><span class="line">https://siwuxei.gitee.io/baidusitemap.xml <span class="comment">#这是我的</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Google站长平台提交"><a href="#Google站长平台提交" class="headerlink" title="Google站长平台提交"></a>Google站长平台提交</h4><p>登录<a href="https://link.jianshu.com/?t=https://www.google.com/webmasters/#?modal_active=none">Google网站站长</a>，进入<code>Search Console</code>，点击<code>添加属性</code>进行站点添加</p>
+<h5 id="验证站点"><a href="#验证站点" class="headerlink" title="验证站点"></a>验证站点</h5><p>方法与百度类似</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010627.png" alt="image-20200828073131083"></p>
+<p>安装百度相同的方法验证后，会出现</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010627.png" alt="image-20200828073220488"></p>
+<p>点击左侧站点地图，输入站点地图网址，确认提交。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010647.png" alt="image-20200828073258341"></p>
+<h5 id="验证站点是否进行了收录"><a href="#验证站点是否进行了收录" class="headerlink" title="验证站点是否进行了收录"></a>验证站点是否进行了收录</h5><p>点击左侧网址检查，输入网站域名下的任意网址，查看显示结果</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010659.png" alt="image-20200828073443009"></p>
+<p>在Google中输入<font color='orange'>site:&lt;域名&gt;</font>查看搜索结果。</p>
+<h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a><strong>参考资料</strong></h4><p><a href="https://indexmoon.com/articles/1153730074/">Hexo基础教程(四)：功能添加与优化</a></p>
+<p><a href="https://www.jianshu.com/p/f8ec422ebd52">Hexo博客提交百度和Google收录</a></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>思无邪</title>
+    <url>/articles/5d43f63/</url>
+    <content><![CDATA[<blockquote>
+<p>浩浩汤汤历史长河五千载，多少文人骚客的诗赋，多少民间流传的辞章，宛如珍珠般在华夏的阳光下闪耀。侧耳倾听，伴着历史的车轮呼啸而来的，是经典回响的声音。<a id="more"></a></p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829204950.jpg" alt="摄图网_500739697_banner_竹林中国风小女孩（非企业商用）"></p>
+<p>常思而无邪</p>
+<p>《诗经》，中国诗歌的源头。对于我们来说，也许它太久远了，久远到如果没有注释，我们将寸步难行。其实，它只是民歌，是我们普通人的歌，并没有想像中的那么疏远不可亲近。千百年来，它就如盛开在彼岸的花，即使无法摘取，也一直存活于心。只是往往在不经意间，就被我们遗落在另一个时代。</p>
+<p>当我们用诗的清雅去寻找，用经的深邃去看待，用朝圣的虔诚去倾听，它也许是前世的前世，我们心底曾经响过的声音，我们在一起唱过的歌谣，我们前生无邪的记忆。</p>
+<p>诗三百，一言以蔽之，曰思无邪。</p>
+<p>雎鸠，是离爱情最近的鸟；蒹葭，是离爱情最近的草。三千多年过去了，雎鸠在河畔的“关关”叫声依然如在耳畔，仿佛男子在轻声呼唤所爱女子的芳名，如此深情，却又质朴；三千多年过去了，在水一方的伊人恐早已老去，可那比玫瑰平易却更繁芜的蒹葭，早已长在了心里。千年风雨，琴瑟未调，钟鼓未敲；千年风雨，秋水汤汤，芦苇大片大片寂寞地开过。我们把自己的声音留在了前世，徒留记忆的空壳在今生辗转。为何在渡河的时候不回首眺望，采采那参差的荇菜，赏赏那凝成霜的白露。</p>
+<p>现在的都市多了太多的躁动与不安，连爱情也少了几分期许中的美丽与浪漫。看了太多玫瑰与巧克力的故事，突然想起了雎鸠与蒹葭，那平凡得已逐渐被人淡忘的美好。何时我们的生活，能重拾那一份朴实的诗意？</p>
+<p>《关雎》与《蒹葭》，是爱情的极致。</p>
+<p>《诗经》，不仅仅讲述爱情，它也记录那个不安稳的年代所有的动乱。兴盛衰亡，那些浓得化不开的哀伤，在尘封已久的诗句中，读来令人唏嘘感叹。</p>
+<p>彼黍离离。</p>
+<p>世间最残忍的四个字莫过于“物是人非”。当年周室东迁后，一个周大夫回到故都镐京，追想往日繁盛，而今日所见，满目荒凉，不禁悲从中来。宫殿王城皆已成废墟，废墟之上是郁茂的黍苗。此后的千百年，故宫禾黍就成为亡国之思的代名词。从曹植唱《情》诗到向秀赋《思旧》，从刘禹锡的《乌衣巷》到姜夔的《扬州慢》，“黍离之悲”浸染着我们的诗文辞赋，与《诗经》血脉相承。</p>
+<p>知我者谓我心忧，不知我者谓我何求。</p>
+<p>这是一个清醒的人恳切直白的自问。他行迈靡靡，中心摇摇，在时光的轮回里疲惫苍老。</p>
+<p>其实早在周朝之前，历史就给我们讲了另一个故事，一个因不肯食周粟而饿死首阳山上的故事。伯夷和叔齐在死前作了一首歌，曰：“登彼西山兮，采其薇矣。已暴易暴兮，不知其非矣……”，这是关于采薇最早的记录。</p>
+<p>《诗经》中的《采薇》，是一首征夫思归的诗。</p>
+<p>你听，他在唱：“采薇采薇，薇亦柔止。曰归曰归，心亦忧止。忧心烈烈，载饥载渴。我戍未定，靡使归聘。”</p>
+<p>靡使归聘。战乱的年代，何物最为珍贵？烽火连三月，家书抵万金。岑参也写道：“马上相逢无纸笔，凭君传语报平安。”征战在外，漂泊不定，生死难料，一封家信也成奢望，于是思念插上了翅膀。</p>
+<p>《黍离》和《采薇》，如今读来，只剩一句轻叹……</p>
+<p>夜阑人静，当我们凭几而坐，用从容珍重的心态来品一品《诗经》，或许我们能重新溯流而上到三千年前的小洲兰沚边，找回我们前世遗落的声音。生命如河，我们怎能在遗忘中度过？</p>
+<p>《诗经》不仅是一部经典，它更是一种信念。我们文化的河流，从来没有断过。</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>诗经</tag>
+        <tag>旅行</tag>
+      </tags>
   </entry>
 </search>
