@@ -6,7 +6,7 @@
   <link href="https://siwuxei.github.io/atom.xml" rel="self"/>
   
   <link href="https://siwuxei.github.io/"/>
-  <updated>2020-08-28T17:12:24.192Z</updated>
+  <updated>2020-08-30T11:07:54.078Z</updated>
   <id>https://siwuxei.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sklean学习之K-近邻算法</title>
+    <link href="https://siwuxei.github.io/articles/22b53add/"/>
+    <id>https://siwuxei.github.io/articles/22b53add/</id>
+    <published>2020-08-30T10:57:41.000Z</published>
+    <updated>2020-08-30T11:07:54.078Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;KNN算法最早是由Cover和Hart提出的一种分类算法</summary>
+    
+    
+    
+    <category term="学习" scheme="https://siwuxei.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Sklearn" scheme="https://siwuxei.github.io/tags/Sklearn/"/>
+    
+  </entry>
   
   <entry>
     <title>Markdown写作工具推荐</title>
