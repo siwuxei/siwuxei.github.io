@@ -39,22 +39,33 @@
     <title>Sklean学习之K-近邻算法</title>
     <url>/articles/22b53add/</url>
     <content><![CDATA[<blockquote>
-<p>KNN算法最早是由Cover和Hart提出的一种分类算法 <a id="more"></a></p>
+<p>KNN算法最早是由Cover和Hart提出的一种分类算法 。<a id="more"></a></p>
 </blockquote>
 <h3 id="机器学习的一般流程"><a href="#机器学习的一般流程" class="headerlink" title="机器学习的一般流程"></a>机器学习的一般流程</h3><p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829114047.png" alt="image-20200829114046374"></p>
 <h3 id="机器学习算法分类"><a href="#机器学习算法分类" class="headerlink" title="机器学习算法分类"></a>机器学习算法分类</h3><p>1、监督学习</p>
-<p>•分类  k-近邻算法、贝叶斯分类、决策树与随机森林、逻辑回归、神经网络</p>
-<p>•回归  线性回归、岭回归</p>
-<p>•标注  隐马尔可夫模型   (不做要求)</p>
+<ul>
+<li><p>分类  k-近邻算法、贝叶斯分类、决策树与随机森林、逻辑回归、神经网络</p>
+</li>
+<li><p>回归  线性回归、岭回归</p>
+</li>
+<li><p>标注  隐马尔可夫模型   (不做要求)</p>
+</li>
+</ul>
 <p>2、无监督学习</p>
-<p>•聚类  k-means</p>
+<ul>
+<li>聚类  k-means</li>
+</ul>
 <h3 id="分类算法-k近邻算法-KNN"><a href="#分类算法-k近邻算法-KNN" class="headerlink" title="分类算法-k近邻算法(KNN)"></a>分类算法-k近邻算法(KNN)</h3><p>定义：如果一个样本在特征空间中的k个最相似(即特征空间中最邻近)的样本中的大多数属于某一个类别，则该样本也属于这个类别。</p>
 <p>计算距离公式：两个样本的距离可以通过如下公式计算，又叫欧式距离比如说，a(a1,a2,a3),b(b1,b2,b3)</p>
 <p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829114941.png" alt="image-20200829114941932"></p>
 <p>sklearn k-近邻算法</p>
 <p>APIsklearn.neighbors.KNeighborsClassifier<font color='red'>(n_neighbors</font>=5,<font color='red'>algorithm</font>=’auto’)</p>
-<p>• n_neighbors：int,可选（默认= 5），k_neighbors查询默认使用的邻居数</p>
-<p>•algorithm：{‘auto’，‘ball_tree’，‘kd_tree’，‘brute’}，可选用于计算最近邻居的算法：‘ball_tree’将会使用 BallTree，‘kd_tree’将使用 KDTree。‘auto’将尝试根据传递给fit方法的值来决定最合适的算法。 (不同实现方式影响效率)</p>
+<ul>
+<li><p>n_neighbors：int,可选（默认= 5），k_neighbors查询默认使用的邻居数</p>
+</li>
+<li><p>algorithm：{‘auto’，‘ball_tree’，‘kd_tree’，‘brute’}，可选用于计算最近邻居的算法：‘ball_tree’将会使用 BallTree，‘kd_tree’将使用 KDTree。‘auto’将尝试根据传递给fit方法的值来决定最合适的算法。 (不同实现方式影响效率)</p>
+</li>
+</ul>
 <h3 id="存在问题"><a href="#存在问题" class="headerlink" title="存在问题"></a>存在问题</h3><p>1、k值取多大？有什么影响？</p>
 <ul>
 <li><p>k值取很小：容易受异常点影响</p>
