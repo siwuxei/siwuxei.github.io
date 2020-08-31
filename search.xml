@@ -1,371 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Git学习总结</title>
-    <url>/articles/acd4e1/</url>
-    <content><![CDATA[<blockquote>
-<p>主要介绍Git运作的基本流程以及相关常用命令。<a id="more"></a></p>
-</blockquote>
-<h3 id="什么是Git？"><a href="#什么是Git？" class="headerlink" title="什么是Git？"></a>什么是Git？</h3><p>Git:是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。<br><img src="https://s1.ax1x.com/2020/08/26/dfFQBT.png" alt="artara"></p>
-<h4 id="Git的名词"><a href="#Git的名词" class="headerlink" title="Git的名词"></a>Git的名词</h4><p>工作区：它持有实际文件<br>缓存区（Index）：它像个缓存区域，临时保存你的改动<br>Head：指向你最近一次提交后的结果。  </p>
-<h4 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h4><p>1、改动添加到缓存区</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add &lt;filename&gt;</span><br><span class="line"><span class="comment"># 常用filename:.表示本级目录下的全部文件  </span></span><br></pre></td></tr></table></figure>
-<p>2、改动提交到Head</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提价信息&quot;</span></span><br></pre></td></tr></table></figure>
-<p>3、推送改动信息</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 假如还没有链接远端服务器，则需要下面命令添加</span></span><br><span class="line">git remote add origin &lt;server&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="Git分支的进一步理解"><a href="#Git分支的进一步理解" class="headerlink" title="Git分支的进一步理解"></a>Git分支的进一步理解</h3><h4 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h4><ul>
-<li>分支：分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。<br><img src="https://s1.ax1x.com/2020/08/26/dfZZ6A.png" alt="artara"></li>
-<li>相关命令<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建一个新的分支“featuer_x”</span></span><br><span class="line">git checkout -b featuer_x</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换到主分支</span></span><br><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 删除新分支</span></span><br><span class="line">git branch -d feature_x</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将本地分支推送到远端仓库</span></span><br><span class="line">git push origin &lt;branch&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="分支的更新与合并"><a href="#分支的更新与合并" class="headerlink" title="分支的更新与合并"></a>分支的更新与合并</h4></li>
-<li>更新本地仓库到最新改动<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure></li>
-<li>以在你的工作目录中 获取（fetch） 并 合并（merge） 远端的改动。要合并其他分支到你的当前分支（例如 master）。<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge &lt;branch&gt;</span><br></pre></td></tr></table></figure></li>
-<li>合并后，冲突怎么办？—自己更改，自己合并相关文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在更改后添加</span></span><br><span class="line">git add &lt;filename&gt;</span><br></pre></td></tr></table></figure></li>
-<li>查看合并后的改动<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git diff &lt;source_branch&gt; &lt;target_branch&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="远程分支管理"><a href="#远程分支管理" class="headerlink" title="远程分支管理"></a>远程分支管理</h3></li>
-<li>查看本地分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git bash</span><br></pre></td></tr></table></figure></li>
-<li>查看远程分支<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git branch -r</span><br></pre></td></tr></table></figure></li>
-<li>删除远程分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin:&lt;name&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4></li>
-<li>从服务器上拉取代码<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;拉取SSH&gt;</span><br></pre></td></tr></table></figure></li>
-<li>初始化(不经常使用，一般克隆后就会生产.git文件)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></li>
-<li>从远程获取最新版本到本地(不会自动merge)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure>
-<h4 id="走过的坑"><a href="#走过的坑" class="headerlink" title="走过的坑"></a>走过的坑</h4>报错类型<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">! [rejected]   master -&gt; master (non-fast-forward)</span><br></pre></td></tr></table></figure>
-分析：出现原因在于：git仓库中已经有一部分代码，所以它不允许你直接把你的代码覆盖上去。<br>解决方案<br>1、强推<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 即利用强覆盖方式用你本地的代码替代git仓库内的内容</span></span><br><span class="line">git push -f</span><br></pre></td></tr></table></figure>
-2、先把git的东西fetch到你本地然后merge后再push<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 报错：refusing to merge unrelated histories</span></span><br><span class="line"><span class="comment"># 解决方案如下</span></span><br><span class="line">git pull origin master --allow-unrelated-histories</span><br></pre></td></tr></table></figure>
-然后依次执行以下命令  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提交信息&quot;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure>
-最后执行<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-<h4 id="文件-gitignore相关命令"><a href="#文件-gitignore相关命令" class="headerlink" title="文件.gitignore相关命令"></a>文件.gitignore相关命令</h4><img src="https://s1.ax1x.com/2020/08/26/dflMWV.png" alt="artara"></li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown写作工具推荐</title>
-    <url>/articles/a9ae164/</url>
-    <content><![CDATA[<blockquote>
-<p>Markdown使用总结以及工具推荐。<a id="more"></a></p>
-</blockquote>
-<h3 id="初识Markdown"><a href="#初识Markdown" class="headerlink" title="初识Markdown"></a>初识Markdown</h3><p>在学习Jupyter的时候才知道有Markdown这个东西，当时认为其语法复杂，怎么还有人用这种东西，但…万事都逃不了真香定律，太香了!</p>
-<h3 id="好用的Markdown工具推荐"><a href="#好用的Markdown工具推荐" class="headerlink" title="好用的Markdown工具推荐"></a>好用的Markdown工具推荐</h3><h4 id="PC端"><a href="#PC端" class="headerlink" title="PC端"></a>PC端</h4><p>1、VScode</p>
-<p>VScode太强大了，其插件无所不能</p>
-<p><font color='orange'>markdownlint</font>插件：是vscode上一款非常好用的 Markdown 格式检查扩展工具，它规定了许多规则并实时对文档进行检查，防止一些语法错误，同时维持文档风格的统一，使用此工具有助于形成一个良好的写作习惯和规范。但因其规则较多，写文档时很容易就出错（或不符合规则），所以需要对工具的规则有一个详细的了解，另外，有时工作要求的文档风格与markdownlint工具规定的规则并不相同，比如标题、列表的创建格式，缩进的空格数等等，这时就需要对规则进行一定的设置。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010755.png" alt="image-20200828082309848"></p>
-<p><font color='orange'>markdownlint</font>插件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010755.png" alt="image-20200828082627410"></p>
-<p>目录、批注、合并单元格、插入 LaTeX 公式、用纯文本绘图、运行代码、导入和导出、制作幻灯片….你说还有啥它不会？</p>
-<p>2、<a href="https://github.com/Molunerfinn/PicGo">PicGo</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829011132.png" alt="image-20200828084525027"></p>
-<p>这个插件太强了，我用了它感觉效率提升了一倍，它可以将图片上传到指定的图床上，然后返回markdown链接，直接粘贴到你的文档中，就搞定啦！</p>
-<p>问题来了，用什么图床比较好呢，这里有<a href="https://zhuanlan.zhihu.com/p/149282549">GitHub，Gitee，Coding，静态博客「Pages」服务横评</a>，图床的代理国内不少，但质量高又免费的…没有（白嫖失败）。但，但，但我们有<del>Github</del>（Gitee）啊，可以搭建免费图床。具体搭建过程也不太难，详细的，请参考：<a href="https://zhuanlan.zhihu.com/p/102594554">Gitee(码云)实现markdown图床</a>。</p>
-<p>3、<a href="https://link.zhihu.com/?target=https://www.typora.io/">Typora</a></p>
-<p>这个也不错，Typora 是一款<strong>支持实时预览的 Markdown 文本编辑器</strong>。它有 OS X、Windows、Linux 三个平台的版本，并且由于仍在测试中，是<strong>完全免费</strong>的。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010804.png" alt="image-20200828083954808"></p>
-<p>再来看看快捷键</p>
-<table>
-<thead>
-<tr>
-<th>快捷键</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Ctrl+L</td>
-<td>选中当前行/句</td>
-</tr>
-<tr>
-<td>Ctrl+E</td>
-<td>选中当前格式文本</td>
-</tr>
-<tr>
-<td>Ctrl + Home</td>
-<td>跳转到文首</td>
-</tr>
-<tr>
-<td>Ctrl + End</td>
-<td>跳转到文末</td>
-</tr>
-<tr>
-<td>Ctrl + H</td>
-<td>替换</td>
-</tr>
-<tr>
-<td>Ctrl + B</td>
-<td>加粗</td>
-</tr>
-<tr>
-<td>Ctrl + I</td>
-<td>倾斜</td>
-</tr>
-<tr>
-<td>Ctrl + K</td>
-<td>超链接</td>
-</tr>
-<tr>
-<td>Ctrl + U</td>
-<td>下划线</td>
-</tr>
-<tr>
-<td>Ctrl + 1</td>
-<td>一级标题</td>
-</tr>
-<tr>
-<td>Ctrl + 2</td>
-<td>二级标题</td>
-</tr>
-<tr>
-<td>Ctrl + 3</td>
-<td>三级标题</td>
-</tr>
-<tr>
-<td>Ctrl + 4</td>
-<td>四级标题</td>
-</tr>
-<tr>
-<td>Ctrl + +</td>
-<td>增大标题等级</td>
-</tr>
-<tr>
-<td>Ctrl + -</td>
-<td>减小标题等级</td>
-</tr>
-<tr>
-<td>Ctrl + /</td>
-<td>切换源代码和预览模式</td>
-</tr>
-<tr>
-<td>Ctrl + \</td>
-<td>清除格式</td>
-</tr>
-<tr>
-<td>Ctrl + Shift + I</td>
-<td>插入图片</td>
-</tr>
-<tr>
-<td>Alt + Shift + 5</td>
-<td>删除线</td>
-</tr>
-</tbody></table>
-<p>还有很多，继续白嫖吧！</p>
-<p>4、<a href="https://autohotkey.com/download/ahk-install.exe">AutoHotKey</a></p>
-<p>Typoya也有不足，就是没有设置字体颜色的快捷键，AutoHotKey是一款著名的windows系统快捷键设置的软件，轻便小巧，我们可以对快捷键进行补充。</p>
-<p>(1)、先安装AutoHotKey</p>
-<p>(2)、打开记事本，把如下内容复制粘贴</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">; Typora</span><br><span class="line">; 快捷增加字体颜色</span><br><span class="line">; SendInput &#123;Text&#125; 解决中文输入法问题</span><br><span class="line"> </span><br><span class="line"><span class="comment">#IfWinActive ahk_exe Typora.exe</span></span><br><span class="line">&#123;</span><br><span class="line">    ; Ctrl+Alt+O 橙色</span><br><span class="line">    ^!o::addFontColor(<span class="string">&quot;orange&quot;</span>)</span><br><span class="line"> </span><br><span class="line">    ; Ctrl+Alt+R 红色</span><br><span class="line">    ^!r::addFontColor(<span class="string">&quot;red&quot;</span>)</span><br><span class="line"> </span><br><span class="line">    ; Ctrl+Alt+B 浅蓝色</span><br><span class="line">    ^!b::addFontColor(<span class="string">&quot;cornflowerblue&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">; 快捷增加字体颜色</span><br><span class="line">addFontColor(color)&#123;</span><br><span class="line">    clipboard := <span class="string">&quot;&quot;</span> ; 清空剪切板</span><br><span class="line">    Send &#123;ctrl down&#125;c&#123;ctrl up&#125; ; 复制</span><br><span class="line">    SendInput &#123;TEXT&#125;&lt;font color=<span class="string">&#x27;%color%&#x27;</span>&gt;</span><br><span class="line">    SendInput &#123;ctrl down&#125;v&#123;ctrl up&#125; ; 粘贴</span><br><span class="line">    If(clipboard = <span class="string">&quot;&quot;</span>)&#123;</span><br><span class="line">        SendInput &#123;TEXT&#125;&lt;/font&gt; ; Typora 在这不会自动补充</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        SendInput &#123;TEXT&#125;&lt;/ ; Typora中自动补全标签</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>(3)、将文件保存为ahk后缀的文件，如TyporaHotKey.ahk</p>
-<p>(4)、在Typora软件里就可以使用快捷键：如按<code>Ctrl+Alt+O</code>添加橙色，Ctrl+Alt+R 红色，按<code>Ctrl+\</code>取消样式！</p>
-<h4 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h4><p>1、<font color='cornflowerblue'>MWeb</font>（推荐，60解锁高级版）</p>
-<p>MWeb 是专业的 Markdown 写作、记笔记、静态博客生成软件，目前已支持 Mac，iPad 和 iPhone。iOS 版 MWeb 功能特点如下：</p>
-<p>* 全面支持 Github Flavored Markdown 语法和常用扩展语法，如 TOC、Table、Fenced code block、LaTeX、Task lists、Footnote 等。</p>
-<p>* 根据 iOS 系统的特点，自定义 Markdown 语法输入/编辑键盘。</p>
-<p>* 支持粘贴插入图片，图片保存在跟文档相关联的位置，可以在编辑器中直接显示图片。</p>
-<p>* 支持发布到 Wordpress、Metaweblog API 、Evernote、Blogger、Tumblr、语雀、少数派 Matrix、Ghost 和 Medium，除了 Medium 外都支持更新已发布文档。发布时会自动上传插入到文档中的图片。</p>
-<p>* 有图床功能，目前已支持 imgur、七牛云、SM.MS、腾讯云 COS、又拍云、阿里云 OSS、自定义 四种图床。</p>
-<p>* 支持 iCloud，Dropbox 同步。</p>
-<p>* 支持 Mac 版的文档库的文档的查看，编辑和新增。</p>
-<p>* 支持文档大纲，以方便快速定位文档。</p>
-<p>* 支持导出为图片、PDF</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829011156.png" alt="image-20200828085512524"></p>
-<p>2、<font color='cornflowerblue'>Markdown-图文并茂，高效写作</font>（68解锁高级版）</p>
-<p>深色模式护眼，键盘工具条辅助，分屏预览等功能一应俱全，同时还具有以下功能：</p>
-<p>• 支持iCloud Drive</p>
-<p>• 支持夜间模式，以及多种主题</p>
-<p>• 支持LaTeX数学公式</p>
-<p>• 支持Todo-List等扩展语法</p>
-<p>• 支持从其他app打开文件，以及添加外部文件夹</p>
-<p>• 可开启WebDAV服务与你的电脑共享文件</p>
-<p>• 快速的渲染，支持多种CSS，以及自定义样式….</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829011214.png" alt="image-20200828085836319"></p>
-<p>还不错！</p>
-<h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><p><a href="https://www.itblogcn.com/article/583.html">Typora 快捷方式给字体设置颜色</a></p>
-]]></content>
-      <categories>
-        <category>安利</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>about me</title>
-    <url>/articles/9c4101a6/</url>
-    <content><![CDATA[<blockquote>
-<p>A Student, live in China  </p>
-</blockquote>
-<p>姓名：李乐乐<br>GitHub：<a href="https://github.com/siwuxei">siwuxei</a><br>Twitter：<a href="https://twitter.com/supperyface">llike</a><br>微信：Lilestudent</p>
-<a id="more"></a>
-
-<div align=center>
-
- <img src="https://s1.ax1x.com/2020/08/24/dsbtEj.md.png" width = "350" height = "350" alt="头像" align=center />
-
-</div>
-]]></content>
-  </entry>
-  <entry>
-    <title>如何在GitHub上搭建属于自己的博客</title>
-    <url>/articles/419fe643/</url>
-    <content><![CDATA[<blockquote>
-<p>最近在学习机器学习查阅资料的时候，看到几个大佬写的博客，羡煞我也，自己也想搭建一个，过程有点艰辛，现在搭建成功后，想把搭建过程写下来，作为我的第一篇博客，没有前端和后端经验的小白也能看的懂哦！<a id="more"></a></p>
-</blockquote>
-<h3 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h3><h4 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h4><p><a href="https://hexo.io/zh-cn/">Hexo</a>是一个开源的静态博客框架,基于node.js开发,作者是台湾大学生tommy351。 </p>
-<h4 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h4><p><a href="https://github.com/">GitHub</a>相当于程序员的知网啦，在GitHub，用户可以十分轻易地找到海量的开源代码。  </p>
-<h4 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h4><p><a href="https://docs.github.com/en/github/working-with-github-pages/about-github-pages">GitHub Pages</a>可以理解为用户编写的、托管在github上的静态网页，你只需将你的改动提交到Github，就可以实现更改你的网页。</p>
-<h3 id="二、搭建环境"><a href="#二、搭建环境" class="headerlink" title="二、搭建环境"></a>二、搭建环境</h3><h4 id="安装Node"><a href="#安装Node" class="headerlink" title="安装Node"></a>安装Node</h4><p>软件在<a href="https://nodejs.org/en/download/">官网</a>下载即可安装Node的过程很简单，基本上一路点默认就行了，文件路径想改的可以改一下。</p>
-<div aliga=center>
-
-<p> <img src="https://s1.ax1x.com/2020/08/25/dckgne.png" alt="artara"></p>
-</div>
-
-<h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h4><p><a href="https://git-scm.com/download/win">Git</a>可是个好东西，代码托管、团队协作都离不开它。安装过程也并不复杂，几乎一路默认就好了，不过其中也有一些要<a href="https://zhuanlan.zhihu.com/p/140405392">注意的地方</a>，不过一直按默认安装也没有什么问题。<br><img src="https://s1.ax1x.com/2020/08/25/dckL7j.png" alt="artara"></p>
-<h3 id="三、环境配置"><a href="#三、环境配置" class="headerlink" title="三、环境配置"></a>三、环境配置</h3><h4 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h4><p>在电脑某一磁盘内创建一个文件夹（文件夹必须是空的，名字随便，但最好能见名知意哈，比如blog）本文用blog文件夹进行演示。</p>
-<h4 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h4><p>进入blog文件夹，右击鼠标，选择Git Brash Here 命令，弹出命令框输入以下命令:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-<p><img src="https://s1.ax1x.com/2020/08/25/dcApcT.png" alt="artara"><br>等待Hexo进行初始化（如果过程比较久，就终止一下，然后把blog文件夹里缓存的东西删光，重新执行初始化命令）。<br><img src="https://s1.ax1x.com/2020/08/25/dcADEj.png" alt="artara"> </p>
-<h4 id="启动Hexo"><a href="#启动Hexo" class="headerlink" title="启动Hexo"></a>启动Hexo</h4><p>仍是在blog文件夹下，在命令窗口输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>这时在浏览器输入：默认网址，可以在本地查看你的博文啦！ </p>
-<h4 id="创建自己的博客"><a href="#创建自己的博客" class="headerlink" title="创建自己的博客"></a>创建自己的博客</h4><p>在命令窗口，输入ctrl+c,断开连接，然后输入命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo n <span class="string">&#x27;我的第一篇博客&#x27;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://s1.ax1x.com/2020/08/25/dctV5q.png" alt="artara"><br>这时候，你的第一篇博客就创建成功了！它默认在‘ G:\Blog\source_posts ’位置（你的可能不同），接下来我们就可以愉快的用MarkDown编辑自己的博客啦！我们用<a href="https://code.visualstudio.com/">VScode</a>或者<a href="https://jupyterlab.readthedocs.io/en/stable/#">Jupyter</a>打开它，输入命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">## 第一章</span></span><br><span class="line">    内容</span><br><span class="line"><span class="comment">## 第二章</span></span><br><span class="line">    内容  </span><br><span class="line"><span class="comment">## 第三章</span></span><br><span class="line">    结束语</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://s1.ax1x.com/2020/08/25/dcJaY6.png" alt="artara"></p>
-<h4 id="查看博客"><a href="#查看博客" class="headerlink" title="查看博客"></a>查看博客</h4><p>仍是blog文件夹的命令面板输入命令行:<br>清理</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-
-<p>生成</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
-<p>启动</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://s1.ax1x.com/2020/08/25/dcN9F1.png" alt="artara"><br>此时刷新刚才的界面，发现内容已经传入啦！<br><img src="https://s1.ax1x.com/2020/08/25/dcYo8K.png" alt="arara"></p>
-<h3 id="四、GitHub设置"><a href="#四、GitHub设置" class="headerlink" title="四、GitHub设置"></a>四、GitHub设置</h3><h4 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h4><p>登录<a href="https://github.com/">GitHub</a>,不用GitHub的话，你也可以自己买域名创建博客，但白嫖不爽吗？没有账号的自己创建一个。</p>
-<h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><p>新建一个仓库，仓库名必须为：[你的昵称].github.io,这个很重要。描述信息可写可不可。<br><img src="https://s1.ax1x.com/2020/08/25/dctGI1.png" alt="artara"><br><img src="https://s1.ax1x.com/2020/08/25/dctUxO.png" alt="artara"></p>
-<h4 id="本地部署"><a href="#本地部署" class="headerlink" title="本地部署"></a>本地部署</h4><p>回到blog文件夹下的控制面板，我们点击ctrl+c,将本地服务终止，然后输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p><img src="https://s1.ax1x.com/2020/08/25/dct6it.png" alt="artara"><br>这是一个插件，用它来连接Github。</p>
-<h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><p>在文件夹blog里，找到配置文件_config.yml，我们打开它，拉到代码最下面，进行配置：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  <span class="comment"># 这里根据自己的改，把siwuxei改成你的昵称</span></span><br><span class="line">  repo: https://github.com/siwuxei/siwuxei.github.io.git </span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<h4 id="同步至远端（GitHub）"><a href="#同步至远端（GitHub）" class="headerlink" title="同步至远端（GitHub）"></a>同步至远端（GitHub）</h4><p>输入命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>期间会让你进行输入github的账号和密码，至此，网站静态部署结束啦！此时你可以访问：[你的昵称].github.io啦！</p>
-<h3 id="五、Hexo主题的使用"><a href="#五、Hexo主题的使用" class="headerlink" title="五、Hexo主题的使用"></a>五、Hexo主题的使用</h3><h4 id="主题选择"><a href="#主题选择" class="headerlink" title="主题选择"></a>主题选择</h4><p><a href="https://hexo.io/themes/">Hexo</a>上有许多主题进行使用，我比较喜欢精简的主义的，写博客让人看的，搞些花里胡哨的不太好，个人推荐<a href="https://github.com/litten/hexo-theme-yilia">Yilia</a>和<a href="https://github.com/iissnan/hexo-theme-next">Next</a>，连接中都有教程，我这里以next举例,仍在blog文件夹里右键启动命令面板，输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-<p>国内没有梯子比较慢，请耐心等待。<br>然后，在blog文件夹下修改_config.yml文件，将theme名字改为next</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-<p>配置完成</p>
-<h4 id="同步GitHub"><a href="#同步GitHub" class="headerlink" title="同步GitHub"></a>同步GitHub</h4><p>在控制面板输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>即可同步至github上面去了，但你立即登录可能还看不到效果，github进行自动配置需要时间，通常不会太久。</p>
-<h3 id="六、图床"><a href="#六、图床" class="headerlink" title="六、图床"></a>六、图床</h3><p>没有写博客前我都不知道有这东西，图床重要用于在写博客时，便于插入图片（若用网上的公共图片，随时可能失效），推荐<a href="https://imgchr.com/">路过图床</a>,空间无限，但传入图片&lt;10M,基本够用，当然你如果还不满意，可以利用GitHub自己搭建一个图床。步骤如下：<br>1、添加博客图片专用Repository，如BlogImages，这样有利于维护；<br>2、发布博客前，将博客中用到的图片push到BlogImages；<br>3、从Github里获取图片地址，如何获取我想你会的；  </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 注意将地址中的blob替换为raw，必须替换，否则无法显示图片</span></span><br><span class="line">“https://github.com/ConnorLin/BlogImages/blob/master/2016:04:02/hexo_server.png”  </span><br><span class="line">改为  </span><br><span class="line">“https://github.com/ConnorLin/BlogImages/raw/master/2016:04:02/hexo_server.png”</span><br></pre></td></tr></table></figure>
-<p><strong>好啦，至此你的个人博客就搭建完了，Enjoy it！</strong></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>GithubPages</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何对Hexo博客进行优化</title>
-    <url>/articles/7793c3e2/</url>
-    <content><![CDATA[<blockquote>
-<p>本文主要讲解如何对Hexo驱动下的博客网站进行优化，主要从网站加载速度、网站稳定性、网站扩散方法进行探讨。<a id="more"></a></p>
-</blockquote>
-<h3 id="提升网站加载速度"><a href="#提升网站加载速度" class="headerlink" title="提升网站加载速度"></a>提升网站加载速度</h3><p>由于大部分人基于GitHub进行建立博客，而GitHub的服务器不在国内，别墙的厉害，所以博客的加载速度会显得异常缓慢，如果你的Blog主页内有大量高清图片时，那速度…，等它加载完，我们火锅都吃完了。这里提供两种方案，仅供参考。</p>
-<h4 id="转移博客至Gitee"><a href="#转移博客至Gitee" class="headerlink" title="转移博客至Gitee"></a>转移博客至Gitee</h4><p>Gitee服务器在国内，加载速度较GitHub快的不是一点半点，建议进行博客的转移，一劳永逸，Gitee搭建的博客较GitHub搭建的，当然也有不足之处，Gitee所提供的Gitee Pages服务不支持自动部署。这是什么概念呢？就是说之前用GitHub搭建博客，我们对博客进行修改后 hexo d 就完事了，Github会帮我们自动更新，但Gitee的免费用户不支持此项功能，需我们对其修改后进行手动更新。<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010345.png" alt="image-20200828061556416">具体要不要进行转移看个人取舍了</p>
-<h4 id="优化博客"><a href="#优化博客" class="headerlink" title="优化博客"></a>优化博客</h4><p>对于不想进行转移的，剩下的方法我们只有对博客进行优化了，我采取了对代码进行压缩的方式进行</p>
-<h5 id="代码压缩策略"><a href="#代码压缩策略" class="headerlink" title="代码压缩策略"></a>代码压缩策略</h5><p>可以使用<strong>gulp</strong>进行，本文以 <a href="https://github.com/chenzhutian/hexo-all-minifier">hexo-all-minifier</a>进行讲解，这个插件集成了对html，css，js，image的优化，合并重复代码，去除多余空格，用算法压缩图片。压缩后的博客，在加载速度上会有较大的提升。</p>
-<p>插件安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure>
-
-<p>在站点的配置文件_<font color='orange'>config.yml</font>将下面代码加入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#文件压缩</span></span><br><span class="line">html_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  ignore_error: <span class="literal">false</span></span><br><span class="line">  exclude:</span><br><span class="line"></span><br><span class="line">css_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;*.min.css&#x27;</span></span><br><span class="line"></span><br><span class="line">js_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  mangle: <span class="literal">true</span></span><br><span class="line">  output:</span><br><span class="line">  compress:</span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;*.min.js&#x27;</span></span><br><span class="line"></span><br><span class="line">image_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  interlaced: <span class="literal">false</span></span><br><span class="line">  multipass: <span class="literal">false</span></span><br><span class="line">  optimizationLevel: 2</span><br><span class="line">  pngquant: <span class="literal">false</span></span><br><span class="line">  progressive: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="扩展性优化"><a href="#扩展性优化" class="headerlink" title="扩展性优化"></a>扩展性优化</h3><h4 id="文章链接唯一化"><a href="#文章链接唯一化" class="headerlink" title="文章链接唯一化"></a>文章链接唯一化</h4><p>什么是文章链接唯一化呢？默认情况下，Hexo生成的超链接都是绝对链接。更改文章标题，变更文章所属分类，发布时间等都可能导致文章链接改变，不利于搜索引擎收录，也不利于分享。唯一的永久链接显然是更好的选择。</p>
-<p>安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-
-<p>在站点配置文件中，找到permalink进行修改</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">permalink: articles/:abbrlink/ <span class="comment"># 此处可以自己设置，也可以直接使用 :/abbrlink</span></span><br><span class="line">abbrlink:</span><br><span class="line">    alg: crc32   <span class="comment">#算法： crc16(default) and crc32</span></span><br><span class="line">    rep: hex     <span class="comment">#进制： dec(default) and hex</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="Hexo博客提交到百度"><a href="#Hexo博客提交到百度" class="headerlink" title="Hexo博客提交到百度"></a>Hexo博客提交到百度</h4><h5 id="生成站点地图"><a href="#生成站点地图" class="headerlink" title="生成站点地图"></a>生成站点地图</h5><p>站点地图即<a href="https://link.jianshu.com/?t=https://baike.baidu.com/item/sitemap/6241567?fr=aladdin">sitemap</a>， 是一个页面，上面放置了网站上需要搜索引擎抓取的所有页面的链接。站点地图可以告诉搜索引擎网站上有哪些可供抓取的网页，以便搜索引擎可以更加智能地抓取网站。</p>
-<p>安装插件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
-
-<p>修改配置文件<font color='orange'>_config.yml</font>,追加以下代码</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 自动生成sitemap</span></span><br><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml</span><br><span class="line">baidusitemap:</span><br><span class="line">  path: baidusitemap.xml</span><br></pre></td></tr></table></figure>
-
-<p>生产与部署</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>此时，进入<font color='orange'>public</font>目录，你会发现里面有<font color='orange'>sitemap.xml</font>和<font color='orange'>baidusitemap.xml</font>两个文件，这就是生成的站点地图。里面包含了网站上所有页面的链接，搜索引擎通过这两个文件来抓取网站页面。</p>
-<h5 id="百度站长平台提交"><a href="#百度站长平台提交" class="headerlink" title="百度站长平台提交"></a>百度站长平台提交</h5><p>注册并并登录 <a href="http://zhanzhang.baidu.com/">百度站长平台</a>添加站点<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829011650.png" alt="image-20200829011649980">站点验证<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010502.png" alt="image-20200828071208317"></p>
-<p>我们选择<font color='red'>文件验证</font>，下载验证文件到本地，放置在<font color='orange'>themes/next/source</font>目录下。执行生成和部署命令 </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>提交即可</p>
-<h5 id="链接提交"><a href="#链接提交" class="headerlink" title="链接提交"></a>链接提交</h5><p>为了使网站更容易被搜索引擎收录，获得更高<font color='orange'>SEO</font>，需要提供百度搜索引擎的自动推送服务。</p>
-<p>插件安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
-
-<p>修改站点配置文件<font color='orange'>config.yml</font>，添加以下内容</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">  count: 5 <span class="comment">## 提交最新的五个链接</span></span><br><span class="line">  host: www.hui-wang.info <span class="comment">## 百度站长平台中注册的域名</span></span><br><span class="line">  token: your_token <span class="comment">## 准入秘钥</span></span><br><span class="line">  path: baidu_urls.txt <span class="comment">## 文本文档的地址， 新链接会保存在此文本文档里</span></span><br></pre></td></tr></table></figure>
-
-<p>修改配置文件的<font color='orange'>url</font>值</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line">url: <span class="comment">#填写你的网站url</span></span><br><span class="line">root: /</span><br><span class="line">permalink: :year/:month/:day/:title.xml</span><br></pre></td></tr></table></figure>
-
-<p>加入新的<font color='orange'>deploy</font></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">- <span class="built_in">type</span>: git <span class="comment">## 这是我原来的deployer</span></span><br><span class="line">  repo:</span><br><span class="line">  branch:</span><br><span class="line">- <span class="built_in">type</span>: baidu_url_submitter <span class="comment">## 添加这里内容即可</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="自动推送"><a href="#自动推送" class="headerlink" title="自动推送"></a>自动推送</h5><p>安装自动推送JS代码的网页，在页面被访问时，页面URL将立即被推送给百度。修改主题目录下的<code>layout/post.swig</code>文件，末尾添加自动推送代码，代码如下</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">(function()&#123;</span><br><span class="line">    <span class="keyword">var</span> bp = document.createElement(<span class="string">&#x27;script&#x27;</span>);</span><br><span class="line">    <span class="keyword">var</span> curProtocol = window.location.protocol.split(<span class="string">&#x27;:&#x27;</span>)[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">if</span> (curProtocol === <span class="string">&#x27;https&#x27;</span>) &#123;</span><br><span class="line">        bp.src = <span class="string">&#x27;https://zz.bdstatic.com/linksubmit/push.js&#x27;</span>;        </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        bp.src = <span class="string">&#x27;http://push.zhanzhang.baidu.com/push.js&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> s = document.getElementsByTagName(<span class="string">&quot;script&quot;</span>)[<span class="number">0</span>];</span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-<h5 id="sitemap提交"><a href="#sitemap提交" class="headerlink" title="sitemap提交"></a>sitemap提交</h5><p>在界面</p>
-<p>输入<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010528.png" alt="image-20200828072539693"></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 你的网站url/baidusitemap.xml</span></span><br><span class="line">https://siwuxei.gitee.io/baidusitemap.xml <span class="comment">#这是我的</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="Google站长平台提交"><a href="#Google站长平台提交" class="headerlink" title="Google站长平台提交"></a>Google站长平台提交</h4><p>登录<a href="https://link.jianshu.com/?t=https://www.google.com/webmasters/#?modal_active=none">Google网站站长</a>，进入<code>Search Console</code>，点击<code>添加属性</code>进行站点添加</p>
-<h5 id="验证站点"><a href="#验证站点" class="headerlink" title="验证站点"></a>验证站点</h5><p>方法与百度类似</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010627.png" alt="image-20200828073131083"></p>
-<p>安装百度相同的方法验证后，会出现</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010627.png" alt="image-20200828073220488"></p>
-<p>点击左侧站点地图，输入站点地图网址，确认提交。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010647.png" alt="image-20200828073258341"></p>
-<h5 id="验证站点是否进行了收录"><a href="#验证站点是否进行了收录" class="headerlink" title="验证站点是否进行了收录"></a>验证站点是否进行了收录</h5><p>点击左侧网址检查，输入网站域名下的任意网址，查看显示结果</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010659.png" alt="image-20200828073443009"></p>
-<p>在Google中输入<font color='orange'>site:&lt;域名&gt;</font>查看搜索结果。</p>
-<h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a><strong>参考资料</strong></h4><p><a href="https://indexmoon.com/articles/1153730074/">Hexo基础教程(四)：功能添加与优化</a></p>
-<p><a href="https://www.jianshu.com/p/f8ec422ebd52">Hexo博客提交百度和Google收录</a></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>思无邪</title>
     <url>/articles/5d43f63/</url>
     <content><![CDATA[<blockquote>
@@ -398,69 +33,6 @@
       <tags>
         <tag>诗经</tag>
         <tag>旅行</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Sklearn学习之K-近邻算法</title>
-    <url>/articles/22b53add/</url>
-    <content><![CDATA[<blockquote>
-<p>KNN算法最早是由Cover和Hart提出的一种分类算法。<a id="more"></a></p>
-</blockquote>
-<h3 id="机器学习的一般流程"><a href="#机器学习的一般流程" class="headerlink" title="机器学习的一般流程"></a>机器学习的一般流程</h3><p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829114047.png" alt="image-20200829114046374"></p>
-<h3 id="机器学习算法分类"><a href="#机器学习算法分类" class="headerlink" title="机器学习算法分类"></a>机器学习算法分类</h3><p>1、监督学习</p>
-<ul>
-<li><p>分类  k-近邻算法、贝叶斯分类、决策树与随机森林、逻辑回归、神经网络</p>
-</li>
-<li><p>回归  线性回归、岭回归</p>
-</li>
-<li><p>标注  隐马尔可夫模型   (不做要求)</p>
-</li>
-</ul>
-<p>2、无监督学习</p>
-<ul>
-<li>聚类  k-means</li>
-</ul>
-<h3 id="分类算法-k近邻算法-KNN"><a href="#分类算法-k近邻算法-KNN" class="headerlink" title="分类算法-k近邻算法(KNN)"></a>分类算法-k近邻算法(KNN)</h3><p>定义：如果一个样本在特征空间中的k个最相似(即特征空间中最邻近)的样本中的大多数属于某一个类别，则该样本也属于这个类别。</p>
-<p>计算距离公式：两个样本的距离可以通过如下公式计算，又叫欧式距离比如说，a(a1,a2,a3),b(b1,b2,b3)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829114941.png" alt="image-20200829114941932"></p>
-<p>sklearn k-近邻算法</p>
-<p>APIsklearn.neighbors.KNeighborsClassifier<font color='red'>(n_neighbors</font>=5,<font color='red'>algorithm</font>=’auto’)</p>
-<ul>
-<li><p>n_neighbors：int,可选（默认= 5），k_neighbors查询默认使用的邻居数</p>
-</li>
-<li><p>algorithm：{‘auto’，‘ball_tree’，‘kd_tree’，‘brute’}，可选用于计算最近邻居的算法：‘ball_tree’将会使用 BallTree，‘kd_tree’将使用 KDTree。‘auto’将尝试根据传递给fit方法的值来决定最合适的算法。 (不同实现方式影响效率)</p>
-</li>
-</ul>
-<h3 id="存在问题"><a href="#存在问题" class="headerlink" title="存在问题"></a>存在问题</h3><p>1、k值取多大？有什么影响？</p>
-<ul>
-<li><p>k值取很小：容易受异常点影响</p>
-</li>
-<li><p>k值取很大：容易受最近数据太多导致比例变化 </p>
-</li>
-</ul>
-<p>2、性能影响</p>
-<ul>
-<li>不适合超大数据类型</li>
-</ul>
-<h3 id="k-近邻算法优缺点"><a href="#k-近邻算法优缺点" class="headerlink" title="k-近邻算法优缺点"></a>k-近邻算法优缺点</h3><p>优点：</p>
-<ul>
-<li>简单，易于理解，易于实现，无需估计参数，无需训练</li>
-</ul>
-<p>缺点：</p>
-<ul>
-<li><p>懒惰算法，对测试样本分类时的计算量大，内存开销大</p>
-</li>
-<li><p>必须指定K值，K值选择不当则分类精度不能保证</p>
-</li>
-</ul>
-<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">knncls</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    K-近邻预测用户签到位置</span></span><br><span class="line"><span class="string">    :return:None</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 读取数据</span></span><br><span class="line">    data = pd.read_csv(<span class="string">&quot;./data/FBlocation/train.csv&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># print(data.head(10))</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 处理数据</span></span><br><span class="line">    <span class="comment"># 1、缩小数据,查询数据晒讯</span></span><br><span class="line">    data = data.query(<span class="string">&quot;x &gt; 1.0 &amp;  x &lt; 1.25 &amp; y &gt; 2.5 &amp; y &lt; 2.75&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 处理时间的数据</span></span><br><span class="line">    time_value = pd.to_datetime(data[<span class="string">&#x27;time&#x27;</span>], unit=<span class="string">&#x27;s&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    print(time_value)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把日期格式转换成 字典格式</span></span><br><span class="line">    time_value = pd.DatetimeIndex(time_value)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 构造一些特征</span></span><br><span class="line">    data[<span class="string">&#x27;day&#x27;</span>] = time_value.day</span><br><span class="line">    data[<span class="string">&#x27;hour&#x27;</span>] = time_value.hour</span><br><span class="line">    data[<span class="string">&#x27;weekday&#x27;</span>] = time_value.weekday</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把时间戳特征删除</span></span><br><span class="line">    data = data.drop([<span class="string">&#x27;time&#x27;</span>], axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    print(data)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把签到数量少于n个目标位置删除</span></span><br><span class="line">    place_count = data.groupby(<span class="string">&#x27;place_id&#x27;</span>).count()</span><br><span class="line"></span><br><span class="line">    tf = place_count[place_count.row_id &gt; <span class="number">3</span>].reset_index()</span><br><span class="line"></span><br><span class="line">    data = data[data[<span class="string">&#x27;place_id&#x27;</span>].isin(tf.place_id)]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 取出数据当中的特征值和目标值</span></span><br><span class="line">    y = data[<span class="string">&#x27;place_id&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    x = data.drop([<span class="string">&#x27;place_id&#x27;</span>], axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行数据的分割训练集合测试集</span></span><br><span class="line">    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=<span class="number">0.25</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 特征工程（标准化）</span></span><br><span class="line">    std = StandardScaler()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 对测试集和训练集的特征值进行标准化</span></span><br><span class="line">    x_train = std.fit_transform(x_train)</span><br><span class="line"></span><br><span class="line">    x_test = std.transform(x_test)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行算法流程 # 超参数</span></span><br><span class="line">    knn = KNeighborsClassifier()</span><br><span class="line"></span><br><span class="line">     <span class="comment"># fit， predict,score</span></span><br><span class="line">     knn.fit(x_train, y_train)</span><br><span class="line">    </span><br><span class="line">     <span class="comment"># 得出预测结果</span></span><br><span class="line">     y_predict = knn.predict(x_test)</span><br><span class="line">    </span><br><span class="line">     print(<span class="string">&quot;预测的目标签到位置为：&quot;</span>, y_predict)</span><br><span class="line">    </span><br><span class="line">     <span class="comment"># 得出准确率</span></span><br><span class="line">     print(<span class="string">&quot;预测的准确率:&quot;</span>, knn.score(x_test, y_test))</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Sklearn</tag>
       </tags>
   </entry>
   <entry>
@@ -713,5 +285,433 @@
       <tags>
         <tag>Sklearn</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Sklearn学习之K-近邻算法</title>
+    <url>/articles/22b53add/</url>
+    <content><![CDATA[<blockquote>
+<p>KNN算法最早是由Cover和Hart提出的一种分类算法。<a id="more"></a></p>
+</blockquote>
+<h3 id="机器学习的一般流程"><a href="#机器学习的一般流程" class="headerlink" title="机器学习的一般流程"></a>机器学习的一般流程</h3><p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829114047.png" alt="image-20200829114046374"></p>
+<h3 id="机器学习算法分类"><a href="#机器学习算法分类" class="headerlink" title="机器学习算法分类"></a>机器学习算法分类</h3><p>1、监督学习</p>
+<ul>
+<li><p>分类  k-近邻算法、贝叶斯分类、决策树与随机森林、逻辑回归、神经网络</p>
+</li>
+<li><p>回归  线性回归、岭回归</p>
+</li>
+<li><p>标注  隐马尔可夫模型   (不做要求)</p>
+</li>
+</ul>
+<p>2、无监督学习</p>
+<ul>
+<li>聚类  k-means</li>
+</ul>
+<h3 id="分类算法-k近邻算法-KNN"><a href="#分类算法-k近邻算法-KNN" class="headerlink" title="分类算法-k近邻算法(KNN)"></a>分类算法-k近邻算法(KNN)</h3><p>定义：如果一个样本在特征空间中的k个最相似(即特征空间中最邻近)的样本中的大多数属于某一个类别，则该样本也属于这个类别。</p>
+<p>计算距离公式：两个样本的距离可以通过如下公式计算，又叫欧式距离比如说，a(a1,a2,a3),b(b1,b2,b3)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829114941.png" alt="image-20200829114941932"></p>
+<p>sklearn k-近邻算法</p>
+<p>APIsklearn.neighbors.KNeighborsClassifier<font color='red'>(n_neighbors</font>=5,<font color='red'>algorithm</font>=’auto’)</p>
+<ul>
+<li><p>n_neighbors：int,可选（默认= 5），k_neighbors查询默认使用的邻居数</p>
+</li>
+<li><p>algorithm：{‘auto’，‘ball_tree’，‘kd_tree’，‘brute’}，可选用于计算最近邻居的算法：‘ball_tree’将会使用 BallTree，‘kd_tree’将使用 KDTree。‘auto’将尝试根据传递给fit方法的值来决定最合适的算法。 (不同实现方式影响效率)</p>
+</li>
+</ul>
+<h3 id="存在问题"><a href="#存在问题" class="headerlink" title="存在问题"></a>存在问题</h3><p>1、k值取多大？有什么影响？</p>
+<ul>
+<li><p>k值取很小：容易受异常点影响</p>
+</li>
+<li><p>k值取很大：容易受最近数据太多导致比例变化 </p>
+</li>
+</ul>
+<p>2、性能影响</p>
+<ul>
+<li>不适合超大数据类型</li>
+</ul>
+<h3 id="k-近邻算法优缺点"><a href="#k-近邻算法优缺点" class="headerlink" title="k-近邻算法优缺点"></a>k-近邻算法优缺点</h3><p>优点：</p>
+<ul>
+<li>简单，易于理解，易于实现，无需估计参数，无需训练</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li><p>懒惰算法，对测试样本分类时的计算量大，内存开销大</p>
+</li>
+<li><p>必须指定K值，K值选择不当则分类精度不能保证</p>
+</li>
+</ul>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">knncls</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    K-近邻预测用户签到位置</span></span><br><span class="line"><span class="string">    :return:None</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 读取数据</span></span><br><span class="line">    data = pd.read_csv(<span class="string">&quot;./data/FBlocation/train.csv&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># print(data.head(10))</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 处理数据</span></span><br><span class="line">    <span class="comment"># 1、缩小数据,查询数据晒讯</span></span><br><span class="line">    data = data.query(<span class="string">&quot;x &gt; 1.0 &amp;  x &lt; 1.25 &amp; y &gt; 2.5 &amp; y &lt; 2.75&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 处理时间的数据</span></span><br><span class="line">    time_value = pd.to_datetime(data[<span class="string">&#x27;time&#x27;</span>], unit=<span class="string">&#x27;s&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    print(time_value)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把日期格式转换成 字典格式</span></span><br><span class="line">    time_value = pd.DatetimeIndex(time_value)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 构造一些特征</span></span><br><span class="line">    data[<span class="string">&#x27;day&#x27;</span>] = time_value.day</span><br><span class="line">    data[<span class="string">&#x27;hour&#x27;</span>] = time_value.hour</span><br><span class="line">    data[<span class="string">&#x27;weekday&#x27;</span>] = time_value.weekday</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把时间戳特征删除</span></span><br><span class="line">    data = data.drop([<span class="string">&#x27;time&#x27;</span>], axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    print(data)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把签到数量少于n个目标位置删除</span></span><br><span class="line">    place_count = data.groupby(<span class="string">&#x27;place_id&#x27;</span>).count()</span><br><span class="line"></span><br><span class="line">    tf = place_count[place_count.row_id &gt; <span class="number">3</span>].reset_index()</span><br><span class="line"></span><br><span class="line">    data = data[data[<span class="string">&#x27;place_id&#x27;</span>].isin(tf.place_id)]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 取出数据当中的特征值和目标值</span></span><br><span class="line">    y = data[<span class="string">&#x27;place_id&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    x = data.drop([<span class="string">&#x27;place_id&#x27;</span>], axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行数据的分割训练集合测试集</span></span><br><span class="line">    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=<span class="number">0.25</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 特征工程（标准化）</span></span><br><span class="line">    std = StandardScaler()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 对测试集和训练集的特征值进行标准化</span></span><br><span class="line">    x_train = std.fit_transform(x_train)</span><br><span class="line"></span><br><span class="line">    x_test = std.transform(x_test)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行算法流程 # 超参数</span></span><br><span class="line">    knn = KNeighborsClassifier()</span><br><span class="line"></span><br><span class="line">     <span class="comment"># fit， predict,score</span></span><br><span class="line">     knn.fit(x_train, y_train)</span><br><span class="line">    </span><br><span class="line">     <span class="comment"># 得出预测结果</span></span><br><span class="line">     y_predict = knn.predict(x_test)</span><br><span class="line">    </span><br><span class="line">     print(<span class="string">&quot;预测的目标签到位置为：&quot;</span>, y_predict)</span><br><span class="line">    </span><br><span class="line">     <span class="comment"># 得出准确率</span></span><br><span class="line">     print(<span class="string">&quot;预测的准确率:&quot;</span>, knn.score(x_test, y_test))</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Sklearn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown写作工具推荐</title>
+    <url>/articles/a9ae164/</url>
+    <content><![CDATA[<blockquote>
+<p>Markdown使用总结以及工具推荐。<a id="more"></a></p>
+</blockquote>
+<h3 id="初识Markdown"><a href="#初识Markdown" class="headerlink" title="初识Markdown"></a>初识Markdown</h3><p>在学习Jupyter的时候才知道有Markdown这个东西，当时认为其语法复杂，怎么还有人用这种东西，但…万事都逃不了真香定律，太香了!</p>
+<h3 id="好用的Markdown工具推荐"><a href="#好用的Markdown工具推荐" class="headerlink" title="好用的Markdown工具推荐"></a>好用的Markdown工具推荐</h3><h4 id="PC端"><a href="#PC端" class="headerlink" title="PC端"></a>PC端</h4><p>1、VScode</p>
+<p>VScode太强大了，其插件无所不能</p>
+<p><font color='orange'>markdownlint</font>插件：是vscode上一款非常好用的 Markdown 格式检查扩展工具，它规定了许多规则并实时对文档进行检查，防止一些语法错误，同时维持文档风格的统一，使用此工具有助于形成一个良好的写作习惯和规范。但因其规则较多，写文档时很容易就出错（或不符合规则），所以需要对工具的规则有一个详细的了解，另外，有时工作要求的文档风格与markdownlint工具规定的规则并不相同，比如标题、列表的创建格式，缩进的空格数等等，这时就需要对规则进行一定的设置。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010755.png" alt="image-20200828082309848"></p>
+<p><font color='orange'>markdownlint</font>插件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010755.png" alt="image-20200828082627410"></p>
+<p>目录、批注、合并单元格、插入 LaTeX 公式、用纯文本绘图、运行代码、导入和导出、制作幻灯片….你说还有啥它不会？</p>
+<p>2、<a href="https://github.com/Molunerfinn/PicGo">PicGo</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829011132.png" alt="image-20200828084525027"></p>
+<p>这个插件太强了，我用了它感觉效率提升了一倍，它可以将图片上传到指定的图床上，然后返回markdown链接，直接粘贴到你的文档中，就搞定啦！</p>
+<p>问题来了，用什么图床比较好呢，这里有<a href="https://zhuanlan.zhihu.com/p/149282549">GitHub，Gitee，Coding，静态博客「Pages」服务横评</a>，图床的代理国内不少，但质量高又免费的…没有（白嫖失败）。但，但，但我们有<del>Github</del>（Gitee）啊，可以搭建免费图床。具体搭建过程也不太难，详细的，请参考：<a href="https://zhuanlan.zhihu.com/p/102594554">Gitee(码云)实现markdown图床</a>。</p>
+<p>3、<a href="https://link.zhihu.com/?target=https://www.typora.io/">Typora</a></p>
+<p>这个也不错，Typora 是一款<strong>支持实时预览的 Markdown 文本编辑器</strong>。它有 OS X、Windows、Linux 三个平台的版本，并且由于仍在测试中，是<strong>完全免费</strong>的。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010804.png" alt="image-20200828083954808"></p>
+<p>再来看看快捷键</p>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ctrl+L</td>
+<td>选中当前行/句</td>
+</tr>
+<tr>
+<td>Ctrl+E</td>
+<td>选中当前格式文本</td>
+</tr>
+<tr>
+<td>Ctrl + Home</td>
+<td>跳转到文首</td>
+</tr>
+<tr>
+<td>Ctrl + End</td>
+<td>跳转到文末</td>
+</tr>
+<tr>
+<td>Ctrl + H</td>
+<td>替换</td>
+</tr>
+<tr>
+<td>Ctrl + B</td>
+<td>加粗</td>
+</tr>
+<tr>
+<td>Ctrl + I</td>
+<td>倾斜</td>
+</tr>
+<tr>
+<td>Ctrl + K</td>
+<td>超链接</td>
+</tr>
+<tr>
+<td>Ctrl + U</td>
+<td>下划线</td>
+</tr>
+<tr>
+<td>Ctrl + 1</td>
+<td>一级标题</td>
+</tr>
+<tr>
+<td>Ctrl + 2</td>
+<td>二级标题</td>
+</tr>
+<tr>
+<td>Ctrl + 3</td>
+<td>三级标题</td>
+</tr>
+<tr>
+<td>Ctrl + 4</td>
+<td>四级标题</td>
+</tr>
+<tr>
+<td>Ctrl + +</td>
+<td>增大标题等级</td>
+</tr>
+<tr>
+<td>Ctrl + -</td>
+<td>减小标题等级</td>
+</tr>
+<tr>
+<td>Ctrl + /</td>
+<td>切换源代码和预览模式</td>
+</tr>
+<tr>
+<td>Ctrl + \</td>
+<td>清除格式</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + I</td>
+<td>插入图片</td>
+</tr>
+<tr>
+<td>Alt + Shift + 5</td>
+<td>删除线</td>
+</tr>
+</tbody></table>
+<p>还有很多，继续白嫖吧！</p>
+<p>4、<a href="https://autohotkey.com/download/ahk-install.exe">AutoHotKey</a></p>
+<p>Typoya也有不足，就是没有设置字体颜色的快捷键，AutoHotKey是一款著名的windows系统快捷键设置的软件，轻便小巧，我们可以对快捷键进行补充。</p>
+<p>(1)、先安装AutoHotKey</p>
+<p>(2)、打开记事本，把如下内容复制粘贴</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">; Typora</span><br><span class="line">; 快捷增加字体颜色</span><br><span class="line">; SendInput &#123;Text&#125; 解决中文输入法问题</span><br><span class="line"> </span><br><span class="line"><span class="comment">#IfWinActive ahk_exe Typora.exe</span></span><br><span class="line">&#123;</span><br><span class="line">    ; Ctrl+Alt+O 橙色</span><br><span class="line">    ^!o::addFontColor(<span class="string">&quot;orange&quot;</span>)</span><br><span class="line"> </span><br><span class="line">    ; Ctrl+Alt+R 红色</span><br><span class="line">    ^!r::addFontColor(<span class="string">&quot;red&quot;</span>)</span><br><span class="line"> </span><br><span class="line">    ; Ctrl+Alt+B 浅蓝色</span><br><span class="line">    ^!b::addFontColor(<span class="string">&quot;cornflowerblue&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">; 快捷增加字体颜色</span><br><span class="line">addFontColor(color)&#123;</span><br><span class="line">    clipboard := <span class="string">&quot;&quot;</span> ; 清空剪切板</span><br><span class="line">    Send &#123;ctrl down&#125;c&#123;ctrl up&#125; ; 复制</span><br><span class="line">    SendInput &#123;TEXT&#125;&lt;font color=<span class="string">&#x27;%color%&#x27;</span>&gt;</span><br><span class="line">    SendInput &#123;ctrl down&#125;v&#123;ctrl up&#125; ; 粘贴</span><br><span class="line">    If(clipboard = <span class="string">&quot;&quot;</span>)&#123;</span><br><span class="line">        SendInput &#123;TEXT&#125;&lt;/font&gt; ; Typora 在这不会自动补充</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        SendInput &#123;TEXT&#125;&lt;/ ; Typora中自动补全标签</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>(3)、将文件保存为ahk后缀的文件，如TyporaHotKey.ahk</p>
+<p>(4)、在Typora软件里就可以使用快捷键：如按<code>Ctrl+Alt+O</code>添加橙色，Ctrl+Alt+R 红色，按<code>Ctrl+\</code>取消样式！</p>
+<h4 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h4><p>1、<font color='cornflowerblue'>MWeb</font>（推荐，60解锁高级版）</p>
+<p>MWeb 是专业的 Markdown 写作、记笔记、静态博客生成软件，目前已支持 Mac，iPad 和 iPhone。iOS 版 MWeb 功能特点如下：</p>
+<p>* 全面支持 Github Flavored Markdown 语法和常用扩展语法，如 TOC、Table、Fenced code block、LaTeX、Task lists、Footnote 等。</p>
+<p>* 根据 iOS 系统的特点，自定义 Markdown 语法输入/编辑键盘。</p>
+<p>* 支持粘贴插入图片，图片保存在跟文档相关联的位置，可以在编辑器中直接显示图片。</p>
+<p>* 支持发布到 Wordpress、Metaweblog API 、Evernote、Blogger、Tumblr、语雀、少数派 Matrix、Ghost 和 Medium，除了 Medium 外都支持更新已发布文档。发布时会自动上传插入到文档中的图片。</p>
+<p>* 有图床功能，目前已支持 imgur、七牛云、SM.MS、腾讯云 COS、又拍云、阿里云 OSS、自定义 四种图床。</p>
+<p>* 支持 iCloud，Dropbox 同步。</p>
+<p>* 支持 Mac 版的文档库的文档的查看，编辑和新增。</p>
+<p>* 支持文档大纲，以方便快速定位文档。</p>
+<p>* 支持导出为图片、PDF</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829011156.png" alt="image-20200828085512524"></p>
+<p>2、<font color='cornflowerblue'>Markdown-图文并茂，高效写作</font>（68解锁高级版）</p>
+<p>深色模式护眼，键盘工具条辅助，分屏预览等功能一应俱全，同时还具有以下功能：</p>
+<p>• 支持iCloud Drive</p>
+<p>• 支持夜间模式，以及多种主题</p>
+<p>• 支持LaTeX数学公式</p>
+<p>• 支持Todo-List等扩展语法</p>
+<p>• 支持从其他app打开文件，以及添加外部文件夹</p>
+<p>• 可开启WebDAV服务与你的电脑共享文件</p>
+<p>• 快速的渲染，支持多种CSS，以及自定义样式….</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829011214.png" alt="image-20200828085836319"></p>
+<p>还不错！</p>
+<h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><p><a href="https://www.itblogcn.com/article/583.html">Typora 快捷方式给字体设置颜色</a></p>
+]]></content>
+      <categories>
+        <category>安利</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何对Hexo博客进行优化</title>
+    <url>/articles/7793c3e2/</url>
+    <content><![CDATA[<blockquote>
+<p>本文主要讲解如何对Hexo驱动下的博客网站进行优化，主要从网站加载速度、网站稳定性、网站扩散方法进行探讨。<a id="more"></a></p>
+</blockquote>
+<h3 id="提升网站加载速度"><a href="#提升网站加载速度" class="headerlink" title="提升网站加载速度"></a>提升网站加载速度</h3><p>由于大部分人基于GitHub进行建立博客，而GitHub的服务器不在国内，别墙的厉害，所以博客的加载速度会显得异常缓慢，如果你的Blog主页内有大量高清图片时，那速度…，等它加载完，我们火锅都吃完了。这里提供两种方案，仅供参考。</p>
+<h4 id="转移博客至Gitee"><a href="#转移博客至Gitee" class="headerlink" title="转移博客至Gitee"></a>转移博客至Gitee</h4><p>Gitee服务器在国内，加载速度较GitHub快的不是一点半点，建议进行博客的转移，一劳永逸，Gitee搭建的博客较GitHub搭建的，当然也有不足之处，Gitee所提供的Gitee Pages服务不支持自动部署。这是什么概念呢？就是说之前用GitHub搭建博客，我们对博客进行修改后 hexo d 就完事了，Github会帮我们自动更新，但Gitee的免费用户不支持此项功能，需我们对其修改后进行手动更新。<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010345.png" alt="image-20200828061556416">具体要不要进行转移看个人取舍了</p>
+<h4 id="优化博客"><a href="#优化博客" class="headerlink" title="优化博客"></a>优化博客</h4><p>对于不想进行转移的，剩下的方法我们只有对博客进行优化了，我采取了对代码进行压缩的方式进行</p>
+<h5 id="代码压缩策略"><a href="#代码压缩策略" class="headerlink" title="代码压缩策略"></a>代码压缩策略</h5><p>可以使用<strong>gulp</strong>进行，本文以 <a href="https://github.com/chenzhutian/hexo-all-minifier">hexo-all-minifier</a>进行讲解，这个插件集成了对html，css，js，image的优化，合并重复代码，去除多余空格，用算法压缩图片。压缩后的博客，在加载速度上会有较大的提升。</p>
+<p>插件安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure>
+
+<p>在站点的配置文件_<font color='orange'>config.yml</font>将下面代码加入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#文件压缩</span></span><br><span class="line">html_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  ignore_error: <span class="literal">false</span></span><br><span class="line">  exclude:</span><br><span class="line"></span><br><span class="line">css_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;*.min.css&#x27;</span></span><br><span class="line"></span><br><span class="line">js_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  mangle: <span class="literal">true</span></span><br><span class="line">  output:</span><br><span class="line">  compress:</span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;*.min.js&#x27;</span></span><br><span class="line"></span><br><span class="line">image_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  interlaced: <span class="literal">false</span></span><br><span class="line">  multipass: <span class="literal">false</span></span><br><span class="line">  optimizationLevel: 2</span><br><span class="line">  pngquant: <span class="literal">false</span></span><br><span class="line">  progressive: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="扩展性优化"><a href="#扩展性优化" class="headerlink" title="扩展性优化"></a>扩展性优化</h3><h4 id="文章链接唯一化"><a href="#文章链接唯一化" class="headerlink" title="文章链接唯一化"></a>文章链接唯一化</h4><p>什么是文章链接唯一化呢？默认情况下，Hexo生成的超链接都是绝对链接。更改文章标题，变更文章所属分类，发布时间等都可能导致文章链接改变，不利于搜索引擎收录，也不利于分享。唯一的永久链接显然是更好的选择。</p>
+<p>安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+
+<p>在站点配置文件中，找到permalink进行修改</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">permalink: articles/:abbrlink/ <span class="comment"># 此处可以自己设置，也可以直接使用 :/abbrlink</span></span><br><span class="line">abbrlink:</span><br><span class="line">    alg: crc32   <span class="comment">#算法： crc16(default) and crc32</span></span><br><span class="line">    rep: hex     <span class="comment">#进制： dec(default) and hex</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Hexo博客提交到百度"><a href="#Hexo博客提交到百度" class="headerlink" title="Hexo博客提交到百度"></a>Hexo博客提交到百度</h4><h5 id="生成站点地图"><a href="#生成站点地图" class="headerlink" title="生成站点地图"></a>生成站点地图</h5><p>站点地图即<a href="https://link.jianshu.com/?t=https://baike.baidu.com/item/sitemap/6241567?fr=aladdin">sitemap</a>， 是一个页面，上面放置了网站上需要搜索引擎抓取的所有页面的链接。站点地图可以告诉搜索引擎网站上有哪些可供抓取的网页，以便搜索引擎可以更加智能地抓取网站。</p>
+<p>安装插件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+
+<p>修改配置文件<font color='orange'>_config.yml</font>,追加以下代码</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 自动生成sitemap</span></span><br><span class="line">sitemap:</span><br><span class="line">  path: sitemap.xml</span><br><span class="line">baidusitemap:</span><br><span class="line">  path: baidusitemap.xml</span><br></pre></td></tr></table></figure>
+
+<p>生产与部署</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>此时，进入<font color='orange'>public</font>目录，你会发现里面有<font color='orange'>sitemap.xml</font>和<font color='orange'>baidusitemap.xml</font>两个文件，这就是生成的站点地图。里面包含了网站上所有页面的链接，搜索引擎通过这两个文件来抓取网站页面。</p>
+<h5 id="百度站长平台提交"><a href="#百度站长平台提交" class="headerlink" title="百度站长平台提交"></a>百度站长平台提交</h5><p>注册并并登录 <a href="http://zhanzhang.baidu.com/">百度站长平台</a>添加站点<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829011650.png" alt="image-20200829011649980">站点验证<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010502.png" alt="image-20200828071208317"></p>
+<p>我们选择<font color='red'>文件验证</font>，下载验证文件到本地，放置在<font color='orange'>themes/next/source</font>目录下。执行生成和部署命令 </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>提交即可</p>
+<h5 id="链接提交"><a href="#链接提交" class="headerlink" title="链接提交"></a>链接提交</h5><p>为了使网站更容易被搜索引擎收录，获得更高<font color='orange'>SEO</font>，需要提供百度搜索引擎的自动推送服务。</p>
+<p>插件安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
+
+<p>修改站点配置文件<font color='orange'>config.yml</font>，添加以下内容</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">  count: 5 <span class="comment">## 提交最新的五个链接</span></span><br><span class="line">  host: www.hui-wang.info <span class="comment">## 百度站长平台中注册的域名</span></span><br><span class="line">  token: your_token <span class="comment">## 准入秘钥</span></span><br><span class="line">  path: baidu_urls.txt <span class="comment">## 文本文档的地址， 新链接会保存在此文本文档里</span></span><br></pre></td></tr></table></figure>
+
+<p>修改配置文件的<font color='orange'>url</font>值</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line">url: <span class="comment">#填写你的网站url</span></span><br><span class="line">root: /</span><br><span class="line">permalink: :year/:month/:day/:title.xml</span><br></pre></td></tr></table></figure>
+
+<p>加入新的<font color='orange'>deploy</font></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">- <span class="built_in">type</span>: git <span class="comment">## 这是我原来的deployer</span></span><br><span class="line">  repo:</span><br><span class="line">  branch:</span><br><span class="line">- <span class="built_in">type</span>: baidu_url_submitter <span class="comment">## 添加这里内容即可</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="自动推送"><a href="#自动推送" class="headerlink" title="自动推送"></a>自动推送</h5><p>安装自动推送JS代码的网页，在页面被访问时，页面URL将立即被推送给百度。修改主题目录下的<code>layout/post.swig</code>文件，末尾添加自动推送代码，代码如下</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">(function()&#123;</span><br><span class="line">    <span class="keyword">var</span> bp = document.createElement(<span class="string">&#x27;script&#x27;</span>);</span><br><span class="line">    <span class="keyword">var</span> curProtocol = window.location.protocol.split(<span class="string">&#x27;:&#x27;</span>)[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">if</span> (curProtocol === <span class="string">&#x27;https&#x27;</span>) &#123;</span><br><span class="line">        bp.src = <span class="string">&#x27;https://zz.bdstatic.com/linksubmit/push.js&#x27;</span>;        </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        bp.src = <span class="string">&#x27;http://push.zhanzhang.baidu.com/push.js&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> s = document.getElementsByTagName(<span class="string">&quot;script&quot;</span>)[<span class="number">0</span>];</span><br><span class="line">    s.parentNode.insertBefore(bp, s);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="sitemap提交"><a href="#sitemap提交" class="headerlink" title="sitemap提交"></a>sitemap提交</h5><p>在界面</p>
+<p>输入<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010528.png" alt="image-20200828072539693"></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 你的网站url/baidusitemap.xml</span></span><br><span class="line">https://siwuxei.gitee.io/baidusitemap.xml <span class="comment">#这是我的</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Google站长平台提交"><a href="#Google站长平台提交" class="headerlink" title="Google站长平台提交"></a>Google站长平台提交</h4><p>登录<a href="https://link.jianshu.com/?t=https://www.google.com/webmasters/#?modal_active=none">Google网站站长</a>，进入<code>Search Console</code>，点击<code>添加属性</code>进行站点添加</p>
+<h5 id="验证站点"><a href="#验证站点" class="headerlink" title="验证站点"></a>验证站点</h5><p>方法与百度类似</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010627.png" alt="image-20200828073131083"></p>
+<p>安装百度相同的方法验证后，会出现</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010627.png" alt="image-20200828073220488"></p>
+<p>点击左侧站点地图，输入站点地图网址，确认提交。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010647.png" alt="image-20200828073258341"></p>
+<h5 id="验证站点是否进行了收录"><a href="#验证站点是否进行了收录" class="headerlink" title="验证站点是否进行了收录"></a>验证站点是否进行了收录</h5><p>点击左侧网址检查，输入网站域名下的任意网址，查看显示结果</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010659.png" alt="image-20200828073443009"></p>
+<p>在Google中输入<font color='orange'>site:&lt;域名&gt;</font>查看搜索结果。</p>
+<h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a><strong>参考资料</strong></h4><p><a href="https://indexmoon.com/articles/1153730074/">Hexo基础教程(四)：功能添加与优化</a></p>
+<p><a href="https://www.jianshu.com/p/f8ec422ebd52">Hexo博客提交百度和Google收录</a></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git学习总结</title>
+    <url>/articles/acd4e1/</url>
+    <content><![CDATA[<blockquote>
+<p>主要介绍Git运作的基本流程以及相关常用命令。<a id="more"></a></p>
+</blockquote>
+<h3 id="什么是Git？"><a href="#什么是Git？" class="headerlink" title="什么是Git？"></a>什么是Git？</h3><p>Git:是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。<br><img src="https://s1.ax1x.com/2020/08/26/dfFQBT.png" alt="artara"></p>
+<h4 id="Git的名词"><a href="#Git的名词" class="headerlink" title="Git的名词"></a>Git的名词</h4><p>工作区：它持有实际文件<br>缓存区（Index）：它像个缓存区域，临时保存你的改动<br>Head：指向你最近一次提交后的结果。  </p>
+<h4 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h4><p>1、改动添加到缓存区</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add &lt;filename&gt;</span><br><span class="line"><span class="comment"># 常用filename:.表示本级目录下的全部文件  </span></span><br></pre></td></tr></table></figure>
+<p>2、改动提交到Head</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提价信息&quot;</span></span><br></pre></td></tr></table></figure>
+<p>3、推送改动信息</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 假如还没有链接远端服务器，则需要下面命令添加</span></span><br><span class="line">git remote add origin &lt;server&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="Git分支的进一步理解"><a href="#Git分支的进一步理解" class="headerlink" title="Git分支的进一步理解"></a>Git分支的进一步理解</h3><h4 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h4><ul>
+<li>分支：分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。<br><img src="https://s1.ax1x.com/2020/08/26/dfZZ6A.png" alt="artara"></li>
+<li>相关命令<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建一个新的分支“featuer_x”</span></span><br><span class="line">git checkout -b featuer_x</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换到主分支</span></span><br><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 删除新分支</span></span><br><span class="line">git branch -d feature_x</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将本地分支推送到远端仓库</span></span><br><span class="line">git push origin &lt;branch&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="分支的更新与合并"><a href="#分支的更新与合并" class="headerlink" title="分支的更新与合并"></a>分支的更新与合并</h4></li>
+<li>更新本地仓库到最新改动<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure></li>
+<li>以在你的工作目录中 获取（fetch） 并 合并（merge） 远端的改动。要合并其他分支到你的当前分支（例如 master）。<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge &lt;branch&gt;</span><br></pre></td></tr></table></figure></li>
+<li>合并后，冲突怎么办？—自己更改，自己合并相关文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在更改后添加</span></span><br><span class="line">git add &lt;filename&gt;</span><br></pre></td></tr></table></figure></li>
+<li>查看合并后的改动<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git diff &lt;source_branch&gt; &lt;target_branch&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="远程分支管理"><a href="#远程分支管理" class="headerlink" title="远程分支管理"></a>远程分支管理</h3></li>
+<li>查看本地分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git bash</span><br></pre></td></tr></table></figure></li>
+<li>查看远程分支<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git branch -r</span><br></pre></td></tr></table></figure></li>
+<li>删除远程分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin:&lt;name&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4></li>
+<li>从服务器上拉取代码<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;拉取SSH&gt;</span><br></pre></td></tr></table></figure></li>
+<li>初始化(不经常使用，一般克隆后就会生产.git文件)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></li>
+<li>从远程获取最新版本到本地(不会自动merge)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure>
+<h4 id="走过的坑"><a href="#走过的坑" class="headerlink" title="走过的坑"></a>走过的坑</h4>报错类型<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">! [rejected]   master -&gt; master (non-fast-forward)</span><br></pre></td></tr></table></figure>
+分析：出现原因在于：git仓库中已经有一部分代码，所以它不允许你直接把你的代码覆盖上去。<br>解决方案<br>1、强推<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 即利用强覆盖方式用你本地的代码替代git仓库内的内容</span></span><br><span class="line">git push -f</span><br></pre></td></tr></table></figure>
+2、先把git的东西fetch到你本地然后merge后再push<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 报错：refusing to merge unrelated histories</span></span><br><span class="line"><span class="comment"># 解决方案如下</span></span><br><span class="line">git pull origin master --allow-unrelated-histories</span><br></pre></td></tr></table></figure>
+然后依次执行以下命令  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提交信息&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure>
+最后执行<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<h4 id="文件-gitignore相关命令"><a href="#文件-gitignore相关命令" class="headerlink" title="文件.gitignore相关命令"></a>文件.gitignore相关命令</h4><img src="https://s1.ax1x.com/2020/08/26/dflMWV.png" alt="artara"></li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何在GitHub上搭建属于自己的博客</title>
+    <url>/articles/419fe643/</url>
+    <content><![CDATA[<blockquote>
+<p>最近在学习机器学习查阅资料的时候，看到几个大佬写的博客，羡煞我也，自己也想搭建一个，过程有点艰辛，现在搭建成功后，想把搭建过程写下来，作为我的第一篇博客，没有前端和后端经验的小白也能看的懂哦！<a id="more"></a></p>
+</blockquote>
+<h3 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h3><h4 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h4><p><a href="https://hexo.io/zh-cn/">Hexo</a>是一个开源的静态博客框架,基于node.js开发,作者是台湾大学生tommy351。 </p>
+<h4 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h4><p><a href="https://github.com/">GitHub</a>相当于程序员的知网啦，在GitHub，用户可以十分轻易地找到海量的开源代码。  </p>
+<h4 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h4><p><a href="https://docs.github.com/en/github/working-with-github-pages/about-github-pages">GitHub Pages</a>可以理解为用户编写的、托管在github上的静态网页，你只需将你的改动提交到Github，就可以实现更改你的网页。</p>
+<h3 id="二、搭建环境"><a href="#二、搭建环境" class="headerlink" title="二、搭建环境"></a>二、搭建环境</h3><h4 id="安装Node"><a href="#安装Node" class="headerlink" title="安装Node"></a>安装Node</h4><p>软件在<a href="https://nodejs.org/en/download/">官网</a>下载即可安装Node的过程很简单，基本上一路点默认就行了，文件路径想改的可以改一下。</p>
+<div aliga=center>
+
+<p> <img src="https://s1.ax1x.com/2020/08/25/dckgne.png" alt="artara"></p>
+</div>
+
+<h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h4><p><a href="https://git-scm.com/download/win">Git</a>可是个好东西，代码托管、团队协作都离不开它。安装过程也并不复杂，几乎一路默认就好了，不过其中也有一些要<a href="https://zhuanlan.zhihu.com/p/140405392">注意的地方</a>，不过一直按默认安装也没有什么问题。<br><img src="https://s1.ax1x.com/2020/08/25/dckL7j.png" alt="artara"></p>
+<h3 id="三、环境配置"><a href="#三、环境配置" class="headerlink" title="三、环境配置"></a>三、环境配置</h3><h4 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h4><p>在电脑某一磁盘内创建一个文件夹（文件夹必须是空的，名字随便，但最好能见名知意哈，比如blog）本文用blog文件夹进行演示。</p>
+<h4 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h4><p>进入blog文件夹，右击鼠标，选择Git Brash Here 命令，弹出命令框输入以下命令:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<p><img src="https://s1.ax1x.com/2020/08/25/dcApcT.png" alt="artara"><br>等待Hexo进行初始化（如果过程比较久，就终止一下，然后把blog文件夹里缓存的东西删光，重新执行初始化命令）。<br><img src="https://s1.ax1x.com/2020/08/25/dcADEj.png" alt="artara"> </p>
+<h4 id="启动Hexo"><a href="#启动Hexo" class="headerlink" title="启动Hexo"></a>启动Hexo</h4><p>仍是在blog文件夹下，在命令窗口输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>这时在浏览器输入：默认网址，可以在本地查看你的博文啦！ </p>
+<h4 id="创建自己的博客"><a href="#创建自己的博客" class="headerlink" title="创建自己的博客"></a>创建自己的博客</h4><p>在命令窗口，输入ctrl+c,断开连接，然后输入命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo n <span class="string">&#x27;我的第一篇博客&#x27;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://s1.ax1x.com/2020/08/25/dctV5q.png" alt="artara"><br>这时候，你的第一篇博客就创建成功了！它默认在‘ G:\Blog\source_posts ’位置（你的可能不同），接下来我们就可以愉快的用MarkDown编辑自己的博客啦！我们用<a href="https://code.visualstudio.com/">VScode</a>或者<a href="https://jupyterlab.readthedocs.io/en/stable/#">Jupyter</a>打开它，输入命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">## 第一章</span></span><br><span class="line">    内容</span><br><span class="line"><span class="comment">## 第二章</span></span><br><span class="line">    内容  </span><br><span class="line"><span class="comment">## 第三章</span></span><br><span class="line">    结束语</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s1.ax1x.com/2020/08/25/dcJaY6.png" alt="artara"></p>
+<h4 id="查看博客"><a href="#查看博客" class="headerlink" title="查看博客"></a>查看博客</h4><p>仍是blog文件夹的命令面板输入命令行:<br>清理</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<p>生成</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p>启动</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s1.ax1x.com/2020/08/25/dcN9F1.png" alt="artara"><br>此时刷新刚才的界面，发现内容已经传入啦！<br><img src="https://s1.ax1x.com/2020/08/25/dcYo8K.png" alt="arara"></p>
+<h3 id="四、GitHub设置"><a href="#四、GitHub设置" class="headerlink" title="四、GitHub设置"></a>四、GitHub设置</h3><h4 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h4><p>登录<a href="https://github.com/">GitHub</a>,不用GitHub的话，你也可以自己买域名创建博客，但白嫖不爽吗？没有账号的自己创建一个。</p>
+<h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><p>新建一个仓库，仓库名必须为：[你的昵称].github.io,这个很重要。描述信息可写可不可。<br><img src="https://s1.ax1x.com/2020/08/25/dctGI1.png" alt="artara"><br><img src="https://s1.ax1x.com/2020/08/25/dctUxO.png" alt="artara"></p>
+<h4 id="本地部署"><a href="#本地部署" class="headerlink" title="本地部署"></a>本地部署</h4><p>回到blog文件夹下的控制面板，我们点击ctrl+c,将本地服务终止，然后输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p><img src="https://s1.ax1x.com/2020/08/25/dct6it.png" alt="artara"><br>这是一个插件，用它来连接Github。</p>
+<h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><p>在文件夹blog里，找到配置文件_config.yml，我们打开它，拉到代码最下面，进行配置：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  <span class="comment"># 这里根据自己的改，把siwuxei改成你的昵称</span></span><br><span class="line">  repo: https://github.com/siwuxei/siwuxei.github.io.git </span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<h4 id="同步至远端（GitHub）"><a href="#同步至远端（GitHub）" class="headerlink" title="同步至远端（GitHub）"></a>同步至远端（GitHub）</h4><p>输入命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>期间会让你进行输入github的账号和密码，至此，网站静态部署结束啦！此时你可以访问：[你的昵称].github.io啦！</p>
+<h3 id="五、Hexo主题的使用"><a href="#五、Hexo主题的使用" class="headerlink" title="五、Hexo主题的使用"></a>五、Hexo主题的使用</h3><h4 id="主题选择"><a href="#主题选择" class="headerlink" title="主题选择"></a>主题选择</h4><p><a href="https://hexo.io/themes/">Hexo</a>上有许多主题进行使用，我比较喜欢精简的主义的，写博客让人看的，搞些花里胡哨的不太好，个人推荐<a href="https://github.com/litten/hexo-theme-yilia">Yilia</a>和<a href="https://github.com/iissnan/hexo-theme-next">Next</a>，连接中都有教程，我这里以next举例,仍在blog文件夹里右键启动命令面板，输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<p>国内没有梯子比较慢，请耐心等待。<br>然后，在blog文件夹下修改_config.yml文件，将theme名字改为next</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+<p>配置完成</p>
+<h4 id="同步GitHub"><a href="#同步GitHub" class="headerlink" title="同步GitHub"></a>同步GitHub</h4><p>在控制面板输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>即可同步至github上面去了，但你立即登录可能还看不到效果，github进行自动配置需要时间，通常不会太久。</p>
+<h3 id="六、图床"><a href="#六、图床" class="headerlink" title="六、图床"></a>六、图床</h3><p>没有写博客前我都不知道有这东西，图床重要用于在写博客时，便于插入图片（若用网上的公共图片，随时可能失效），推荐<a href="https://imgchr.com/">路过图床</a>,空间无限，但传入图片&lt;10M,基本够用，当然你如果还不满意，可以利用GitHub自己搭建一个图床。步骤如下：<br>1、添加博客图片专用Repository，如BlogImages，这样有利于维护；<br>2、发布博客前，将博客中用到的图片push到BlogImages；<br>3、从Github里获取图片地址，如何获取我想你会的；  </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 注意将地址中的blob替换为raw，必须替换，否则无法显示图片</span></span><br><span class="line">“https://github.com/ConnorLin/BlogImages/blob/master/2016:04:02/hexo_server.png”  </span><br><span class="line">改为  </span><br><span class="line">“https://github.com/ConnorLin/BlogImages/raw/master/2016:04:02/hexo_server.png”</span><br></pre></td></tr></table></figure>
+<p><strong>好啦，至此你的个人博客就搭建完了，Enjoy it！</strong></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>GithubPages</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>about me</title>
+    <url>/articles/9c4101a6/</url>
+    <content><![CDATA[<blockquote>
+<p>A Student, live in China  </p>
+</blockquote>
+<p>姓名：李乐乐<br>GitHub：<a href="https://github.com/siwuxei">siwuxei</a><br>Twitter：<a href="https://twitter.com/supperyface">llike</a><br>微信：Lilestudent</p>
+<a id="more"></a>
+
+<div align=center>
+
+ <img src="https://s1.ax1x.com/2020/08/24/dsbtEj.md.png" width = "350" height = "350" alt="头像" align=center />
+
+</div>
+]]></content>
   </entry>
 </search>
