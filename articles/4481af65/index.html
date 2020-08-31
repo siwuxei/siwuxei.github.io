@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Tag: Sklearn |  常思而无邪
+    Sklean学习之分类模型的评估 |  常思而无邪
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -74,155 +74,251 @@ var _hmt = _hmt || [];
       
     <main class="content on">
       <section class="outer">
-  <article class="articles">
+  <article
+  id="post-分类模型的评估"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
     
-    
-    <h1 class="page-type-title">#&nbspSklearn</h1>
-    
-    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Sklean学习之分类模型的评估
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/articles/4481af65/" class="article-date">
+  <time datetime="2020-08-31T00:31:41.000Z" itemprop="datePublished">2020-08-31</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+  </div>
   
-  
-  
-  
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2020" class="archive-year">2020</a>
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">220</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">1 分钟</span>
+        </span>
+    </span>
+</div>
+ 
     </div>
-    <div class="archives">
       
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/articles/eec6dfbb/" class="archive-article-date">
-  <time datetime="2020-08-31T00:50:41.000Z" itemprop="datePublished">08/31</time>
-</a>
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
        
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/articles/eec6dfbb/"
-    >Sklean学习之决策树</a> 
-</h2>
+  <blockquote>
+<p>分类模型的评估<a id="more"></a></p>
+</blockquote>
+<h4 id="一般方法：准确率"><a href="#一般方法：准确率" class="headerlink" title="一般方法：准确率"></a>一般方法：准确率</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">estimator.score()</span><br></pre></td></tr></table></figure>
+
+<h4 id="特殊方法：混淆矩阵"><a href="#特殊方法：混淆矩阵" class="headerlink" title="特殊方法：混淆矩阵"></a>特殊方法：混淆矩阵</h4><p>在分类任务下，预测结果(Predicted Condition)与正确标记(True Condition)之间存在四种不同的组合，构成混淆矩阵(适用于多分类)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831080231.png" alt="image-20200831080224559"></p>
+<h4 id="为什么要引入混淆矩阵呢？"><a href="#为什么要引入混淆矩阵呢？" class="headerlink" title="为什么要引入混淆矩阵呢？"></a>为什么要引入混淆矩阵呢？</h4><p>是为了计算精确率(Precision)与召回率(Recall)，二者又有何区别？</p>
+<p>精确率：预测结果为正例样本中真实为正例的比例（查得准）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831080428.png"></p>
+<p>•召回率：真实为正例的样本中预测结果为正例的比例（查的全，对正样本的区分能力）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831080449.png" alt="image-20200831080449027"></p>
+<h4 id="其他分类标准：F1-score（反映了模型的稳健型）"><a href="#其他分类标准：F1-score（反映了模型的稳健型）" class="headerlink" title="其他分类标准：F1-score（反映了模型的稳健型）"></a>其他分类标准：F1-score（反映了模型的稳健型）</h4><p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831080543.png" alt="image-20200831080543319"></p>
+<h3 id="分类模型评估API"><a href="#分类模型评估API" class="headerlink" title="分类模型评估API"></a>分类模型评估API</h3><p><strong>sklearn.metrics.classification_report(<em>y_true</em>, <em>y_pred</em>, target_names=None)</strong></p>
+<ul>
+<li><p>y_true：真实目标值</p>
+</li>
+<li><p>y_pred：估计器预测目标值</p>
+</li>
+<li><p>target_names：目标类别名称</p>
+</li>
+<li><p>return：每个类别精确率与召回率</p>
+</li>
+</ul>
  
-
-    </header>
-    
-    
+      <!-- reward -->
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Sklearn/" rel="tag">Sklearn</a></li></ul>
-
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/articles/4481af65/" class="archive-article-date">
-  <time datetime="2020-08-31T00:31:41.000Z" itemprop="datePublished">08/31</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/articles/4481af65/"
-    >Sklean学习之分类模型的评估</a> 
-</h2>
- 
-
-    </header>
-    
-    
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Sklearn/" rel="tag">Sklearn</a></li></ul>
-
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/articles/9afa3f41/" class="archive-article-date">
-  <time datetime="2020-08-31T00:20:41.000Z" itemprop="datePublished">08/31</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/articles/9afa3f41/"
-    >Sklean学习之朴素贝叶斯算法</a> 
-</h2>
- 
-
-    </header>
-    
-    
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Sklearn/" rel="tag">Sklearn</a></li></ul>
-
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/articles/d77c4b19/" class="archive-article-date">
-  <time datetime="2020-08-31T00:00:41.000Z" itemprop="datePublished">08/31</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/articles/d77c4b19/"
-    >Sklean学习之模型的选择与调优</a> 
-</h2>
- 
-
-    </header>
-    
-    
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Sklearn/" rel="tag">Sklearn</a></li></ul>
-
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/articles/22b53add/" class="archive-article-date">
-  <time datetime="2020-08-30T10:57:41.000Z" itemprop="datePublished">08/30</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/articles/22b53add/"
-    >Sklean学习之K-近邻算法</a> 
-</h2>
- 
-
-    </header>
-    
-    
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Sklearn/" rel="tag">Sklearn</a></li></ul>
-
-    
-  </div>
-</article>
-      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
       
     </div>
-  </div>
-  
-  
+    
 
-  
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://siwuxei.github.io/articles/4481af65/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Sklearn/" rel="tag">Sklearn</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/articles/eec6dfbb/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            Sklean学习之决策树
+          
+        </div>
+      </a>
+    
+    
+      <a href="/articles/9afa3f41/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Sklean学习之朴素贝叶斯算法</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "FBOzeot0YAjnTPknJOFBdymN-gzGzoHsz",
+    app_key: "DybLJnUVj5L3Hg13bATfYrig",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+     
+</article>
+
 </section>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+  </script>
       <footer class="footer">
   <div class="outer">
     <ul>
@@ -376,6 +472,23 @@ var _hmt = _hmt || [];
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
