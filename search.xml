@@ -36,7 +36,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Sklean学习之决策树</title>
+    <title>Sklearn学习之决策树</title>
     <url>/articles/eec6dfbb/</url>
     <content><![CDATA[<blockquote>
 <p>分类算法-决策树<a id="more"></a></p>
@@ -102,7 +102,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Sklean学习之分类模型的评估</title>
+    <title>Sklearn学习之分类模型的评估</title>
     <url>/articles/4481af65/</url>
     <content><![CDATA[<blockquote>
 <p>分类模型的评估<a id="more"></a></p>
@@ -137,7 +137,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Sklean学习之朴素贝叶斯算法</title>
+    <title>Sklearn学习之朴素贝叶斯算法</title>
     <url>/articles/9afa3f41/</url>
     <content><![CDATA[<blockquote>
 <p>分类算法-朴素贝叶斯算法 <a id="more"></a></p>
@@ -245,7 +245,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Sklean学习之模型的选择与调优</title>
+    <title>Sklearn学习之模型的选择与调优</title>
     <url>/articles/d77c4b19/</url>
     <content><![CDATA[<blockquote>
 <p>模型的选择与调优<a id="more"></a></p>
@@ -287,7 +287,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Sklean学习之K-近邻算法</title>
+    <title>Sklearn学习之K-近邻算法</title>
     <url>/articles/22b53add/</url>
     <content><![CDATA[<blockquote>
 <p>KNN算法最早是由Cover和Hart提出的一种分类算法 。<a id="more"></a></p>
