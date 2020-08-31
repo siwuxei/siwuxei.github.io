@@ -1,352 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>思无邪</title>
-    <url>/articles/5d43f63/</url>
+    <title>Git学习总结</title>
+    <url>/articles/acd4e1/</url>
     <content><![CDATA[<blockquote>
-<p>浩浩汤汤历史长河五千载，多少文人骚客的诗赋，多少民间流传的辞章，宛如珍珠般在华夏的阳光下闪耀。侧耳倾听，伴着历史的车轮呼啸而来的，是经典回响的声音。<a id="more"></a></p>
+<p>主要介绍Git运作的基本流程以及相关常用命令。<a id="more"></a></p>
 </blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829204950.jpg" alt="摄图网_500739697_banner_竹林中国风小女孩（非企业商用）"></p>
-<p><strong>常思而无邪</strong></p>
-<p>《诗经》，中国诗歌的源头。对于我们来说，也许它太久远了，久远到如果没有注释，我们将寸步难行。其实，它只是民歌，是我们普通人的歌，并没有想像中的那么疏远不可亲近。千百年来，它就如盛开在彼岸的花，即使无法摘取，也一直存活于心。只是往往在不经意间，就被我们遗落在另一个时代。</p>
-<p>当我们用诗的清雅去寻找，用经的深邃去看待，用朝圣的虔诚去倾听，它也许是前世的前世，我们心底曾经响过的声音，我们在一起唱过的歌谣，我们前生无邪的记忆。</p>
-<p><strong>诗三百，一言以蔽之，曰思无邪。</strong></p>
-<p>雎鸠，是离爱情最近的鸟；蒹葭，是离爱情最近的草。三千多年过去了，雎鸠在河畔的“关关”叫声依然如在耳畔，仿佛男子在轻声呼唤所爱女子的芳名，如此深情，却又质朴；三千多年过去了，在水一方的伊人恐早已老去，可那比玫瑰平易却更繁芜的蒹葭，早已长在了心里。千年风雨，琴瑟未调，钟鼓未敲；千年风雨，秋水汤汤，芦苇大片大片寂寞地开过。我们把自己的声音留在了前世，徒留记忆的空壳在今生辗转。为何在渡河的时候不回首眺望，采采那参差的荇菜，赏赏那凝成霜的白露。</p>
-<p>现在的都市多了太多的躁动与不安，连爱情也少了几分期许中的美丽与浪漫。看了太多玫瑰与巧克力的故事，突然想起了雎鸠与蒹葭，那平凡得已逐渐被人淡忘的美好。何时我们的生活，能重拾那一份朴实的诗意？</p>
-<p>《关雎》与《蒹葭》，是爱情的极致。</p>
-<p>《诗经》，不仅仅讲述爱情，它也记录那个不安稳的年代所有的动乱。兴盛衰亡，那些浓得化不开的哀伤，在尘封已久的诗句中，读来令人唏嘘感叹。</p>
-<p>彼黍离离。</p>
-<p>世间最残忍的四个字莫过于“物是人非”。当年周室东迁后，一个周大夫回到故都镐京，追想往日繁盛，而今日所见，满目荒凉，不禁悲从中来。宫殿王城皆已成废墟，废墟之上是郁茂的黍苗。此后的千百年，故宫禾黍就成为亡国之思的代名词。从曹植唱《情》诗到向秀赋《思旧》，从刘禹锡的《乌衣巷》到姜夔的《扬州慢》，“黍离之悲”浸染着我们的诗文辞赋，与《诗经》血脉相承。</p>
-<p><strong>知我者谓我心忧，不知我者谓我何求</strong>。</p>
-<p>这是一个清醒的人恳切直白的自问。他行迈靡靡，中心摇摇，在时光的轮回里疲惫苍老。</p>
-<p>其实早在周朝之前，历史就给我们讲了另一个故事，一个因不肯食周粟而饿死首阳山上的故事。伯夷和叔齐在死前作了一首歌，曰：“登彼西山兮，采其薇矣。已暴易暴兮，不知其非矣……”，这是关于采薇最早的记录。</p>
-<p>《诗经》中的《采薇》，是一首征夫思归的诗。</p>
-<p>你听，他在唱：“采薇采薇，薇亦柔止。曰归曰归，心亦忧止。忧心烈烈，载饥载渴。我戍未定，靡使归聘。”</p>
-<p>靡使归聘。战乱的年代，何物最为珍贵？烽火连三月，家书抵万金。岑参也写道：“马上相逢无纸笔，凭君传语报平安。”征战在外，漂泊不定，生死难料，一封家信也成奢望，于是思念插上了翅膀。</p>
-<p>《黍离》和《采薇》，如今读来，只剩一句轻叹……</p>
-<p>夜阑人静，当我们凭几而坐，用从容珍重的心态来品一品《诗经》，或许我们能重新溯流而上到三千年前的小洲兰沚边，找回我们前世遗落的声音。生命如河，我们怎能在遗忘中度过？</p>
-<p>《诗经》不仅是一部经典，它更是一种信念。我们文化的河流，从来没有断过。</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>诗经</tag>
-        <tag>旅行</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Sklearn学习之决策树</title>
-    <url>/articles/eec6dfbb/</url>
-    <content><![CDATA[<blockquote>
-<p>分类算法-决策树<a id="more"></a></p>
-</blockquote>
-<h3 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a>决策树</h3><p>决策树思想的来源非常朴素，程序设计中的条件分支结构就是if-then结构，最早的决策树就是利用这类结构分割数据的一种分类学习方法 </p>
-<h4 id="认识决策树"><a href="#认识决策树" class="headerlink" title="认识决策树"></a>认识决策树</h4><p>银行贷款数据</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831090514.png" alt="image-20200831082950521"></p>
-<p>你如何去划分是否能得到贷款？</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831090521.png" alt="image-20200831083320187"></p>
-<h4 id="认识信息熵"><a href="#认识信息熵" class="headerlink" title="认识信息熵"></a>认识信息熵</h4><p>信息论的创始人，香农是密歇根大学学士，麻省理工学院博士，1948年，香农发表了划时代的论文——通信的数学原理，奠定了现代信息论的基础。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831084029.png" alt="image-20200831083652834"></p>
-<p>猜谁是冠军？假设有32支球队。</p>
-<p>每猜一次给一块钱，告诉我是否猜对了，那么我需要掏多少钱才能知道谁是冠军？我可以把球编上号，从1到32，然后提问：冠 军在1-16号吗？依次询问，只需要五次，就可以知道结果。</p>
-<p>“谁是世界杯冠军”的信息量应该比5比特少。香农指出，它的准确信息量应该是：</p>
-<p>​                                H = -(p1<em>logp1 + p2</em>logp2 + … + p32log32)</p>
-<p><strong>H</strong>的专业术语称之为信息熵，单位为比特。</p>
-<p>公式：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831084218.png" alt="image-20200831084218349"></p>
-<p>当这32支球队夺冠的几率相同时，对应的信息熵等于5比特</p>
-<h4 id="决策树的划分依据之一-信息增益"><a href="#决策树的划分依据之一-信息增益" class="headerlink" title="决策树的划分依据之一-信息增益"></a>决策树的划分依据之一-信息增益</h4><p>特征A对训练数据集D的信息增益g(D,A),定义为集合D的信息熵H(D)与特征A给定条件下D的信息条件熵H(D|A)之差，即公式为：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831084417.png" alt="image-20200831084417205"></p>
-<p>注：信息增益表示得知特征X的信息而使得类Y的信息的不确定性减少的程度</p>
-<h4 id="信息增益的计算"><a href="#信息增益的计算" class="headerlink" title="信息增益的计算"></a>信息增益的计算</h4><p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831084542.png" alt="image-20200831084542411"></p>
-<p>条件熵的计算：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831084605.png" alt="image-20200831084605334"></p>
-<p>注：C_k 表示属于某个类别的样本数</p>
-<h4 id="策树使用的算法"><a href="#策树使用的算法" class="headerlink" title="策树使用的算法"></a>策树使用的算法</h4><p>ID3：信息增益 最大的准则</p>
-<p>C4.5：信息增益比 最大的准则</p>
-<p>CART </p>
-<ul>
-<li><p>回归树: 平方误差 最小 </p>
-</li>
-<li><p>分类树: 基尼系数  最小的准则 在sklearn中可以选择划分的原则</p>
-</li>
-</ul>
-<h4 id="sklearn决策树API"><a href="#sklearn决策树API" class="headerlink" title="sklearn决策树API"></a>sklearn决策树API</h4><p>class sklearn.tree.DecisionTreeClassifier </p>
-<p>(*criterion=’<strong>gini</strong>’, <strong>max_depth</strong>=<strong>None</strong>,random_state=None)</p>
-<ul>
-<li><p>决策树分类器</p>
-</li>
-<li><p>criterion:默认是’gini’系数，也可以选择信息增益的熵’entropy’</p>
-</li>
-<li><p>max_depth:树的深度大小</p>
-</li>
-<li><p>random_state:随机数种子</p>
-</li>
-<li><p>method:</p>
-</li>
-<li><p>decision_path:返回决策树的路径</p>
-</li>
-</ul>
-<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><p>泰坦尼克号数据</p>
-<p>在泰坦尼克号和titanic2数据帧描述泰坦尼克号上的个别乘客的生存状态。在泰坦尼克号的数据帧不包含从剧组信息，但它确实包含了乘客的一半的实际年龄。关于泰坦尼克号旅客的数据的主要来源是百科全书Titanica。这里使用的数据集是由各种研究人员开始的。其中包括许多研究人员创建的旅客名单，由Michael A.Findlay编辑。</p>
-<p>我们提取的数据集中的特征是票的类别，存活，乘坐班，年龄，登陆，home.dest，房间，票，船和性别。乘坐班是指乘客班（1，2，3），是社会经济阶层的代表。其中age数据存在缺失。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris, fetch_20newsgroups, load_boston</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split, GridSearchCV</span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text <span class="keyword">import</span> TfidfVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.naive_bayes <span class="keyword">import</span> MultinomialNB</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> classification_report</span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction <span class="keyword">import</span> DictVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeClassifier, export_graphviz</span><br><span class="line"><span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> RandomForestClassifier</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">decision</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    决策树对泰坦尼克号进行预测生死</span></span><br><span class="line"><span class="string">    :return: None</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 获取数据</span></span><br><span class="line">    titan = pd.read_csv(<span class="string">&quot;http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/titanic.txt&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 处理数据，找出特征值和目标值</span></span><br><span class="line">    x = titan[[<span class="string">&#x27;pclass&#x27;</span>, <span class="string">&#x27;age&#x27;</span>, <span class="string">&#x27;sex&#x27;</span>]]</span><br><span class="line"></span><br><span class="line">    y = titan[<span class="string">&#x27;survived&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    print(x)</span><br><span class="line">    <span class="comment"># 缺失值处理</span></span><br><span class="line">    x[<span class="string">&#x27;age&#x27;</span>].fillna(x[<span class="string">&#x27;age&#x27;</span>].mean(), inplace=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 分割数据集到训练集合测试集</span></span><br><span class="line">    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=<span class="number">0.25</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行处理（特征工程）特征-》类别-》one_hot编码</span></span><br><span class="line">    dict = DictVectorizer(sparse=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line">    x_train = dict.fit_transform(x_train.to_dict(orient=<span class="string">&quot;records&quot;</span>))</span><br><span class="line"></span><br><span class="line">    print(dict.get_feature_names())</span><br><span class="line"></span><br><span class="line">    x_test = dict.transform(x_test.to_dict(orient=<span class="string">&quot;records&quot;</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># print(x_train)</span></span><br><span class="line">    <span class="comment"># 用决策树进行预测</span></span><br><span class="line">    <span class="comment"># dec = DecisionTreeClassifier()</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># dec.fit(x_train, y_train)</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># # 预测准确率</span></span><br><span class="line">    <span class="comment"># print(&quot;预测的准确率：&quot;, dec.score(x_test, y_test))</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># # 导出决策树的结构</span></span><br><span class="line">    <span class="comment"># export_graphviz(dec, out_file=&quot;./tree.dot&quot;, feature_names=[&#x27;年龄&#x27;, &#x27;pclass=1st&#x27;, &#x27;pclass=2nd&#x27;, &#x27;pclass=3rd&#x27;, &#x27;女性&#x27;, &#x27;男性&#x27;])</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 随机森林进行预测 （超参数调优）</span></span><br><span class="line">    rf = RandomForestClassifier(n_jobs=<span class="number">-1</span>)</span><br><span class="line"></span><br><span class="line">    param = &#123;<span class="string">&quot;n_estimators&quot;</span>: [<span class="number">120</span>, <span class="number">200</span>, <span class="number">300</span>, <span class="number">500</span>, <span class="number">800</span>, <span class="number">1200</span>], <span class="string">&quot;max_depth&quot;</span>: [<span class="number">5</span>, <span class="number">8</span>, <span class="number">15</span>, <span class="number">25</span>, <span class="number">30</span>]&#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 网格搜索与交叉验证</span></span><br><span class="line">    gc = GridSearchCV(rf, param_grid=param, cv=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    gc.fit(x_train, y_train)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;准确率：&quot;</span>, gc.score(x_test, y_test))</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;查看选择的参数模型：&quot;</span>, gc.best_params_)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Sklearn</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Sklearn学习之分类模型的评估</title>
-    <url>/articles/4481af65/</url>
-    <content><![CDATA[<blockquote>
-<p>分类模型的评估<a id="more"></a></p>
-</blockquote>
-<h4 id="一般方法：准确率"><a href="#一般方法：准确率" class="headerlink" title="一般方法：准确率"></a>一般方法：准确率</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">estimator.score()</span><br></pre></td></tr></table></figure>
-
-<h4 id="特殊方法：混淆矩阵"><a href="#特殊方法：混淆矩阵" class="headerlink" title="特殊方法：混淆矩阵"></a>特殊方法：混淆矩阵</h4><p>在分类任务下，预测结果(Predicted Condition)与正确标记(True Condition)之间存在四种不同的组合，构成混淆矩阵(适用于多分类)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831080231.png" alt="image-20200831080224559"></p>
-<h4 id="为什么要引入混淆矩阵呢？"><a href="#为什么要引入混淆矩阵呢？" class="headerlink" title="为什么要引入混淆矩阵呢？"></a>为什么要引入混淆矩阵呢？</h4><p>是为了计算精确率(Precision)与召回率(Recall)，二者又有何区别？</p>
-<p>精确率：预测结果为正例样本中真实为正例的比例（查得准）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831080428.png"></p>
-<p>•召回率：真实为正例的样本中预测结果为正例的比例（查的全，对正样本的区分能力）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831080449.png" alt="image-20200831080449027"></p>
-<h4 id="其他分类标准：F1-score（反映了模型的稳健型）"><a href="#其他分类标准：F1-score（反映了模型的稳健型）" class="headerlink" title="其他分类标准：F1-score（反映了模型的稳健型）"></a>其他分类标准：F1-score（反映了模型的稳健型）</h4><p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831080543.png" alt="image-20200831080543319"></p>
-<h3 id="分类模型评估API"><a href="#分类模型评估API" class="headerlink" title="分类模型评估API"></a>分类模型评估API</h3><p><strong>sklearn.metrics.classification_report(<em>y_true</em>, <em>y_pred</em>, target_names=None)</strong></p>
-<ul>
-<li><p>y_true：真实目标值</p>
-</li>
-<li><p>y_pred：估计器预测目标值</p>
-</li>
-<li><p>target_names：目标类别名称</p>
-</li>
-<li><p>return：每个类别精确率与召回率</p>
-</li>
+<h3 id="什么是Git？"><a href="#什么是Git？" class="headerlink" title="什么是Git？"></a>什么是Git？</h3><p>Git:是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。<br><img src="https://s1.ax1x.com/2020/08/26/dfFQBT.png" alt="artara"></p>
+<h4 id="Git的名词"><a href="#Git的名词" class="headerlink" title="Git的名词"></a>Git的名词</h4><p>工作区：它持有实际文件<br>缓存区（Index）：它像个缓存区域，临时保存你的改动<br>Head：指向你最近一次提交后的结果。  </p>
+<h4 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h4><p>1、改动添加到缓存区</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add &lt;filename&gt;</span><br><span class="line"><span class="comment"># 常用filename:.表示本级目录下的全部文件  </span></span><br></pre></td></tr></table></figure>
+<p>2、改动提交到Head</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提价信息&quot;</span></span><br></pre></td></tr></table></figure>
+<p>3、推送改动信息</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 假如还没有链接远端服务器，则需要下面命令添加</span></span><br><span class="line">git remote add origin &lt;server&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="Git分支的进一步理解"><a href="#Git分支的进一步理解" class="headerlink" title="Git分支的进一步理解"></a>Git分支的进一步理解</h3><h4 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h4><ul>
+<li>分支：分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。<br><img src="https://s1.ax1x.com/2020/08/26/dfZZ6A.png" alt="artara"></li>
+<li>相关命令<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建一个新的分支“featuer_x”</span></span><br><span class="line">git checkout -b featuer_x</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换到主分支</span></span><br><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 删除新分支</span></span><br><span class="line">git branch -d feature_x</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将本地分支推送到远端仓库</span></span><br><span class="line">git push origin &lt;branch&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="分支的更新与合并"><a href="#分支的更新与合并" class="headerlink" title="分支的更新与合并"></a>分支的更新与合并</h4></li>
+<li>更新本地仓库到最新改动<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure></li>
+<li>以在你的工作目录中 获取（fetch） 并 合并（merge） 远端的改动。要合并其他分支到你的当前分支（例如 master）。<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge &lt;branch&gt;</span><br></pre></td></tr></table></figure></li>
+<li>合并后，冲突怎么办？—自己更改，自己合并相关文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在更改后添加</span></span><br><span class="line">git add &lt;filename&gt;</span><br></pre></td></tr></table></figure></li>
+<li>查看合并后的改动<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git diff &lt;source_branch&gt; &lt;target_branch&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="远程分支管理"><a href="#远程分支管理" class="headerlink" title="远程分支管理"></a>远程分支管理</h3></li>
+<li>查看本地分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git bash</span><br></pre></td></tr></table></figure></li>
+<li>查看远程分支<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git branch -r</span><br></pre></td></tr></table></figure></li>
+<li>删除远程分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin:&lt;name&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4></li>
+<li>从服务器上拉取代码<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;拉取SSH&gt;</span><br></pre></td></tr></table></figure></li>
+<li>初始化(不经常使用，一般克隆后就会生产.git文件)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></li>
+<li>从远程获取最新版本到本地(不会自动merge)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure>
+<h4 id="走过的坑"><a href="#走过的坑" class="headerlink" title="走过的坑"></a>走过的坑</h4>报错类型<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">! [rejected]   master -&gt; master (non-fast-forward)</span><br></pre></td></tr></table></figure>
+分析：出现原因在于：git仓库中已经有一部分代码，所以它不允许你直接把你的代码覆盖上去。<br>解决方案<br>1、强推<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 即利用强覆盖方式用你本地的代码替代git仓库内的内容</span></span><br><span class="line">git push -f</span><br></pre></td></tr></table></figure>
+2、先把git的东西fetch到你本地然后merge后再push<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 报错：refusing to merge unrelated histories</span></span><br><span class="line"><span class="comment"># 解决方案如下</span></span><br><span class="line">git pull origin master --allow-unrelated-histories</span><br></pre></td></tr></table></figure>
+然后依次执行以下命令  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提交信息&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure>
+最后执行<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<h4 id="文件-gitignore相关命令"><a href="#文件-gitignore相关命令" class="headerlink" title="文件.gitignore相关命令"></a>文件.gitignore相关命令</h4><img src="https://s1.ax1x.com/2020/08/26/dflMWV.png" alt="artara"></li>
 </ul>
 ]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
-        <tag>Sklearn</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Sklearn学习之朴素贝叶斯算法</title>
-    <url>/articles/9afa3f41/</url>
-    <content><![CDATA[<blockquote>
-<p>分类算法-朴素贝叶斯算法 <a id="more"></a></p>
-</blockquote>
-<h4 id="理论基础"><a href="#理论基础" class="headerlink" title="理论基础"></a>理论基础</h4><p>朴素贝叶斯-贝叶斯公式</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831080920.png" alt="image-20200831080919995"></p>
-<p>w为给定文档的特征值(频数统计,预测文档提供)，c为文档类别</p>
-<p><em>公式可以理解为：</em></p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831081031.png" alt="image-20200831081031016"></p>
-<p>其中c可以是不同类别。</p>
-<p>公式分为三个部分：</p>
-<ul>
-<li><p>P(C)：每个文档类别的概率(某文档类别词数／总文档词数)</p>
-</li>
-<li><p>P(W│C)<em>：给定类别下特征（<strong>被预测文档中出现的词</strong>）的概率</em></p>
-</li>
-</ul>
-<p>计算方法：P(F1│C)=Ni/N （训练文档中去计算）</p>
-<ul>
-<li><p>Ni为该F1词在C类别所有文档中出现的次数</p>
-</li>
-<li><p>N为所属类别C下的文档所有词出现的次数和</p>
-</li>
-</ul>
-<p>P(F1,F2,…)   预测文档中每个词的概率 </p>
-<h4 id="应用举例"><a href="#应用举例" class="headerlink" title="应用举例"></a>应用举例</h4><p>训练集统计结果(指定统计词频)：</p>
-<table>
-<thead>
-<tr>
-<th>特征\统计</th>
-<th>科技</th>
-<th>娱乐</th>
-<th>汇总（求和）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>“商场”</td>
-<td>9</td>
-<td>51</td>
-<td>60</td>
-</tr>
-<tr>
-<td>“影院”</td>
-<td>8</td>
-<td>56</td>
-<td>64</td>
-</tr>
-<tr>
-<td>“支付宝”</td>
-<td>20</td>
-<td>15</td>
-<td>35</td>
-</tr>
-<tr>
-<td>“云计算”</td>
-<td>63</td>
-<td>0</td>
-<td>63</td>
-</tr>
-<tr>
-<td>汇总(求和)</td>
-<td>100</td>
-<td>121</td>
-<td>221</td>
-</tr>
-</tbody></table>
-<p>现有一篇被预测文档：出现了影院，支付宝，云计算，计算属于科技、娱乐的类别概率？</p>
-<p>科技：P(影院,支付宝,云计算 │科技)∗P(科技)=8/100∗20/100∗63/100∗(100/221) =0.00456109</p>
-<p>娱乐：P(影院,支付宝,云计算│娱乐)∗P(娱乐)=56/121∗15/121∗0/121∗(121/221)=0 </p>
-<p><strong>属于某个类别为0，合适吗？</strong></p>
-<h4 id="拉普拉斯平滑"><a href="#拉普拉斯平滑" class="headerlink" title="拉普拉斯平滑"></a>拉普拉斯平滑</h4><p>问题：从上面的例子我们得到娱乐概率为0，这是不合理的，如果词频列表里面</p>
-<p>有很多出现次数都为0，很可能计算结果都为零</p>
-<p>解决方法：<strong>拉普拉斯平滑系数</strong></p>
-<p>​                                       <img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831081624.png" alt="image-20200831081624099"></p>
-<p>α为指定的系数一般为1，m为训练文档中统计出的特征词个数</p>
-<h4 id="sklearn朴素贝叶斯实现API"><a href="#sklearn朴素贝叶斯实现API" class="headerlink" title="sklearn朴素贝叶斯实现API"></a>sklearn朴素贝叶斯实现API</h4><p><strong>sklearn.naive_bayes.MultinomialNB</strong></p>
-<p>sklearn.naive_bayes.MultinomialNB(<em>alpha = 1.0</em>)</p>
-<ul>
-<li><p>朴素贝叶斯分类</p>
-</li>
-<li><p>alpha：拉普拉斯平滑系数</p>
-</li>
-</ul>
-<h4 id="朴素贝叶斯分类优缺点"><a href="#朴素贝叶斯分类优缺点" class="headerlink" title="朴素贝叶斯分类优缺点"></a>朴素贝叶斯分类优缺点</h4><p>优点：</p>
-<ul>
-<li><p>朴素贝叶斯模型发源于古典数学理论，有稳定的分类效率。</p>
-</li>
-<li><p>对缺失数据不太敏感，算法也比较简单，常用于文本分类。</p>
-</li>
-<li><p>分类准确度高，速度快</p>
-</li>
-</ul>
-<p>缺点：</p>
-<ul>
-<li>需要知道先验概率P(F1,F2,…|C)，因此在某些时候会由于假设的先验模型的原因导致预测效果不佳。</li>
-</ul>
-<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris, fetch_20newsgroups, load_boston</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split, GridSearchCV</span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text <span class="keyword">import</span> TfidfVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.naive_bayes <span class="keyword">import</span> MultinomialNB</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> classification_report</span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction <span class="keyword">import</span> DictVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeClassifier, export_graphviz</span><br><span class="line"><span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> RandomForestClassifier</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">ef naviebayes():</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    朴素贝叶斯进行文本分类</span></span><br><span class="line"><span class="string">    :return: None</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    news = fetch_20newsgroups(subset=<span class="string">&#x27;all&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行数据分割</span></span><br><span class="line">    x_train, x_test, y_train, y_test = train_test_split(news.data, news.target, test_size=<span class="number">0.25</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 对数据集进行特征抽取</span></span><br><span class="line">    tf = TfidfVectorizer()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 以训练集当中的词的列表进行每篇文章重要性统计[&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;,&#x27;d&#x27;]</span></span><br><span class="line">    x_train = tf.fit_transform(x_train)</span><br><span class="line"></span><br><span class="line">    print(tf.get_feature_names())</span><br><span class="line"></span><br><span class="line">    x_test = tf.transform(x_test)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行朴素贝叶斯算法的预测</span></span><br><span class="line">    mlt = MultinomialNB(alpha=<span class="number">1.0</span>)</span><br><span class="line"></span><br><span class="line">    print(x_train.toarray())</span><br><span class="line"></span><br><span class="line">    mlt.fit(x_train, y_train)</span><br><span class="line"></span><br><span class="line">    y_predict = mlt.predict(x_test)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;预测的文章类别为：&quot;</span>, y_predict)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 得出准确率</span></span><br><span class="line">    print(<span class="string">&quot;准确率为：&quot;</span>, mlt.score(x_test, y_test))</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;每个类别的精确率和召回率：&quot;</span>, classification_report(y_test, y_predict, target_names=news.target_names))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Sklearn</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Sklearn学习之模型的选择与调优</title>
-    <url>/articles/d77c4b19/</url>
-    <content><![CDATA[<blockquote>
-<p>模型的选择与调优<a id="more"></a></p>
-</blockquote>
-<h4 id="交叉验证"><a href="#交叉验证" class="headerlink" title="交叉验证"></a>交叉验证</h4><p>目的：为了让被评估的模型更加准确可信</p>
-<p>过程：将拿到的数据，分为训练和验证集。以下图为例：将数据分成5份，其中一份作为验证集。然后经过5次(组)的测试，每次都更换不同的验证集。即得到5组模型的结果，取平均值作为最终结果。又称5折交叉验证。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831082358.png" alt="image-20200831082358370"></p>
-<h4 id="网格搜索"><a href="#网格搜索" class="headerlink" title="网格搜索"></a>网格搜索</h4><p>通常情况下，有很多参数是需要手动指定的（如k-近邻算法中的K值），这种叫超参数。但是手动过程繁杂，所以需要对模型预设几种超参数组合。每组超参数都采用交叉验证来进行评估。最后选出最优参数组合建立模型。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831082519.png" alt="image-20200831082519053"></p>
-<h4 id="超参数搜索-网格搜索API"><a href="#超参数搜索-网格搜索API" class="headerlink" title="超参数搜索-网格搜索API"></a>超参数搜索-网格搜索API</h4><p>sklearn.model_selection.GridSearchCV(estimator,param_grid=None,cv=None)</p>
-<p>目的：对估计器的指定参数值进行详尽搜索</p>
-<ul>
-<li><p>estimator：估计器对象</p>
-</li>
-<li><p>param_grid：估计器参数(dict){“n_neighbors”:[1,3,5]}</p>
-</li>
-<li><p>cv：指定几折交叉验证</p>
-</li>
-<li><p>fit：输入训练数据</p>
-</li>
-<li><p>score：准确率</p>
-</li>
-</ul>
-<p>结果分析：</p>
-<ul>
-<li><p>best_score_:在交叉验证中测试的最好结果</p>
-</li>
-<li><p>best_estimator_：最好的参数模型</p>
-</li>
-<li><p>cv_results_:每次交叉验证后的测试集准确率结果和训练集准确率结果</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Sklearn</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Sklearn学习之K-近邻算法</title>
-    <url>/articles/22b53add/</url>
-    <content><![CDATA[<blockquote>
-<p>KNN算法最早是由Cover和Hart提出的一种分类算法 。<a id="more"></a></p>
-</blockquote>
-<h3 id="机器学习的一般流程"><a href="#机器学习的一般流程" class="headerlink" title="机器学习的一般流程"></a>机器学习的一般流程</h3><p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829114047.png" alt="image-20200829114046374"></p>
-<h3 id="机器学习算法分类"><a href="#机器学习算法分类" class="headerlink" title="机器学习算法分类"></a>机器学习算法分类</h3><p>1、监督学习</p>
-<ul>
-<li><p>分类  k-近邻算法、贝叶斯分类、决策树与随机森林、逻辑回归、神经网络</p>
-</li>
-<li><p>回归  线性回归、岭回归</p>
-</li>
-<li><p>标注  隐马尔可夫模型   (不做要求)</p>
-</li>
-</ul>
-<p>2、无监督学习</p>
-<ul>
-<li>聚类  k-means</li>
-</ul>
-<h3 id="分类算法-k近邻算法-KNN"><a href="#分类算法-k近邻算法-KNN" class="headerlink" title="分类算法-k近邻算法(KNN)"></a>分类算法-k近邻算法(KNN)</h3><p>定义：如果一个样本在特征空间中的k个最相似(即特征空间中最邻近)的样本中的大多数属于某一个类别，则该样本也属于这个类别。</p>
-<p>计算距离公式：两个样本的距离可以通过如下公式计算，又叫欧式距离比如说，a(a1,a2,a3),b(b1,b2,b3)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829114941.png" alt="image-20200829114941932"></p>
-<p>sklearn k-近邻算法</p>
-<p>APIsklearn.neighbors.KNeighborsClassifier<font color='red'>(n_neighbors</font>=5,<font color='red'>algorithm</font>=’auto’)</p>
-<ul>
-<li><p>n_neighbors：int,可选（默认= 5），k_neighbors查询默认使用的邻居数</p>
-</li>
-<li><p>algorithm：{‘auto’，‘ball_tree’，‘kd_tree’，‘brute’}，可选用于计算最近邻居的算法：‘ball_tree’将会使用 BallTree，‘kd_tree’将使用 KDTree。‘auto’将尝试根据传递给fit方法的值来决定最合适的算法。 (不同实现方式影响效率)</p>
-</li>
-</ul>
-<h3 id="存在问题"><a href="#存在问题" class="headerlink" title="存在问题"></a>存在问题</h3><p>1、k值取多大？有什么影响？</p>
-<ul>
-<li><p>k值取很小：容易受异常点影响</p>
-</li>
-<li><p>k值取很大：容易受最近数据太多导致比例变化 </p>
-</li>
-</ul>
-<p>2、性能影响</p>
-<ul>
-<li>不适合超大数据类型</li>
-</ul>
-<h3 id="k-近邻算法优缺点"><a href="#k-近邻算法优缺点" class="headerlink" title="k-近邻算法优缺点"></a>k-近邻算法优缺点</h3><p>优点：</p>
-<ul>
-<li>简单，易于理解，易于实现，无需估计参数，无需训练</li>
-</ul>
-<p>缺点：</p>
-<ul>
-<li><p>懒惰算法，对测试样本分类时的计算量大，内存开销大</p>
-</li>
-<li><p>必须指定K值，K值选择不当则分类精度不能保证</p>
-</li>
-</ul>
-<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">knncls</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    K-近邻预测用户签到位置</span></span><br><span class="line"><span class="string">    :return:None</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 读取数据</span></span><br><span class="line">    data = pd.read_csv(<span class="string">&quot;./data/FBlocation/train.csv&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># print(data.head(10))</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 处理数据</span></span><br><span class="line">    <span class="comment"># 1、缩小数据,查询数据晒讯</span></span><br><span class="line">    data = data.query(<span class="string">&quot;x &gt; 1.0 &amp;  x &lt; 1.25 &amp; y &gt; 2.5 &amp; y &lt; 2.75&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 处理时间的数据</span></span><br><span class="line">    time_value = pd.to_datetime(data[<span class="string">&#x27;time&#x27;</span>], unit=<span class="string">&#x27;s&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    print(time_value)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把日期格式转换成 字典格式</span></span><br><span class="line">    time_value = pd.DatetimeIndex(time_value)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 构造一些特征</span></span><br><span class="line">    data[<span class="string">&#x27;day&#x27;</span>] = time_value.day</span><br><span class="line">    data[<span class="string">&#x27;hour&#x27;</span>] = time_value.hour</span><br><span class="line">    data[<span class="string">&#x27;weekday&#x27;</span>] = time_value.weekday</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把时间戳特征删除</span></span><br><span class="line">    data = data.drop([<span class="string">&#x27;time&#x27;</span>], axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    print(data)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把签到数量少于n个目标位置删除</span></span><br><span class="line">    place_count = data.groupby(<span class="string">&#x27;place_id&#x27;</span>).count()</span><br><span class="line"></span><br><span class="line">    tf = place_count[place_count.row_id &gt; <span class="number">3</span>].reset_index()</span><br><span class="line"></span><br><span class="line">    data = data[data[<span class="string">&#x27;place_id&#x27;</span>].isin(tf.place_id)]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 取出数据当中的特征值和目标值</span></span><br><span class="line">    y = data[<span class="string">&#x27;place_id&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    x = data.drop([<span class="string">&#x27;place_id&#x27;</span>], axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行数据的分割训练集合测试集</span></span><br><span class="line">    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=<span class="number">0.25</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 特征工程（标准化）</span></span><br><span class="line">    std = StandardScaler()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 对测试集和训练集的特征值进行标准化</span></span><br><span class="line">    x_train = std.fit_transform(x_train)</span><br><span class="line"></span><br><span class="line">    x_test = std.transform(x_test)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行算法流程 # 超参数</span></span><br><span class="line">    knn = KNeighborsClassifier()</span><br><span class="line"></span><br><span class="line">     <span class="comment"># fit， predict,score</span></span><br><span class="line">     knn.fit(x_train, y_train)</span><br><span class="line">    </span><br><span class="line">     <span class="comment"># 得出预测结果</span></span><br><span class="line">     y_predict = knn.predict(x_test)</span><br><span class="line">    </span><br><span class="line">     print(<span class="string">&quot;预测的目标签到位置为：&quot;</span>, y_predict)</span><br><span class="line">    </span><br><span class="line">     <span class="comment"># 得出准确率</span></span><br><span class="line">     print(<span class="string">&quot;预测的准确率:&quot;</span>, knn.score(x_test, y_test))</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Sklearn</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -497,13 +201,97 @@
       </tags>
   </entry>
   <entry>
+    <title>about me</title>
+    <url>/articles/9c4101a6/</url>
+    <content><![CDATA[<blockquote>
+<p>A Student, live in China  </p>
+</blockquote>
+<p>姓名：李乐乐<br>GitHub：<a href="https://github.com/siwuxei">siwuxei</a><br>Twitter：<a href="https://twitter.com/supperyface">llike</a><br>微信：Lilestudent</p>
+<a id="more"></a>
+
+<div align=center>
+
+ <img src="https://s1.ax1x.com/2020/08/24/dsbtEj.md.png" width = "350" height = "350" alt="头像" align=center />
+
+</div>
+]]></content>
+  </entry>
+  <entry>
+    <title>如何在GitHub上搭建属于自己的博客</title>
+    <url>/articles/419fe643/</url>
+    <content><![CDATA[<blockquote>
+<p>最近在学习机器学习查阅资料的时候，看到几个大佬写的博客，羡煞我也，自己也想搭建一个，过程有点艰辛，现在搭建成功后，想把搭建过程写下来，作为我的第一篇博客，没有前端和后端经验的小白也能看的懂哦！<a id="more"></a></p>
+</blockquote>
+<h3 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h3><h4 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h4><p><a href="https://hexo.io/zh-cn/">Hexo</a>是一个开源的静态博客框架,基于node.js开发,作者是台湾大学生tommy351。 </p>
+<h4 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h4><p><a href="https://github.com/">GitHub</a>相当于程序员的知网啦，在GitHub，用户可以十分轻易地找到海量的开源代码。  </p>
+<h4 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h4><p><a href="https://docs.github.com/en/github/working-with-github-pages/about-github-pages">GitHub Pages</a>可以理解为用户编写的、托管在github上的静态网页，你只需将你的改动提交到Github，就可以实现更改你的网页。</p>
+<h3 id="二、搭建环境"><a href="#二、搭建环境" class="headerlink" title="二、搭建环境"></a>二、搭建环境</h3><h4 id="安装Node"><a href="#安装Node" class="headerlink" title="安装Node"></a>安装Node</h4><p>软件在<a href="https://nodejs.org/en/download/">官网</a>下载即可安装Node的过程很简单，基本上一路点默认就行了，文件路径想改的可以改一下。</p>
+<div aliga=center>
+
+<p> <img src="https://s1.ax1x.com/2020/08/25/dckgne.png" alt="artara"></p>
+</div>
+
+<h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h4><p><a href="https://git-scm.com/download/win">Git</a>可是个好东西，代码托管、团队协作都离不开它。安装过程也并不复杂，几乎一路默认就好了，不过其中也有一些要<a href="https://zhuanlan.zhihu.com/p/140405392">注意的地方</a>，不过一直按默认安装也没有什么问题。<br><img src="https://s1.ax1x.com/2020/08/25/dckL7j.png" alt="artara"></p>
+<h3 id="三、环境配置"><a href="#三、环境配置" class="headerlink" title="三、环境配置"></a>三、环境配置</h3><h4 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h4><p>在电脑某一磁盘内创建一个文件夹（文件夹必须是空的，名字随便，但最好能见名知意哈，比如blog）本文用blog文件夹进行演示。</p>
+<h4 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h4><p>进入blog文件夹，右击鼠标，选择Git Brash Here 命令，弹出命令框输入以下命令:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<p><img src="https://s1.ax1x.com/2020/08/25/dcApcT.png" alt="artara"><br>等待Hexo进行初始化（如果过程比较久，就终止一下，然后把blog文件夹里缓存的东西删光，重新执行初始化命令）。<br><img src="https://s1.ax1x.com/2020/08/25/dcADEj.png" alt="artara"> </p>
+<h4 id="启动Hexo"><a href="#启动Hexo" class="headerlink" title="启动Hexo"></a>启动Hexo</h4><p>仍是在blog文件夹下，在命令窗口输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>这时在浏览器输入：默认网址，可以在本地查看你的博文啦！ </p>
+<h4 id="创建自己的博客"><a href="#创建自己的博客" class="headerlink" title="创建自己的博客"></a>创建自己的博客</h4><p>在命令窗口，输入ctrl+c,断开连接，然后输入命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo n <span class="string">&#x27;我的第一篇博客&#x27;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://s1.ax1x.com/2020/08/25/dctV5q.png" alt="artara"><br>这时候，你的第一篇博客就创建成功了！它默认在‘ G:\Blog\source_posts ’位置（你的可能不同），接下来我们就可以愉快的用MarkDown编辑自己的博客啦！我们用<a href="https://code.visualstudio.com/">VScode</a>或者<a href="https://jupyterlab.readthedocs.io/en/stable/#">Jupyter</a>打开它，输入命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">## 第一章</span></span><br><span class="line">    内容</span><br><span class="line"><span class="comment">## 第二章</span></span><br><span class="line">    内容  </span><br><span class="line"><span class="comment">## 第三章</span></span><br><span class="line">    结束语</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s1.ax1x.com/2020/08/25/dcJaY6.png" alt="artara"></p>
+<h4 id="查看博客"><a href="#查看博客" class="headerlink" title="查看博客"></a>查看博客</h4><p>仍是blog文件夹的命令面板输入命令行:<br>清理</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<p>生成</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p>启动</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s1.ax1x.com/2020/08/25/dcN9F1.png" alt="artara"><br>此时刷新刚才的界面，发现内容已经传入啦！<br><img src="https://s1.ax1x.com/2020/08/25/dcYo8K.png" alt="arara"></p>
+<h3 id="四、GitHub设置"><a href="#四、GitHub设置" class="headerlink" title="四、GitHub设置"></a>四、GitHub设置</h3><h4 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h4><p>登录<a href="https://github.com/">GitHub</a>,不用GitHub的话，你也可以自己买域名创建博客，但白嫖不爽吗？没有账号的自己创建一个。</p>
+<h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><p>新建一个仓库，仓库名必须为：[你的昵称].github.io,这个很重要。描述信息可写可不可。<br><img src="https://s1.ax1x.com/2020/08/25/dctGI1.png" alt="artara"><br><img src="https://s1.ax1x.com/2020/08/25/dctUxO.png" alt="artara"></p>
+<h4 id="本地部署"><a href="#本地部署" class="headerlink" title="本地部署"></a>本地部署</h4><p>回到blog文件夹下的控制面板，我们点击ctrl+c,将本地服务终止，然后输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p><img src="https://s1.ax1x.com/2020/08/25/dct6it.png" alt="artara"><br>这是一个插件，用它来连接Github。</p>
+<h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><p>在文件夹blog里，找到配置文件_config.yml，我们打开它，拉到代码最下面，进行配置：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  <span class="comment"># 这里根据自己的改，把siwuxei改成你的昵称</span></span><br><span class="line">  repo: https://github.com/siwuxei/siwuxei.github.io.git </span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<h4 id="同步至远端（GitHub）"><a href="#同步至远端（GitHub）" class="headerlink" title="同步至远端（GitHub）"></a>同步至远端（GitHub）</h4><p>输入命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>期间会让你进行输入github的账号和密码，至此，网站静态部署结束啦！此时你可以访问：[你的昵称].github.io啦！</p>
+<h3 id="五、Hexo主题的使用"><a href="#五、Hexo主题的使用" class="headerlink" title="五、Hexo主题的使用"></a>五、Hexo主题的使用</h3><h4 id="主题选择"><a href="#主题选择" class="headerlink" title="主题选择"></a>主题选择</h4><p><a href="https://hexo.io/themes/">Hexo</a>上有许多主题进行使用，我比较喜欢精简的主义的，写博客让人看的，搞些花里胡哨的不太好，个人推荐<a href="https://github.com/litten/hexo-theme-yilia">Yilia</a>和<a href="https://github.com/iissnan/hexo-theme-next">Next</a>，连接中都有教程，我这里以next举例,仍在blog文件夹里右键启动命令面板，输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<p>国内没有梯子比较慢，请耐心等待。<br>然后，在blog文件夹下修改_config.yml文件，将theme名字改为next</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+<p>配置完成</p>
+<h4 id="同步GitHub"><a href="#同步GitHub" class="headerlink" title="同步GitHub"></a>同步GitHub</h4><p>在控制面板输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>即可同步至github上面去了，但你立即登录可能还看不到效果，github进行自动配置需要时间，通常不会太久。</p>
+<h3 id="六、图床"><a href="#六、图床" class="headerlink" title="六、图床"></a>六、图床</h3><p>没有写博客前我都不知道有这东西，图床重要用于在写博客时，便于插入图片（若用网上的公共图片，随时可能失效），推荐<a href="https://imgchr.com/">路过图床</a>,空间无限，但传入图片&lt;10M,基本够用，当然你如果还不满意，可以利用GitHub自己搭建一个图床。步骤如下：<br>1、添加博客图片专用Repository，如BlogImages，这样有利于维护；<br>2、发布博客前，将博客中用到的图片push到BlogImages；<br>3、从Github里获取图片地址，如何获取我想你会的；  </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 注意将地址中的blob替换为raw，必须替换，否则无法显示图片</span></span><br><span class="line">“https://github.com/ConnorLin/BlogImages/blob/master/2016:04:02/hexo_server.png”  </span><br><span class="line">改为  </span><br><span class="line">“https://github.com/ConnorLin/BlogImages/raw/master/2016:04:02/hexo_server.png”</span><br></pre></td></tr></table></figure>
+<p><strong>好啦，至此你的个人博客就搭建完了，Enjoy it！</strong></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>GithubPages</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何对Hexo博客进行优化</title>
     <url>/articles/7793c3e2/</url>
     <content><![CDATA[<blockquote>
-<p>本文主要讲解如何对Hexo驱动下的博客网站进行优化，主要从网站加载速度、网站稳定性、网站扩散方法进行探讨。</p>
+<p>本文主要讲解如何对Hexo驱动下的博客网站进行优化，主要从网站加载速度、网站稳定性、网站扩散方法进行探讨。<a id="more"></a></p>
 </blockquote>
-<a id="more"></a>
-
 <h3 id="提升网站加载速度"><a href="#提升网站加载速度" class="headerlink" title="提升网站加载速度"></a>提升网站加载速度</h3><p>由于大部分人基于GitHub进行建立博客，而GitHub的服务器不在国内，别墙的厉害，所以博客的加载速度会显得异常缓慢，如果你的Blog主页内有大量高清图片时，那速度…，等它加载完，我们火锅都吃完了。这里提供两种方案，仅供参考。</p>
 <h4 id="转移博客至Gitee"><a href="#转移博客至Gitee" class="headerlink" title="转移博客至Gitee"></a>转移博客至Gitee</h4><p>Gitee服务器在国内，加载速度较GitHub快的不是一点半点，建议进行博客的转移，一劳永逸，Gitee搭建的博客较GitHub搭建的，当然也有不足之处，Gitee所提供的Gitee Pages服务不支持自动部署。这是什么概念呢？就是说之前用GitHub搭建博客，我们对博客进行修改后 hexo d 就完事了，Github会帮我们自动更新，但Gitee的免费用户不支持此项功能，需我们对其修改后进行手动更新。<img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829010345.png" alt="image-20200828061556416">具体要不要进行转移看个人取舍了</p>
 <h4 id="优化博客"><a href="#优化博客" class="headerlink" title="优化博客"></a>优化博客</h4><p>对于不想进行转移的，剩下的方法我们只有对博客进行优化了，我采取了对代码进行压缩的方式进行</p>
@@ -578,145 +366,352 @@
       </tags>
   </entry>
   <entry>
-    <title>Git学习总结</title>
-    <url>/articles/acd4e1/</url>
+    <title>思无邪</title>
+    <url>/articles/5d43f63/</url>
     <content><![CDATA[<blockquote>
-<p>主要介绍Git运作的基本流程以及相关常用命令。</p>
+<p>浩浩汤汤历史长河五千载，多少文人骚客的诗赋，多少民间流传的辞章，宛如珍珠般在华夏的阳光下闪耀。侧耳倾听，伴着历史的车轮呼啸而来的，是经典回响的声音。<a id="more"></a></p>
 </blockquote>
-<a id="more"></a>
-<h3 id="什么是Git？"><a href="#什么是Git？" class="headerlink" title="什么是Git？"></a>什么是Git？</h3><p>Git:是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。<br><img src="https://s1.ax1x.com/2020/08/26/dfFQBT.png" alt="artara"></p>
-<h4 id="Git的名词"><a href="#Git的名词" class="headerlink" title="Git的名词"></a>Git的名词</h4><p>工作区：它持有实际文件<br>缓存区（Index）：它像个缓存区域，临时保存你的改动<br>Head：指向你最近一次提交后的结果。  </p>
-<h4 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h4><p>1、改动添加到缓存区</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add &lt;filename&gt;</span><br><span class="line"><span class="comment"># 常用filename:.表示本级目录下的全部文件  </span></span><br></pre></td></tr></table></figure>
-<p>2、改动提交到Head</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提价信息&quot;</span></span><br></pre></td></tr></table></figure>
-<p>3、推送改动信息</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 假如还没有链接远端服务器，则需要下面命令添加</span></span><br><span class="line">git remote add origin &lt;server&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="Git分支的进一步理解"><a href="#Git分支的进一步理解" class="headerlink" title="Git分支的进一步理解"></a>Git分支的进一步理解</h3><h4 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h4><ul>
-<li>分支：分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。<br><img src="https://s1.ax1x.com/2020/08/26/dfZZ6A.png" alt="artara"></li>
-<li>相关命令<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建一个新的分支“featuer_x”</span></span><br><span class="line">git checkout -b featuer_x</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换到主分支</span></span><br><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 删除新分支</span></span><br><span class="line">git branch -d feature_x</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将本地分支推送到远端仓库</span></span><br><span class="line">git push origin &lt;branch&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="分支的更新与合并"><a href="#分支的更新与合并" class="headerlink" title="分支的更新与合并"></a>分支的更新与合并</h4></li>
-<li>更新本地仓库到最新改动<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure></li>
-<li>以在你的工作目录中 获取（fetch） 并 合并（merge） 远端的改动。要合并其他分支到你的当前分支（例如 master）。<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge &lt;branch&gt;</span><br></pre></td></tr></table></figure></li>
-<li>合并后，冲突怎么办？—自己更改，自己合并相关文件<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在更改后添加</span></span><br><span class="line">git add &lt;filename&gt;</span><br></pre></td></tr></table></figure></li>
-<li>查看合并后的改动<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git diff &lt;source_branch&gt; &lt;target_branch&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="远程分支管理"><a href="#远程分支管理" class="headerlink" title="远程分支管理"></a>远程分支管理</h3></li>
-<li>查看本地分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git bash</span><br></pre></td></tr></table></figure></li>
-<li>查看远程分支<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git branch -r</span><br></pre></td></tr></table></figure></li>
-<li>删除远程分支<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin:&lt;name&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4></li>
-<li>从服务器上拉取代码<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;拉取SSH&gt;</span><br></pre></td></tr></table></figure></li>
-<li>初始化(不经常使用，一般克隆后就会生产.git文件)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></li>
-<li>从远程获取最新版本到本地(不会自动merge)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure>
-<h4 id="走过的坑"><a href="#走过的坑" class="headerlink" title="走过的坑"></a>走过的坑</h4>报错类型<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">! [rejected]   master -&gt; master (non-fast-forward)</span><br></pre></td></tr></table></figure>
-分析：出现原因在于：git仓库中已经有一部分代码，所以它不允许你直接把你的代码覆盖上去。<br>解决方案<br>1、强推<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 即利用强覆盖方式用你本地的代码替代git仓库内的内容</span></span><br><span class="line">git push -f</span><br></pre></td></tr></table></figure>
-2、先把git的东西fetch到你本地然后merge后再push<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 报错：refusing to merge unrelated histories</span></span><br><span class="line"><span class="comment"># 解决方案如下</span></span><br><span class="line">git pull origin master --allow-unrelated-histories</span><br></pre></td></tr></table></figure>
-然后依次执行以下命令  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提交信息&quot;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure>
-最后执行<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-<h4 id="文件-gitignore相关命令"><a href="#文件-gitignore相关命令" class="headerlink" title="文件.gitignore相关命令"></a>文件.gitignore相关命令</h4><img src="https://s1.ax1x.com/2020/08/26/dflMWV.png" alt="artara"></li>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829204950.jpg" alt="摄图网_500739697_banner_竹林中国风小女孩（非企业商用）"></p>
+<p><strong>常思而无邪</strong></p>
+<p>《诗经》，中国诗歌的源头。对于我们来说，也许它太久远了，久远到如果没有注释，我们将寸步难行。其实，它只是民歌，是我们普通人的歌，并没有想像中的那么疏远不可亲近。千百年来，它就如盛开在彼岸的花，即使无法摘取，也一直存活于心。只是往往在不经意间，就被我们遗落在另一个时代。</p>
+<p>当我们用诗的清雅去寻找，用经的深邃去看待，用朝圣的虔诚去倾听，它也许是前世的前世，我们心底曾经响过的声音，我们在一起唱过的歌谣，我们前生无邪的记忆。</p>
+<p><strong>诗三百，一言以蔽之，曰思无邪。</strong></p>
+<p>雎鸠，是离爱情最近的鸟；蒹葭，是离爱情最近的草。三千多年过去了，雎鸠在河畔的“关关”叫声依然如在耳畔，仿佛男子在轻声呼唤所爱女子的芳名，如此深情，却又质朴；三千多年过去了，在水一方的伊人恐早已老去，可那比玫瑰平易却更繁芜的蒹葭，早已长在了心里。千年风雨，琴瑟未调，钟鼓未敲；千年风雨，秋水汤汤，芦苇大片大片寂寞地开过。我们把自己的声音留在了前世，徒留记忆的空壳在今生辗转。为何在渡河的时候不回首眺望，采采那参差的荇菜，赏赏那凝成霜的白露。</p>
+<p>现在的都市多了太多的躁动与不安，连爱情也少了几分期许中的美丽与浪漫。看了太多玫瑰与巧克力的故事，突然想起了雎鸠与蒹葭，那平凡得已逐渐被人淡忘的美好。何时我们的生活，能重拾那一份朴实的诗意？</p>
+<p>《关雎》与《蒹葭》，是爱情的极致。</p>
+<p>《诗经》，不仅仅讲述爱情，它也记录那个不安稳的年代所有的动乱。兴盛衰亡，那些浓得化不开的哀伤，在尘封已久的诗句中，读来令人唏嘘感叹。</p>
+<p>彼黍离离。</p>
+<p>世间最残忍的四个字莫过于“物是人非”。当年周室东迁后，一个周大夫回到故都镐京，追想往日繁盛，而今日所见，满目荒凉，不禁悲从中来。宫殿王城皆已成废墟，废墟之上是郁茂的黍苗。此后的千百年，故宫禾黍就成为亡国之思的代名词。从曹植唱《情》诗到向秀赋《思旧》，从刘禹锡的《乌衣巷》到姜夔的《扬州慢》，“黍离之悲”浸染着我们的诗文辞赋，与《诗经》血脉相承。</p>
+<p><strong>知我者谓我心忧，不知我者谓我何求</strong>。</p>
+<p>这是一个清醒的人恳切直白的自问。他行迈靡靡，中心摇摇，在时光的轮回里疲惫苍老。</p>
+<p>其实早在周朝之前，历史就给我们讲了另一个故事，一个因不肯食周粟而饿死首阳山上的故事。伯夷和叔齐在死前作了一首歌，曰：“登彼西山兮，采其薇矣。已暴易暴兮，不知其非矣……”，这是关于采薇最早的记录。</p>
+<p>《诗经》中的《采薇》，是一首征夫思归的诗。</p>
+<p>你听，他在唱：“采薇采薇，薇亦柔止。曰归曰归，心亦忧止。忧心烈烈，载饥载渴。我戍未定，靡使归聘。”</p>
+<p>靡使归聘。战乱的年代，何物最为珍贵？烽火连三月，家书抵万金。岑参也写道：“马上相逢无纸笔，凭君传语报平安。”征战在外，漂泊不定，生死难料，一封家信也成奢望，于是思念插上了翅膀。</p>
+<p>《黍离》和《采薇》，如今读来，只剩一句轻叹……</p>
+<p>夜阑人静，当我们凭几而坐，用从容珍重的心态来品一品《诗经》，或许我们能重新溯流而上到三千年前的小洲兰沚边，找回我们前世遗落的声音。生命如河，我们怎能在遗忘中度过？</p>
+<p>《诗经》不仅是一部经典，它更是一种信念。我们文化的河流，从来没有断过。</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>诗经</tag>
+        <tag>旅行</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Sklearn学习之K-近邻算法</title>
+    <url>/articles/22b53add/</url>
+    <content><![CDATA[<blockquote>
+<p>KNN算法最早是由Cover和Hart提出的一种分类算法。<a id="more"></a></p>
+</blockquote>
+<h3 id="机器学习的一般流程"><a href="#机器学习的一般流程" class="headerlink" title="机器学习的一般流程"></a>机器学习的一般流程</h3><p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829114047.png" alt="image-20200829114046374"></p>
+<h3 id="机器学习算法分类"><a href="#机器学习算法分类" class="headerlink" title="机器学习算法分类"></a>机器学习算法分类</h3><p>1、监督学习</p>
+<ul>
+<li><p>分类  k-近邻算法、贝叶斯分类、决策树与随机森林、逻辑回归、神经网络</p>
+</li>
+<li><p>回归  线性回归、岭回归</p>
+</li>
+<li><p>标注  隐马尔可夫模型   (不做要求)</p>
+</li>
+</ul>
+<p>2、无监督学习</p>
+<ul>
+<li>聚类  k-means</li>
+</ul>
+<h3 id="分类算法-k近邻算法-KNN"><a href="#分类算法-k近邻算法-KNN" class="headerlink" title="分类算法-k近邻算法(KNN)"></a>分类算法-k近邻算法(KNN)</h3><p>定义：如果一个样本在特征空间中的k个最相似(即特征空间中最邻近)的样本中的大多数属于某一个类别，则该样本也属于这个类别。</p>
+<p>计算距离公式：两个样本的距离可以通过如下公式计算，又叫欧式距离比如说，a(a1,a2,a3),b(b1,b2,b3)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200829114941.png" alt="image-20200829114941932"></p>
+<p>sklearn k-近邻算法</p>
+<p>APIsklearn.neighbors.KNeighborsClassifier<font color='red'>(n_neighbors</font>=5,<font color='red'>algorithm</font>=’auto’)</p>
+<ul>
+<li><p>n_neighbors：int,可选（默认= 5），k_neighbors查询默认使用的邻居数</p>
+</li>
+<li><p>algorithm：{‘auto’，‘ball_tree’，‘kd_tree’，‘brute’}，可选用于计算最近邻居的算法：‘ball_tree’将会使用 BallTree，‘kd_tree’将使用 KDTree。‘auto’将尝试根据传递给fit方法的值来决定最合适的算法。 (不同实现方式影响效率)</p>
+</li>
+</ul>
+<h3 id="存在问题"><a href="#存在问题" class="headerlink" title="存在问题"></a>存在问题</h3><p>1、k值取多大？有什么影响？</p>
+<ul>
+<li><p>k值取很小：容易受异常点影响</p>
+</li>
+<li><p>k值取很大：容易受最近数据太多导致比例变化 </p>
+</li>
+</ul>
+<p>2、性能影响</p>
+<ul>
+<li>不适合超大数据类型</li>
+</ul>
+<h3 id="k-近邻算法优缺点"><a href="#k-近邻算法优缺点" class="headerlink" title="k-近邻算法优缺点"></a>k-近邻算法优缺点</h3><p>优点：</p>
+<ul>
+<li>简单，易于理解，易于实现，无需估计参数，无需训练</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li><p>懒惰算法，对测试样本分类时的计算量大，内存开销大</p>
+</li>
+<li><p>必须指定K值，K值选择不当则分类精度不能保证</p>
+</li>
+</ul>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">knncls</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    K-近邻预测用户签到位置</span></span><br><span class="line"><span class="string">    :return:None</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 读取数据</span></span><br><span class="line">    data = pd.read_csv(<span class="string">&quot;./data/FBlocation/train.csv&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># print(data.head(10))</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 处理数据</span></span><br><span class="line">    <span class="comment"># 1、缩小数据,查询数据晒讯</span></span><br><span class="line">    data = data.query(<span class="string">&quot;x &gt; 1.0 &amp;  x &lt; 1.25 &amp; y &gt; 2.5 &amp; y &lt; 2.75&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 处理时间的数据</span></span><br><span class="line">    time_value = pd.to_datetime(data[<span class="string">&#x27;time&#x27;</span>], unit=<span class="string">&#x27;s&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    print(time_value)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把日期格式转换成 字典格式</span></span><br><span class="line">    time_value = pd.DatetimeIndex(time_value)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 构造一些特征</span></span><br><span class="line">    data[<span class="string">&#x27;day&#x27;</span>] = time_value.day</span><br><span class="line">    data[<span class="string">&#x27;hour&#x27;</span>] = time_value.hour</span><br><span class="line">    data[<span class="string">&#x27;weekday&#x27;</span>] = time_value.weekday</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把时间戳特征删除</span></span><br><span class="line">    data = data.drop([<span class="string">&#x27;time&#x27;</span>], axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    print(data)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把签到数量少于n个目标位置删除</span></span><br><span class="line">    place_count = data.groupby(<span class="string">&#x27;place_id&#x27;</span>).count()</span><br><span class="line"></span><br><span class="line">    tf = place_count[place_count.row_id &gt; <span class="number">3</span>].reset_index()</span><br><span class="line"></span><br><span class="line">    data = data[data[<span class="string">&#x27;place_id&#x27;</span>].isin(tf.place_id)]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 取出数据当中的特征值和目标值</span></span><br><span class="line">    y = data[<span class="string">&#x27;place_id&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    x = data.drop([<span class="string">&#x27;place_id&#x27;</span>], axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行数据的分割训练集合测试集</span></span><br><span class="line">    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=<span class="number">0.25</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 特征工程（标准化）</span></span><br><span class="line">    std = StandardScaler()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 对测试集和训练集的特征值进行标准化</span></span><br><span class="line">    x_train = std.fit_transform(x_train)</span><br><span class="line"></span><br><span class="line">    x_test = std.transform(x_test)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行算法流程 # 超参数</span></span><br><span class="line">    knn = KNeighborsClassifier()</span><br><span class="line"></span><br><span class="line">     <span class="comment"># fit， predict,score</span></span><br><span class="line">     knn.fit(x_train, y_train)</span><br><span class="line">    </span><br><span class="line">     <span class="comment"># 得出预测结果</span></span><br><span class="line">     y_predict = knn.predict(x_test)</span><br><span class="line">    </span><br><span class="line">     print(<span class="string">&quot;预测的目标签到位置为：&quot;</span>, y_predict)</span><br><span class="line">    </span><br><span class="line">     <span class="comment"># 得出准确率</span></span><br><span class="line">     print(<span class="string">&quot;预测的准确率:&quot;</span>, knn.score(x_test, y_test))</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Sklearn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Sklearn学习之决策树</title>
+    <url>/articles/eec6dfbb/</url>
+    <content><![CDATA[<blockquote>
+<p>分类算法-决策树。<a id="more"></a></p>
+</blockquote>
+<h3 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a>决策树</h3><p>决策树思想的来源非常朴素，程序设计中的条件分支结构就是if-then结构，最早的决策树就是利用这类结构分割数据的一种分类学习方法 </p>
+<h4 id="认识决策树"><a href="#认识决策树" class="headerlink" title="认识决策树"></a>认识决策树</h4><p>银行贷款数据</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831090514.png" alt="image-20200831082950521"></p>
+<p>你如何去划分是否能得到贷款？</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831090521.png" alt="image-20200831083320187"></p>
+<h4 id="认识信息熵"><a href="#认识信息熵" class="headerlink" title="认识信息熵"></a>认识信息熵</h4><p>信息论的创始人，香农是密歇根大学学士，麻省理工学院博士，1948年，香农发表了划时代的论文——通信的数学原理，奠定了现代信息论的基础。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831084029.png" alt="image-20200831083652834"></p>
+<p>猜谁是冠军？假设有32支球队。</p>
+<p>每猜一次给一块钱，告诉我是否猜对了，那么我需要掏多少钱才能知道谁是冠军？我可以把球编上号，从1到32，然后提问：冠 军在1-16号吗？依次询问，只需要五次，就可以知道结果。</p>
+<p>“谁是世界杯冠军”的信息量应该比5比特少。香农指出，它的准确信息量应该是：</p>
+<p>​                                H = -(p1<em>logp1 + p2</em>logp2 + … + p32log32)</p>
+<p><strong>H</strong>的专业术语称之为信息熵，单位为比特。</p>
+<p>公式：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831084218.png" alt="image-20200831084218349"></p>
+<p>当这32支球队夺冠的几率相同时，对应的信息熵等于5比特</p>
+<h4 id="决策树的划分依据之一-信息增益"><a href="#决策树的划分依据之一-信息增益" class="headerlink" title="决策树的划分依据之一-信息增益"></a>决策树的划分依据之一-信息增益</h4><p>特征A对训练数据集D的信息增益g(D,A),定义为集合D的信息熵H(D)与特征A给定条件下D的信息条件熵H(D|A)之差，即公式为：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831084417.png" alt="image-20200831084417205"></p>
+<p>注：信息增益表示得知特征X的信息而使得类Y的信息的不确定性减少的程度</p>
+<h4 id="信息增益的计算"><a href="#信息增益的计算" class="headerlink" title="信息增益的计算"></a>信息增益的计算</h4><p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831084542.png" alt="image-20200831084542411"></p>
+<p>条件熵的计算：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831084605.png" alt="image-20200831084605334"></p>
+<p>注：C_k 表示属于某个类别的样本数</p>
+<h4 id="策树使用的算法"><a href="#策树使用的算法" class="headerlink" title="策树使用的算法"></a>策树使用的算法</h4><p>ID3：信息增益 最大的准则</p>
+<p>C4.5：信息增益比 最大的准则</p>
+<p>CART </p>
+<ul>
+<li><p>回归树: 平方误差 最小 </p>
+</li>
+<li><p>分类树: 基尼系数  最小的准则 在sklearn中可以选择划分的原则</p>
+</li>
+</ul>
+<h4 id="sklearn决策树API"><a href="#sklearn决策树API" class="headerlink" title="sklearn决策树API"></a>sklearn决策树API</h4><p>class sklearn.tree.DecisionTreeClassifier </p>
+<p>(*criterion=’<strong>gini</strong>’, <strong>max_depth</strong>=<strong>None</strong>,random_state=None)</p>
+<ul>
+<li><p>决策树分类器</p>
+</li>
+<li><p>criterion:默认是’gini’系数，也可以选择信息增益的熵’entropy’</p>
+</li>
+<li><p>max_depth:树的深度大小</p>
+</li>
+<li><p>random_state:随机数种子</p>
+</li>
+<li><p>method:</p>
+</li>
+<li><p>decision_path:返回决策树的路径</p>
+</li>
+</ul>
+<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><p>泰坦尼克号数据</p>
+<p>在泰坦尼克号和titanic2数据帧描述泰坦尼克号上的个别乘客的生存状态。在泰坦尼克号的数据帧不包含从剧组信息，但它确实包含了乘客的一半的实际年龄。关于泰坦尼克号旅客的数据的主要来源是百科全书Titanica。这里使用的数据集是由各种研究人员开始的。其中包括许多研究人员创建的旅客名单，由Michael A.Findlay编辑。</p>
+<p>我们提取的数据集中的特征是票的类别，存活，乘坐班，年龄，登陆，home.dest，房间，票，船和性别。乘坐班是指乘客班（1，2，3），是社会经济阶层的代表。其中age数据存在缺失。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris, fetch_20newsgroups, load_boston</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split, GridSearchCV</span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text <span class="keyword">import</span> TfidfVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.naive_bayes <span class="keyword">import</span> MultinomialNB</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> classification_report</span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction <span class="keyword">import</span> DictVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeClassifier, export_graphviz</span><br><span class="line"><span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> RandomForestClassifier</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">decision</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    决策树对泰坦尼克号进行预测生死</span></span><br><span class="line"><span class="string">    :return: None</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 获取数据</span></span><br><span class="line">    titan = pd.read_csv(<span class="string">&quot;http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/titanic.txt&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 处理数据，找出特征值和目标值</span></span><br><span class="line">    x = titan[[<span class="string">&#x27;pclass&#x27;</span>, <span class="string">&#x27;age&#x27;</span>, <span class="string">&#x27;sex&#x27;</span>]]</span><br><span class="line"></span><br><span class="line">    y = titan[<span class="string">&#x27;survived&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    print(x)</span><br><span class="line">    <span class="comment"># 缺失值处理</span></span><br><span class="line">    x[<span class="string">&#x27;age&#x27;</span>].fillna(x[<span class="string">&#x27;age&#x27;</span>].mean(), inplace=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 分割数据集到训练集合测试集</span></span><br><span class="line">    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=<span class="number">0.25</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行处理（特征工程）特征-》类别-》one_hot编码</span></span><br><span class="line">    dict = DictVectorizer(sparse=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line">    x_train = dict.fit_transform(x_train.to_dict(orient=<span class="string">&quot;records&quot;</span>))</span><br><span class="line"></span><br><span class="line">    print(dict.get_feature_names())</span><br><span class="line"></span><br><span class="line">    x_test = dict.transform(x_test.to_dict(orient=<span class="string">&quot;records&quot;</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># print(x_train)</span></span><br><span class="line">    <span class="comment"># 用决策树进行预测</span></span><br><span class="line">    <span class="comment"># dec = DecisionTreeClassifier()</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># dec.fit(x_train, y_train)</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># # 预测准确率</span></span><br><span class="line">    <span class="comment"># print(&quot;预测的准确率：&quot;, dec.score(x_test, y_test))</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># # 导出决策树的结构</span></span><br><span class="line">    <span class="comment"># export_graphviz(dec, out_file=&quot;./tree.dot&quot;, feature_names=[&#x27;年龄&#x27;, &#x27;pclass=1st&#x27;, &#x27;pclass=2nd&#x27;, &#x27;pclass=3rd&#x27;, &#x27;女性&#x27;, &#x27;男性&#x27;])</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 随机森林进行预测 （超参数调优）</span></span><br><span class="line">    rf = RandomForestClassifier(n_jobs=<span class="number">-1</span>)</span><br><span class="line"></span><br><span class="line">    param = &#123;<span class="string">&quot;n_estimators&quot;</span>: [<span class="number">120</span>, <span class="number">200</span>, <span class="number">300</span>, <span class="number">500</span>, <span class="number">800</span>, <span class="number">1200</span>], <span class="string">&quot;max_depth&quot;</span>: [<span class="number">5</span>, <span class="number">8</span>, <span class="number">15</span>, <span class="number">25</span>, <span class="number">30</span>]&#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 网格搜索与交叉验证</span></span><br><span class="line">    gc = GridSearchCV(rf, param_grid=param, cv=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    gc.fit(x_train, y_train)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;准确率：&quot;</span>, gc.score(x_test, y_test))</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;查看选择的参数模型：&quot;</span>, gc.best_params_)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Sklearn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Sklearn学习之分类模型的评估</title>
+    <url>/articles/4481af65/</url>
+    <content><![CDATA[<blockquote>
+<p>分类模型的评估。<a id="more"></a></p>
+</blockquote>
+<h4 id="一般方法：准确率"><a href="#一般方法：准确率" class="headerlink" title="一般方法：准确率"></a>一般方法：准确率</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">estimator.score()</span><br></pre></td></tr></table></figure>
+
+<h4 id="特殊方法：混淆矩阵"><a href="#特殊方法：混淆矩阵" class="headerlink" title="特殊方法：混淆矩阵"></a>特殊方法：混淆矩阵</h4><p>在分类任务下，预测结果(Predicted Condition)与正确标记(True Condition)之间存在四种不同的组合，构成混淆矩阵(适用于多分类)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831080231.png" alt="image-20200831080224559"></p>
+<h4 id="为什么要引入混淆矩阵呢？"><a href="#为什么要引入混淆矩阵呢？" class="headerlink" title="为什么要引入混淆矩阵呢？"></a>为什么要引入混淆矩阵呢？</h4><p>是为了计算精确率(Precision)与召回率(Recall)，二者又有何区别？</p>
+<p>精确率：预测结果为正例样本中真实为正例的比例（查得准）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831080428.png"></p>
+<p>•召回率：真实为正例的样本中预测结果为正例的比例（查的全，对正样本的区分能力）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831080449.png" alt="image-20200831080449027"></p>
+<h4 id="其他分类标准：F1-score（反映了模型的稳健型）"><a href="#其他分类标准：F1-score（反映了模型的稳健型）" class="headerlink" title="其他分类标准：F1-score（反映了模型的稳健型）"></a>其他分类标准：F1-score（反映了模型的稳健型）</h4><p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831080543.png" alt="image-20200831080543319"></p>
+<h3 id="分类模型评估API"><a href="#分类模型评估API" class="headerlink" title="分类模型评估API"></a>分类模型评估API</h3><p><strong>sklearn.metrics.classification_report(<em>y_true</em>, <em>y_pred</em>, target_names=None)</strong></p>
+<ul>
+<li><p>y_true：真实目标值</p>
+</li>
+<li><p>y_pred：估计器预测目标值</p>
+</li>
+<li><p>target_names：目标类别名称</p>
+</li>
+<li><p>return：每个类别精确率与召回率</p>
+</li>
 </ul>
 ]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
-        <tag>Git</tag>
+        <tag>Sklearn</tag>
       </tags>
   </entry>
   <entry>
-    <title>如何在GitHub上搭建属于自己的博客</title>
-    <url>/articles/419fe643/</url>
+    <title>Sklearn学习之朴素贝叶斯算法</title>
+    <url>/articles/9afa3f41/</url>
     <content><![CDATA[<blockquote>
-<p>最近在学习机器学习查阅资料的时候，看到几个大佬写的博客，羡煞我也，自己也想搭建一个，过程有点艰辛，现在搭建成功后，想把搭建过程写下来，作为我的第一篇博客，没有前端和后端经验的小白也能看的懂哦！</p>
+<p>分类算法-朴素贝叶斯算法。<a id="more"></a></p>
 </blockquote>
-<a id="more"></a>
+<h4 id="理论基础"><a href="#理论基础" class="headerlink" title="理论基础"></a>理论基础</h4><p>朴素贝叶斯-贝叶斯公式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831080920.png" alt="image-20200831080919995"></p>
+<p>w为给定文档的特征值(频数统计,预测文档提供)，c为文档类别</p>
+<p><em>公式可以理解为：</em></p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831081031.png" alt="image-20200831081031016"></p>
+<p>其中c可以是不同类别。</p>
+<p>公式分为三个部分：</p>
+<ul>
+<li><p>P(C)：每个文档类别的概率(某文档类别词数／总文档词数)</p>
+</li>
+<li><p>P(W│C)<em>：给定类别下特征（<strong>被预测文档中出现的词</strong>）的概率</em></p>
+</li>
+</ul>
+<p>计算方法：P(F1│C)=Ni/N （训练文档中去计算）</p>
+<ul>
+<li><p>Ni为该F1词在C类别所有文档中出现的次数</p>
+</li>
+<li><p>N为所属类别C下的文档所有词出现的次数和</p>
+</li>
+</ul>
+<p>P(F1,F2,…)   预测文档中每个词的概率 </p>
+<h4 id="应用举例"><a href="#应用举例" class="headerlink" title="应用举例"></a>应用举例</h4><p>训练集统计结果(指定统计词频)：</p>
+<table>
+<thead>
+<tr>
+<th>特征\统计</th>
+<th>科技</th>
+<th>娱乐</th>
+<th>汇总（求和）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>“商场”</td>
+<td>9</td>
+<td>51</td>
+<td>60</td>
+</tr>
+<tr>
+<td>“影院”</td>
+<td>8</td>
+<td>56</td>
+<td>64</td>
+</tr>
+<tr>
+<td>“支付宝”</td>
+<td>20</td>
+<td>15</td>
+<td>35</td>
+</tr>
+<tr>
+<td>“云计算”</td>
+<td>63</td>
+<td>0</td>
+<td>63</td>
+</tr>
+<tr>
+<td>汇总(求和)</td>
+<td>100</td>
+<td>121</td>
+<td>221</td>
+</tr>
+</tbody></table>
+<p>现有一篇被预测文档：出现了影院，支付宝，云计算，计算属于科技、娱乐的类别概率？</p>
+<p>科技：P(影院,支付宝,云计算 │科技)∗P(科技)=8/100∗20/100∗63/100∗(100/221) =0.00456109</p>
+<p>娱乐：P(影院,支付宝,云计算│娱乐)∗P(娱乐)=56/121∗15/121∗0/121∗(121/221)=0 </p>
+<p><strong>属于某个类别为0，合适吗？</strong></p>
+<h4 id="拉普拉斯平滑"><a href="#拉普拉斯平滑" class="headerlink" title="拉普拉斯平滑"></a>拉普拉斯平滑</h4><p>问题：从上面的例子我们得到娱乐概率为0，这是不合理的，如果词频列表里面</p>
+<p>有很多出现次数都为0，很可能计算结果都为零</p>
+<p>解决方法：<strong>拉普拉斯平滑系数</strong></p>
+<p>​                                       <img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831081624.png" alt="image-20200831081624099"></p>
+<p>α为指定的系数一般为1，m为训练文档中统计出的特征词个数</p>
+<h4 id="sklearn朴素贝叶斯实现API"><a href="#sklearn朴素贝叶斯实现API" class="headerlink" title="sklearn朴素贝叶斯实现API"></a>sklearn朴素贝叶斯实现API</h4><p><strong>sklearn.naive_bayes.MultinomialNB</strong></p>
+<p>sklearn.naive_bayes.MultinomialNB(<em>alpha = 1.0</em>)</p>
+<ul>
+<li><p>朴素贝叶斯分类</p>
+</li>
+<li><p>alpha：拉普拉斯平滑系数</p>
+</li>
+</ul>
+<h4 id="朴素贝叶斯分类优缺点"><a href="#朴素贝叶斯分类优缺点" class="headerlink" title="朴素贝叶斯分类优缺点"></a>朴素贝叶斯分类优缺点</h4><p>优点：</p>
+<ul>
+<li><p>朴素贝叶斯模型发源于古典数学理论，有稳定的分类效率。</p>
+</li>
+<li><p>对缺失数据不太敏感，算法也比较简单，常用于文本分类。</p>
+</li>
+<li><p>分类准确度高，速度快</p>
+</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>需要知道先验概率P(F1,F2,…|C)，因此在某些时候会由于假设的先验模型的原因导致预测效果不佳。</li>
+</ul>
+<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris, fetch_20newsgroups, load_boston</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split, GridSearchCV</span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text <span class="keyword">import</span> TfidfVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.naive_bayes <span class="keyword">import</span> MultinomialNB</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> classification_report</span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction <span class="keyword">import</span> DictVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeClassifier, export_graphviz</span><br><span class="line"><span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> RandomForestClassifier</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">ef naviebayes():</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    朴素贝叶斯进行文本分类</span></span><br><span class="line"><span class="string">    :return: None</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    news = fetch_20newsgroups(subset=<span class="string">&#x27;all&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行数据分割</span></span><br><span class="line">    x_train, x_test, y_train, y_test = train_test_split(news.data, news.target, test_size=<span class="number">0.25</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 对数据集进行特征抽取</span></span><br><span class="line">    tf = TfidfVectorizer()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 以训练集当中的词的列表进行每篇文章重要性统计[&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;,&#x27;d&#x27;]</span></span><br><span class="line">    x_train = tf.fit_transform(x_train)</span><br><span class="line"></span><br><span class="line">    print(tf.get_feature_names())</span><br><span class="line"></span><br><span class="line">    x_test = tf.transform(x_test)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行朴素贝叶斯算法的预测</span></span><br><span class="line">    mlt = MultinomialNB(alpha=<span class="number">1.0</span>)</span><br><span class="line"></span><br><span class="line">    print(x_train.toarray())</span><br><span class="line"></span><br><span class="line">    mlt.fit(x_train, y_train)</span><br><span class="line"></span><br><span class="line">    y_predict = mlt.predict(x_test)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;预测的文章类别为：&quot;</span>, y_predict)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 得出准确率</span></span><br><span class="line">    print(<span class="string">&quot;准确率为：&quot;</span>, mlt.score(x_test, y_test))</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;每个类别的精确率和召回率：&quot;</span>, classification_report(y_test, y_predict, target_names=news.target_names))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h3><h4 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h4><p><a href="https://hexo.io/zh-cn/">Hexo</a>是一个开源的静态博客框架,基于node.js开发,作者是台湾大学生tommy351。 </p>
-<h4 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h4><p><a href="https://github.com/">GitHub</a>相当于程序员的知网啦，在GitHub，用户可以十分轻易地找到海量的开源代码。  </p>
-<h4 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h4><p><a href="https://docs.github.com/en/github/working-with-github-pages/about-github-pages">GitHub Pages</a>可以理解为用户编写的、托管在github上的静态网页，你只需将你的改动提交到Github，就可以实现更改你的网页。</p>
-<h3 id="二、搭建环境"><a href="#二、搭建环境" class="headerlink" title="二、搭建环境"></a>二、搭建环境</h3><h4 id="安装Node"><a href="#安装Node" class="headerlink" title="安装Node"></a>安装Node</h4><p>软件在<a href="https://nodejs.org/en/download/">官网</a>下载即可安装Node的过程很简单，基本上一路点默认就行了，文件路径想改的可以改一下。</p>
-<div aliga=center>
-
-<p> <img src="https://s1.ax1x.com/2020/08/25/dckgne.png" alt="artara"></p>
-</div>
-
-<h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h4><p><a href="https://git-scm.com/download/win">Git</a>可是个好东西，代码托管、团队协作都离不开它。安装过程也并不复杂，几乎一路默认就好了，不过其中也有一些要<a href="https://zhuanlan.zhihu.com/p/140405392">注意的地方</a>，不过一直按默认安装也没有什么问题。<br><img src="https://s1.ax1x.com/2020/08/25/dckL7j.png" alt="artara"></p>
-<h3 id="三、环境配置"><a href="#三、环境配置" class="headerlink" title="三、环境配置"></a>三、环境配置</h3><h4 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h4><p>在电脑某一磁盘内创建一个文件夹（文件夹必须是空的，名字随便，但最好能见名知意哈，比如blog）本文用blog文件夹进行演示。</p>
-<h4 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h4><p>进入blog文件夹，右击鼠标，选择Git Brash Here 命令，弹出命令框输入以下命令:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-<p><img src="https://s1.ax1x.com/2020/08/25/dcApcT.png" alt="artara"><br>等待Hexo进行初始化（如果过程比较久，就终止一下，然后把blog文件夹里缓存的东西删光，重新执行初始化命令）。<br><img src="https://s1.ax1x.com/2020/08/25/dcADEj.png" alt="artara"> </p>
-<h4 id="启动Hexo"><a href="#启动Hexo" class="headerlink" title="启动Hexo"></a>启动Hexo</h4><p>仍是在blog文件夹下，在命令窗口输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>这时在浏览器输入：默认网址，可以在本地查看你的博文啦！ </p>
-<h4 id="创建自己的博客"><a href="#创建自己的博客" class="headerlink" title="创建自己的博客"></a>创建自己的博客</h4><p>在命令窗口，输入ctrl+c,断开连接，然后输入命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo n <span class="string">&#x27;我的第一篇博客&#x27;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://s1.ax1x.com/2020/08/25/dctV5q.png" alt="artara"><br>这时候，你的第一篇博客就创建成功了！它默认在‘ G:\Blog\source_posts ’位置（你的可能不同），接下来我们就可以愉快的用MarkDown编辑自己的博客啦！我们用<a href="https://code.visualstudio.com/">VScode</a>或者<a href="https://jupyterlab.readthedocs.io/en/stable/#">Jupyter</a>打开它，输入命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">## 第一章</span></span><br><span class="line">    内容</span><br><span class="line"><span class="comment">## 第二章</span></span><br><span class="line">    内容  </span><br><span class="line"><span class="comment">## 第三章</span></span><br><span class="line">    结束语</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://s1.ax1x.com/2020/08/25/dcJaY6.png" alt="artara"></p>
-<h4 id="查看博客"><a href="#查看博客" class="headerlink" title="查看博客"></a>查看博客</h4><p>仍是blog文件夹的命令面板输入命令行:<br>清理</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-
-<p>生成</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
-<p>启动</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://s1.ax1x.com/2020/08/25/dcN9F1.png" alt="artara"><br>此时刷新刚才的界面，发现内容已经传入啦！<br><img src="https://s1.ax1x.com/2020/08/25/dcYo8K.png" alt="arara"></p>
-<h3 id="四、GitHub设置"><a href="#四、GitHub设置" class="headerlink" title="四、GitHub设置"></a>四、GitHub设置</h3><h4 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h4><p>登录<a href="https://github.com/">GitHub</a>,不用GitHub的话，你也可以自己买域名创建博客，但白嫖不爽吗？没有账号的自己创建一个。</p>
-<h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><p>新建一个仓库，仓库名必须为：[你的昵称].github.io,这个很重要。描述信息可写可不可。<br><img src="https://s1.ax1x.com/2020/08/25/dctGI1.png" alt="artara"><br><img src="https://s1.ax1x.com/2020/08/25/dctUxO.png" alt="artara"></p>
-<h4 id="本地部署"><a href="#本地部署" class="headerlink" title="本地部署"></a>本地部署</h4><p>回到blog文件夹下的控制面板，我们点击ctrl+c,将本地服务终止，然后输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p><img src="https://s1.ax1x.com/2020/08/25/dct6it.png" alt="artara"><br>这是一个插件，用它来连接Github。</p>
-<h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><p>在文件夹blog里，找到配置文件_config.yml，我们打开它，拉到代码最下面，进行配置：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  <span class="comment"># 这里根据自己的改，把siwuxei改成你的昵称</span></span><br><span class="line">  repo: https://github.com/siwuxei/siwuxei.github.io.git </span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<h4 id="同步至远端（GitHub）"><a href="#同步至远端（GitHub）" class="headerlink" title="同步至远端（GitHub）"></a>同步至远端（GitHub）</h4><p>输入命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>期间会让你进行输入github的账号和密码，至此，网站静态部署结束啦！此时你可以访问：[你的昵称].github.io啦！</p>
-<h3 id="五、Hexo主题的使用"><a href="#五、Hexo主题的使用" class="headerlink" title="五、Hexo主题的使用"></a>五、Hexo主题的使用</h3><h4 id="主题选择"><a href="#主题选择" class="headerlink" title="主题选择"></a>主题选择</h4><p><a href="https://hexo.io/themes/">Hexo</a>上有许多主题进行使用，我比较喜欢精简的主义的，写博客让人看的，搞些花里胡哨的不太好，个人推荐<a href="https://github.com/litten/hexo-theme-yilia">Yilia</a>和<a href="https://github.com/iissnan/hexo-theme-next">Next</a>，连接中都有教程，我这里以next举例,仍在blog文件夹里右键启动命令面板，输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-<p>国内没有梯子比较慢，请耐心等待。<br>然后，在blog文件夹下修改_config.yml文件，将theme名字改为next</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-<p>配置完成</p>
-<h4 id="同步GitHub"><a href="#同步GitHub" class="headerlink" title="同步GitHub"></a>同步GitHub</h4><p>在控制面板输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>即可同步至github上面去了，但你立即登录可能还看不到效果，github进行自动配置需要时间，通常不会太久。</p>
-<h3 id="六、图床"><a href="#六、图床" class="headerlink" title="六、图床"></a>六、图床</h3><p>没有写博客前我都不知道有这东西，图床重要用于在写博客时，便于插入图片（若用网上的公共图片，随时可能失效），推荐<a href="https://imgchr.com/">路过图床</a>,空间无限，但传入图片&lt;10M,基本够用，当然你如果还不满意，可以利用GitHub自己搭建一个图床。步骤如下：<br>1、添加博客图片专用Repository，如BlogImages，这样有利于维护；<br>2、发布博客前，将博客中用到的图片push到BlogImages；<br>3、从Github里获取图片地址，如何获取我想你会的；  </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 注意将地址中的blob替换为raw，必须替换，否则无法显示图片</span></span><br><span class="line">“https://github.com/ConnorLin/BlogImages/blob/master/2016:04:02/hexo_server.png”  </span><br><span class="line">改为  </span><br><span class="line">“https://github.com/ConnorLin/BlogImages/raw/master/2016:04:02/hexo_server.png”</span><br></pre></td></tr></table></figure>
-<p><strong>好啦，至此你的个人博客就搭建完了，Enjoy it！</strong></p>
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>学习</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
-        <tag>GithubPages</tag>
+        <tag>Sklearn</tag>
       </tags>
   </entry>
   <entry>
-    <title>about me</title>
-    <url>/articles/9c4101a6/</url>
+    <title>Sklearn学习之模型的选择与调优</title>
+    <url>/articles/d77c4b19/</url>
     <content><![CDATA[<blockquote>
-<p>A Student, live in China  </p>
+<p>模型的选择与调优。<a id="more"></a></p>
 </blockquote>
-<p>姓名：李乐乐<br>GitHub：<a href="https://github.com/siwuxei">siwuxei</a><br>Twitter：<a href="https://twitter.com/supperyface">llike</a><br>微信：Lilestudent</p>
-<a id="more"></a>
-
-<div align=center>
-
- <img src="https://s1.ax1x.com/2020/08/24/dsbtEj.md.png" width = "350" height = "350" alt="头像" align=center />
-
-</div>
+<h4 id="交叉验证"><a href="#交叉验证" class="headerlink" title="交叉验证"></a>交叉验证</h4><p>目的：为了让被评估的模型更加准确可信</p>
+<p>过程：将拿到的数据，分为训练和验证集。以下图为例：将数据分成5份，其中一份作为验证集。然后经过5次(组)的测试，每次都更换不同的验证集。即得到5组模型的结果，取平均值作为最终结果。又称5折交叉验证。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831082358.png" alt="image-20200831082358370"></p>
+<h4 id="网格搜索"><a href="#网格搜索" class="headerlink" title="网格搜索"></a>网格搜索</h4><p>通常情况下，有很多参数是需要手动指定的（如k-近邻算法中的K值），这种叫超参数。但是手动过程繁杂，所以需要对模型预设几种超参数组合。每组超参数都采用交叉验证来进行评估。最后选出最优参数组合建立模型。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831082519.png" alt="image-20200831082519053"></p>
+<h4 id="超参数搜索-网格搜索API"><a href="#超参数搜索-网格搜索API" class="headerlink" title="超参数搜索-网格搜索API"></a>超参数搜索-网格搜索API</h4><p>sklearn.model_selection.GridSearchCV(estimator,param_grid=None,cv=None)</p>
+<p>目的：对估计器的指定参数值进行详尽搜索</p>
+<ul>
+<li><p>estimator：估计器对象</p>
+</li>
+<li><p>param_grid：估计器参数(dict){“n_neighbors”:[1,3,5]}</p>
+</li>
+<li><p>cv：指定几折交叉验证</p>
+</li>
+<li><p>fit：输入训练数据</p>
+</li>
+<li><p>score：准确率</p>
+</li>
+</ul>
+<p>结果分析：</p>
+<ul>
+<li><p>best_score_:在交叉验证中测试的最好结果</p>
+</li>
+<li><p>best_estimator_：最好的参数模型</p>
+</li>
+<li><p>cv_results_:每次交叉验证后的测试集准确率结果和训练集准确率结果</p>
+</li>
+</ul>
 ]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>Sklearn</tag>
+      </tags>
   </entry>
 </search>
