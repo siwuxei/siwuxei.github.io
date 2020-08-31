@@ -39,7 +39,7 @@
     <title>Sklearn学习之决策树</title>
     <url>/articles/eec6dfbb/</url>
     <content><![CDATA[<blockquote>
-<p>分类算法-决策树。<a id="more"></a></p>
+<p>分类算法之决策树。<a id="more"></a></p>
 </blockquote>
 <h3 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a>决策树</h3><p>决策树思想的来源非常朴素，程序设计中的条件分支结构就是if-then结构，最早的决策树就是利用这类结构分割数据的一种分类学习方法 </p>
 <h4 id="认识决策树"><a href="#认识决策树" class="headerlink" title="认识决策树"></a>认识决策树</h4><p>银行贷款数据</p>
@@ -140,7 +140,7 @@
     <title>Sklearn学习之朴素贝叶斯算法</title>
     <url>/articles/9afa3f41/</url>
     <content><![CDATA[<blockquote>
-<p>分类算法-朴素贝叶斯算法。<a id="more"></a></p>
+<p>分类算法之朴素贝叶斯算法。<a id="more"></a></p>
 </blockquote>
 <h4 id="理论基础"><a href="#理论基础" class="headerlink" title="理论基础"></a>理论基础</h4><p>朴素贝叶斯-贝叶斯公式</p>
 <p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831080920.png" alt="image-20200831080919995"></p>
