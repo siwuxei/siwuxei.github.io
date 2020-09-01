@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Sklearn学习之决策树 |  常思而无邪
+    Sklearn学习之集成学习方法-随机森林 |  常思而无邪
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -75,7 +75,7 @@ var _hmt = _hmt || [];
     <main class="content on">
       <section class="outer">
   <article
-  id="post-Sklearn学习之决策树"
+  id="post-sklearn学习之集成学习方法-随机森林"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -86,15 +86,15 @@ var _hmt = _hmt || [];
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Sklearn学习之决策树
+  Sklearn学习之集成学习方法-随机森林
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/articles/eec6dfbb/" class="article-date">
-  <time datetime="2020-08-31T00:50:41.000Z" itemprop="datePublished">2020-08-31</time>
+      <a href="/articles/4918f98a/" class="article-date">
+  <time datetime="2020-08-31T23:00:41.000Z" itemprop="datePublished">2020-09-01</time>
 </a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
@@ -105,7 +105,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">1.1k</span>
+            <span class="post-count">1k</span>
         </span>
     </span>
 
@@ -130,59 +130,43 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
        
   <blockquote>
-<p>分类算法之决策树。<a id="more"></a></p>
+<p>分类算法之集成学习方法-随机森林。<a id="more"></a></p>
 </blockquote>
-<h3 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a>决策树</h3><p>决策树思想的来源非常朴素，程序设计中的条件分支结构就是if-then结构，最早的决策树就是利用这类结构分割数据的一种分类学习方法 </p>
-<h4 id="认识决策树"><a href="#认识决策树" class="headerlink" title="认识决策树"></a>认识决策树</h4><p>银行贷款数据</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831090514.png" alt="image-20200831082950521"></p>
-<p>你如何去划分是否能得到贷款？</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831090521.png" alt="image-20200831083320187"></p>
-<h4 id="认识信息熵"><a href="#认识信息熵" class="headerlink" title="认识信息熵"></a>认识信息熵</h4><p>信息论的创始人，香农是密歇根大学学士，麻省理工学院博士，1948年，香农发表了划时代的论文——通信的数学原理，奠定了现代信息论的基础。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831084029.png" alt="image-20200831083652834"></p>
-<p>猜谁是冠军？假设有32支球队。</p>
-<p>每猜一次给一块钱，告诉我是否猜对了，那么我需要掏多少钱才能知道谁是冠军？我可以把球编上号，从1到32，然后提问：冠 军在1-16号吗？依次询问，只需要五次，就可以知道结果。</p>
-<p>“谁是世界杯冠军”的信息量应该比5比特少。香农指出，它的准确信息量应该是：</p>
-<p>​                                H = -(p1<em>logp1 + p2</em>logp2 + … + p32log32)</p>
-<p><strong>H</strong>的专业术语称之为信息熵，单位为比特。</p>
-<p>公式：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831084218.png" alt="image-20200831084218349"></p>
-<p>当这32支球队夺冠的几率相同时，对应的信息熵等于5比特</p>
-<h4 id="决策树的划分依据之一-信息增益"><a href="#决策树的划分依据之一-信息增益" class="headerlink" title="决策树的划分依据之一-信息增益"></a>决策树的划分依据之一-信息增益</h4><p>特征A对训练数据集D的信息增益g(D,A),定义为集合D的信息熵H(D)与特征A给定条件下D的信息条件熵H(D|A)之差，即公式为：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831084417.png" alt="image-20200831084417205"></p>
-<p>注：信息增益表示得知特征X的信息而使得类Y的信息的不确定性减少的程度</p>
-<h4 id="信息增益的计算"><a href="#信息增益的计算" class="headerlink" title="信息增益的计算"></a>信息增益的计算</h4><p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831084542.png" alt="image-20200831084542411"></p>
-<p>条件熵的计算：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/120200831084605.png" alt="image-20200831084605334"></p>
-<p>注：C_k 表示属于某个类别的样本数</p>
-<h4 id="策树使用的算法"><a href="#策树使用的算法" class="headerlink" title="策树使用的算法"></a>策树使用的算法</h4><p>ID3：信息增益 最大的准则</p>
-<p>C4.5：信息增益比 最大的准则</p>
-<p>CART </p>
+<h3 id="sklearn学习之集成学习方法-随机森林"><a href="#sklearn学习之集成学习方法-随机森林" class="headerlink" title="sklearn学习之集成学习方法-随机森林"></a>sklearn学习之集成学习方法-随机森林</h3><h4 id="什么是集成学习算法？"><a href="#什么是集成学习算法？" class="headerlink" title="什么是集成学习算法？"></a>什么是集成学习算法？</h4><p>集成学习通过建立几个模型组合的来解决单一预测问题。它的工作原理是生成多个分类器/模型，各自独立地学习和作出预测。这些预测最后结合成单预测，因此优于任何一个单分类的做出预测。</p>
+<h4 id="什么是随机森林？"><a href="#什么是随机森林？" class="headerlink" title="什么是随机森林？"></a>什么是随机森林？</h4><p>定义：在机器学习中，<strong>随机森林</strong>是一个包含多个决策树的分类器，并且其输出的类别是由个别树输出的类别的众数而定。</p>
+<p>例如：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200901090542.png" alt="image-20200901082951991"></p>
+<p>例如, 如果你训练了5个树, 其中有4个树的结果是True, 1个数的结果是False, 那么最终结果会是True.</p>
+<h4 id="学习算法"><a href="#学习算法" class="headerlink" title="学习算法"></a><strong>学习算法</strong></h4><p>根据下列算法而建造每棵树：</p>
+<p>1、用N来表示训练用例（样本）的个数，M表示特征数目。</p>
+<p>2、输入特征数目m，用于确定决策树上一个节点的决策结果；其中m应远小于M。</p>
+<p>3、从N个训练用例（样本）中以有放回抽样的方式，取样N次，形成一个训练集（即bootstrap取样），并用未抽到的用例（样本）作预测，评估其误差。</p>
+<blockquote>
+<p><strong>为什么要随机抽样训练集？</strong>　</p>
+</blockquote>
+<p>如果不进行随机抽样，每棵树的训练集都一样，那么最终训练出的树分类结果也是完全一样的</p>
+<blockquote>
+<p><strong>为什么要有放回地抽样？</strong></p>
+</blockquote>
+<p>如果不是有放回的抽样，那么每棵树的训练样本都是不同的，都是没有交集的，这样每棵树都是“有偏的”，都是绝对“片面的”（当然这样说可能不对），也就是说每棵树训练出来都是有很大的差异的；而随机森林最后分类取决于多棵树（弱分类器）的投票表决。</p>
+<h4 id="集成学习API"><a href="#集成学习API" class="headerlink" title="集成学习API"></a>集成学习API</h4><p>class sklearn.ensemble.RandomForestClassifier(n_estimators=10, criterion=’gini’,max_depth=None, <em>bootstrap=True</em>, random_state=None)</p>
+<p>随机森林分类器</p>
 <ul>
-<li><p>回归树: 平方误差 最小 </p>
+<li><p>n_estimators：integer，optional（default = 10） 森林里的树木数量</p>
 </li>
-<li><p>分类树: 基尼系数  最小的准则 在sklearn中可以选择划分的原则</p>
+<li><p>criteria：string，可选（default =“gini”）分割特征的测量方法</p>
+</li>
+<li><p>max_depth：integer或None，可选（默认=无）树的最大深度</p>
+</li>
+<li><p>bootstrap：boolean，optional（default = True）是否在构建树时使用放回抽样</p>
 </li>
 </ul>
-<h4 id="sklearn决策树API"><a href="#sklearn决策树API" class="headerlink" title="sklearn决策树API"></a>sklearn决策树API</h4><p>class sklearn.tree.DecisionTreeClassifier </p>
-<p>(*criterion=’<strong>gini</strong>’, <strong>max_depth</strong>=<strong>None</strong>,random_state=None)</p>
-<ul>
-<li><p>决策树分类器</p>
-</li>
-<li><p>criterion:默认是’gini’系数，也可以选择信息增益的熵’entropy’</p>
-</li>
-<li><p>max_depth:树的深度大小</p>
-</li>
-<li><p>random_state:随机数种子</p>
-</li>
-<li><p>method:</p>
-</li>
-<li><p>decision_path:返回决策树的路径</p>
-</li>
-</ul>
-<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><p>泰坦尼克号数据</p>
-<p>在泰坦尼克号和titanic2数据帧描述泰坦尼克号上的个别乘客的生存状态。在泰坦尼克号的数据帧不包含从剧组信息，但它确实包含了乘客的一半的实际年龄。关于泰坦尼克号旅客的数据的主要来源是百科全书Titanica。这里使用的数据集是由各种研究人员开始的。其中包括许多研究人员创建的旅客名单，由Michael A.Findlay编辑。</p>
-<p>我们提取的数据集中的特征是票的类别，存活，乘坐班，年龄，登陆，home.dest，房间，票，船和性别。乘坐班是指乘客班（1，2，3），是社会经济阶层的代表。其中age数据存在缺失。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris, fetch_20newsgroups, load_boston</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split, GridSearchCV</span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text <span class="keyword">import</span> TfidfVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.naive_bayes <span class="keyword">import</span> MultinomialNB</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> classification_report</span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction <span class="keyword">import</span> DictVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeClassifier, export_graphviz</span><br><span class="line"><span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> RandomForestClassifier</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">decision</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    决策树对泰坦尼克号进行预测生死</span></span><br><span class="line"><span class="string">    :return: None</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 获取数据</span></span><br><span class="line">    titan = pd.read_csv(<span class="string">&quot;http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/titanic.txt&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 处理数据，找出特征值和目标值</span></span><br><span class="line">    x = titan[[<span class="string">&#x27;pclass&#x27;</span>, <span class="string">&#x27;age&#x27;</span>, <span class="string">&#x27;sex&#x27;</span>]]</span><br><span class="line"></span><br><span class="line">    y = titan[<span class="string">&#x27;survived&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    print(x)</span><br><span class="line">    <span class="comment"># 缺失值处理</span></span><br><span class="line">    x[<span class="string">&#x27;age&#x27;</span>].fillna(x[<span class="string">&#x27;age&#x27;</span>].mean(), inplace=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 分割数据集到训练集合测试集</span></span><br><span class="line">    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=<span class="number">0.25</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行处理（特征工程）特征-》类别-》one_hot编码</span></span><br><span class="line">    dict = DictVectorizer(sparse=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line">    x_train = dict.fit_transform(x_train.to_dict(orient=<span class="string">&quot;records&quot;</span>))</span><br><span class="line"></span><br><span class="line">    print(dict.get_feature_names())</span><br><span class="line"></span><br><span class="line">    x_test = dict.transform(x_test.to_dict(orient=<span class="string">&quot;records&quot;</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># print(x_train)</span></span><br><span class="line">    <span class="comment"># 用决策树进行预测</span></span><br><span class="line">    <span class="comment"># dec = DecisionTreeClassifier()</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># dec.fit(x_train, y_train)</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># # 预测准确率</span></span><br><span class="line">    <span class="comment"># print(&quot;预测的准确率：&quot;, dec.score(x_test, y_test))</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># # 导出决策树的结构</span></span><br><span class="line">    <span class="comment"># export_graphviz(dec, out_file=&quot;./tree.dot&quot;, feature_names=[&#x27;年龄&#x27;, &#x27;pclass=1st&#x27;, &#x27;pclass=2nd&#x27;, &#x27;pclass=3rd&#x27;, &#x27;女性&#x27;, &#x27;男性&#x27;])</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 随机森林进行预测 （超参数调优）</span></span><br><span class="line">    rf = RandomForestClassifier(n_jobs=<span class="number">-1</span>)</span><br><span class="line"></span><br><span class="line">    param = &#123;<span class="string">&quot;n_estimators&quot;</span>: [<span class="number">120</span>, <span class="number">200</span>, <span class="number">300</span>, <span class="number">500</span>, <span class="number">800</span>, <span class="number">1200</span>], <span class="string">&quot;max_depth&quot;</span>: [<span class="number">5</span>, <span class="number">8</span>, <span class="number">15</span>, <span class="number">25</span>, <span class="number">30</span>]&#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 网格搜索与交叉验证</span></span><br><span class="line">    gc = GridSearchCV(rf, param_grid=param, cv=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    gc.fit(x_train, y_train)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;准确率：&quot;</span>, gc.score(x_test, y_test))</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;查看选择的参数模型：&quot;</span>, gc.best_params_)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
+<h4 id="随机森林的优点"><a href="#随机森林的优点" class="headerlink" title="随机森林的优点"></a>随机森林的优点</h4><p>1、在当前所有算法中，具有极好的准确率</p>
+<p>2、能够有效地运行在大数据集上</p>
+<p>3、能够处理具有高维特征的输入样本，而且不需要降维</p>
+<p>4、能够评估各个特征在分类问题上的重要性</p>
+<p>5、对于缺省值问题也能够获得很好得结果</p>
+<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris, fetch_20newsgroups, load_boston</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split, GridSearchCV</span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text <span class="keyword">import</span> TfidfVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.naive_bayes <span class="keyword">import</span> MultinomialNB</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> classification_report</span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction <span class="keyword">import</span> DictVectorizer</span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeClassifier, export_graphviz</span><br><span class="line"><span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> RandomForestClassifier</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">decision</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    决策树对泰坦尼克号进行预测生死</span></span><br><span class="line"><span class="string">    :return: None</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 获取数据</span></span><br><span class="line">    titan = pd.read_csv(<span class="string">&quot;http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/titanic.txt&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 处理数据，找出特征值和目标值</span></span><br><span class="line">    x = titan[[<span class="string">&#x27;pclass&#x27;</span>, <span class="string">&#x27;age&#x27;</span>, <span class="string">&#x27;sex&#x27;</span>]]</span><br><span class="line"></span><br><span class="line">    y = titan[<span class="string">&#x27;survived&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    print(x)</span><br><span class="line">    <span class="comment"># 缺失值处理</span></span><br><span class="line">    x[<span class="string">&#x27;age&#x27;</span>].fillna(x[<span class="string">&#x27;age&#x27;</span>].mean(), inplace=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 分割数据集到训练集合测试集</span></span><br><span class="line">    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=<span class="number">0.25</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行处理（特征工程）特征-》类别-》one_hot编码</span></span><br><span class="line">    dict = DictVectorizer(sparse=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line">    x_train = dict.fit_transform(x_train.to_dict(orient=<span class="string">&quot;records&quot;</span>))</span><br><span class="line"></span><br><span class="line">    print(dict.get_feature_names())</span><br><span class="line"></span><br><span class="line">    x_test = dict.transform(x_test.to_dict(orient=<span class="string">&quot;records&quot;</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># print(x_train)</span></span><br><span class="line">    <span class="comment"># 用决策树进行预测</span></span><br><span class="line">    <span class="comment"># dec = DecisionTreeClassifier()</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># dec.fit(x_train, y_train)</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># # 预测准确率</span></span><br><span class="line">    <span class="comment"># print(&quot;预测的准确率：&quot;, dec.score(x_test, y_test))</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># # 导出决策树的结构</span></span><br><span class="line">    <span class="comment"># export_graphviz(dec, out_file=&quot;./tree.dot&quot;, feature_names=[&#x27;年龄&#x27;, &#x27;pclass=1st&#x27;, &#x27;pclass=2nd&#x27;, &#x27;pclass=3rd&#x27;, &#x27;女性&#x27;, &#x27;男性&#x27;])</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 随机森林进行预测 （超参数调优）</span></span><br><span class="line">    rf = RandomForestClassifier(n_jobs=<span class="number">-1</span>)</span><br><span class="line"></span><br><span class="line">    param = &#123;<span class="string">&quot;n_estimators&quot;</span>: [<span class="number">120</span>, <span class="number">200</span>, <span class="number">300</span>, <span class="number">500</span>, <span class="number">800</span>, <span class="number">1200</span>], <span class="string">&quot;max_depth&quot;</span>: [<span class="number">5</span>, <span class="number">8</span>, <span class="number">15</span>, <span class="number">25</span>, <span class="number">30</span>]&#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 网格搜索与交叉验证</span></span><br><span class="line">    gc = GridSearchCV(rf, param_grid=param, cv=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    gc.fit(x_train, y_train)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;准确率：&quot;</span>, gc.score(x_test, y_test))</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;查看选择的参数模型：&quot;</span>, gc.best_params_)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
  
       <!-- reward -->
@@ -252,7 +236,7 @@ var _hmt = _hmt || [];
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://siwuxei.github.io/articles/eec6dfbb/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://siwuxei.github.io/articles/4918f98a/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -265,19 +249,19 @@ var _hmt = _hmt || [];
    
   <nav class="article-nav">
     
-      <a href="/articles/4918f98a/" class="article-nav-link">
+      <a href="/articles/6ca58d10/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            Sklearn学习之集成学习方法-随机森林
+            Sklearn学习之线性回归
           
         </div>
       </a>
     
     
-      <a href="/articles/4481af65/" class="article-nav-link">
+      <a href="/articles/eec6dfbb/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Sklearn学习之分类模型的评估</div>
+        <div class="article-nav-title">Sklearn学习之决策树</div>
       </a>
     
   </nav>

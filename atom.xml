@@ -6,7 +6,7 @@
   <link href="https://siwuxei.github.io/atom.xml" rel="self"/>
   
   <link href="https://siwuxei.github.io/"/>
-  <updated>2020-08-31T02:53:44.567Z</updated>
+  <updated>2020-09-01T01:38:19.345Z</updated>
   <id>https://siwuxei.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sklearn学习之线性回归</title>
+    <link href="https://siwuxei.github.io/articles/6ca58d10/"/>
+    <id>https://siwuxei.github.io/articles/6ca58d10/</id>
+    <published>2020-09-01T00:50:41.000Z</published>
+    <updated>2020-09-01T01:38:19.345Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;回归算法之线性回归。</summary>
+    
+    
+    
+    <category term="学习" scheme="https://siwuxei.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Sklearn" scheme="https://siwuxei.github.io/tags/Sklearn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sklearn学习之集成学习方法-随机森林</title>
+    <link href="https://siwuxei.github.io/articles/4918f98a/"/>
+    <id>https://siwuxei.github.io/articles/4918f98a/</id>
+    <published>2020-08-31T23:00:41.000Z</published>
+    <updated>2020-09-01T01:38:59.229Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;分类算法之集成学习方法-随机森林。</summary>
+    
+    
+    
+    <category term="学习" scheme="https://siwuxei.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Sklearn" scheme="https://siwuxei.github.io/tags/Sklearn/"/>
+    
+  </entry>
   
   <entry>
     <title>Sklearn学习之决策树</title>

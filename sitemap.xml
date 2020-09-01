@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://siwuxei.github.io/articles/4918f98a/</loc>
+    
+    <lastmod>2020-09-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://siwuxei.github.io/articles/6ca58d10/</loc>
+    
+    <lastmod>2020-09-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://siwuxei.github.io/articles/9afa3f41/</loc>
     
     <lastmod>2020-08-31</lastmod>
@@ -102,7 +116,7 @@
 
   <url>
     <loc>https://siwuxei.github.io/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -110,49 +124,49 @@
   
   <url>
     <loc>https://siwuxei.github.io/tags/Git/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://siwuxei.github.io/tags/Markdown/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://siwuxei.github.io/tags/Hexo/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://siwuxei.github.io/tags/GithubPages/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://siwuxei.github.io/tags/%E8%AF%97%E7%BB%8F/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://siwuxei.github.io/tags/%E6%97%85%E8%A1%8C/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://siwuxei.github.io/tags/Sklearn/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -161,28 +175,28 @@
   
   <url>
     <loc>https://siwuxei.github.io/categories/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://siwuxei.github.io/categories/%E5%AE%89%E5%88%A9/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://siwuxei.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://siwuxei.github.io/categories/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
