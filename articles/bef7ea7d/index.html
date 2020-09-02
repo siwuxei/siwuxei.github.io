@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Sklearn学习之线性回归 |  常思而无邪
+     sklearn学习之逻辑回归 |  常思而无邪
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -75,7 +75,7 @@ var _hmt = _hmt || [];
     <main class="content on">
       <section class="outer">
   <article
-  id="post-sklearn学习之线性回归"
+  id="post-sklearn学习之逻辑回归"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -86,15 +86,15 @@ var _hmt = _hmt || [];
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Sklearn学习之线性回归
+   sklearn学习之逻辑回归
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/articles/6ca58d10/" class="article-date">
-  <time datetime="2020-09-01T00:50:41.000Z" itemprop="datePublished">2020-09-01</time>
+      <a href="/articles/bef7ea7d/" class="article-date">
+  <time datetime="2020-09-02T00:00:41.000Z" itemprop="datePublished">2020-09-02</time>
 </a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
@@ -105,7 +105,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">1.4k</span>
+            <span class="post-count">630</span>
         </span>
     </span>
 
@@ -114,7 +114,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">5 分钟</span>
+            <span class="post-count">2 分钟</span>
         </span>
     </span>
 </div>
@@ -130,101 +130,48 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
        
   <blockquote>
-<p>回归算法之线性回归。<a id="more"></a></p>
+<p>sklearn学习之逻辑回归。<a id="more"></a></p>
 </blockquote>
-<h3 id="sklearn学习之线性回归"><a href="#sklearn学习之线性回归" class="headerlink" title="sklearn学习之线性回归"></a>sklearn学习之线性回归</h3><h4 id="普通线性回归"><a href="#普通线性回归" class="headerlink" title="普通线性回归"></a>普通线性回归</h4><p>定义：线性回归通过一个或者多个自变量与因变量之间之间进行建模的回归分析。其中特点为一个或多个称为回归系数的模型参数的线性组合</p>
+<h4 id="逻辑回归原理"><a href="#逻辑回归原理" class="headerlink" title="逻辑回归原理"></a>逻辑回归原理</h4><p>逻辑回归是解决<strong>二分类</strong>问题的利器</p>
+<p>输入：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903021905.png" alt="image-20200903021856493"></p>
+<p>sigmoid函数</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903022047.png" alt="image-20200903022046969"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903022713.png" alt="image-20200903022713663"></p>
+<p>回归公式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903022115.png" alt="image-20200903022115282"></p>
+<p>输出：[0,1]区间的概率值，默认0.5作为阀值，g(z)为sigmoid函数</p>
+<h4 id="逻辑回归的损失函数、优化"><a href="#逻辑回归的损失函数、优化" class="headerlink" title="逻辑回归的损失函数、优化"></a>逻辑回归的损失函数、优化</h4><p>与线性回归原理相同,但由于是分类问题，<font color='orange'>损失函数</font>不一样，只能通过<font color='orange'>梯度下降</font>求解。</p>
+<p>对数似然损失函数：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903022308.png" alt="image-20200903022308858"></p>
+<p>完整的损失函数：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903022356.png" alt="image-20200903022356372"></p>
+<p><font color='orange'>cost损失的值越小，那么预测的类别准确度更高</font></p>
+<p>当y=1时：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903022514.png" alt="image-20200903022514591"></p>
+<p>当y=0时：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903022601.png" alt="image-20200903022601016"></p>
+<h4 id="sklearn逻辑回归API"><a href="#sklearn逻辑回归API" class="headerlink" title="sklearn逻辑回归API"></a>sklearn逻辑回归API</h4><p>sklearn.linear_model.LogisticRegression(<em>penalty=‘l2’,</em> <em>C = 1.0</em>)</p>
 <ul>
-<li><p>一元线性回归：涉及到的变量只有一个</p>
+<li><p>Logistic回归分类器</p>
 </li>
-<li><p>多元线性回归：涉及到的变量两个或两个以上</p>
-</li>
-</ul>
-<h4 id="损失函数-误差大小"><a href="#损失函数-误差大小" class="headerlink" title="损失函数(误差大小)"></a>损失函数(误差大小)</h4><ul>
-<li><p>yi为第i个训练样本的真实值</p>
-</li>
-<li><p>hw(xi)为第i个训练样本特征值组合预测函数</p>
+<li><p>coef_：回归系数</p>
 </li>
 </ul>
-<p>总损失定义（最小二乘法）：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200901090615.png" alt="image-20200901082433866"></p>
-<h4 id="最小二乘法之梯度下降-理解过程"><a href="#最小二乘法之梯度下降-理解过程" class="headerlink" title="最小二乘法之梯度下降(理解过程)"></a>最小二乘法之梯度下降(理解过程)</h4><p>我们以单变量中的w0,w1为例子：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200901090948.png" alt="image-20200901090948423"></p>
-<p>α为学习速率，需要手动指定</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200901091105.png" alt="image-20200901091105040">表示方向</p>
-<p>理解：沿着这个函数下降的方向找，最后就能找到山谷的最低点，然后</p>
-<p>更新W值。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200901091143.png" alt="image-20200901091143202"></p>
-<h4 id="sklearn线性归正规方程、梯度下降API"><a href="#sklearn线性归正规方程、梯度下降API" class="headerlink" title="sklearn线性归正规方程、梯度下降API"></a>sklearn线性归正规方程、梯度下降API</h4><p>正规方程：sklearn.linear_model.LinearRegression</p>
-<p>梯度下降：sklearn.linear_model.SGDRegressor</p>
-<p>1、sklearn.linear_model.LinearRegression()</p>
-<p>普通最小二乘线性回归</p>
-<ul>
-<li>coef_：回归系数</li>
-</ul>
-<p>2、sklearn.linear_model.SGDRegressor( )</p>
-<p>通过使用SGD最小化线性模型</p>
-<ul>
-<li>coef_：回归系数</li>
-</ul>
-<h4 id="线性回归实例"><a href="#线性回归实例" class="headerlink" title="线性回归实例"></a>线性回归实例</h4><p>1、sklearn线性回归正规方程、梯度下降API</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_boston</span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LinearRegression,SGDRegressor,Ridge</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> mean_squared_error</span><br><span class="line"><span class="keyword">import</span> joblib</span><br><span class="line"></span><br><span class="line"><span class="comment"># 波士顿房价预测</span></span><br><span class="line"><span class="comment"># 获取数据</span></span><br><span class="line">lb=load_boston()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 分割数据</span></span><br><span class="line">x_train,x_test,y_train,y_test=train_test_split(lb.data,lb.target,test_size=<span class="number">0.25</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进行标准化</span></span><br><span class="line"><span class="comment"># 特征值和目标值都需要进行标准化处理</span></span><br><span class="line">std_x=StandardScaler()</span><br><span class="line">std_y=StandardScaler()</span><br><span class="line"></span><br><span class="line">x_train=std_x.fit_transform(x_train)</span><br><span class="line">x_test=std_x.transform(x_test)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 目标值</span></span><br><span class="line"><span class="comment"># reshape(-1,1)转换为一列，-1是代表未知数据重整</span></span><br><span class="line">y_train=std_y.fit_transform(y_train.reshape(<span class="number">-1</span>,<span class="number">1</span>))</span><br><span class="line">y_test=std_y.transform(y_test.reshape(<span class="number">-1</span>,<span class="number">1</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 正规方程求解预测结构</span></span><br><span class="line">lr=LinearRegression()</span><br><span class="line">lr.fit(x_train, y_train)</span><br><span class="line">y_lr_predict=lr.predict(x_test)</span><br><span class="line"></span><br><span class="line">y_lr_predict=std_y.inverse_transform(y_lr_predict)</span><br><span class="line">y_ture_test=std_y.inverse_transform(y_test) </span><br><span class="line"></span><br><span class="line">sgd=SGDRegressor()</span><br><span class="line">sgd.fit(x_train,y_train)</span><br><span class="line"></span><br><span class="line">y_sgd_predict=std_y.inverse_transform(y_sgd_predict)</span><br><span class="line"></span><br><span class="line">x=[i <span class="keyword">for</span> i <span class="keyword">in</span> range(len(y_test))]</span><br><span class="line">plt.figure()</span><br><span class="line">plt.plot(x,y_lr_predict,color=<span class="string">&#x27;r&#x27;</span>,label=<span class="string">&#x27;lr&#x27;</span>)</span><br><span class="line">plt.plot(x,y_sgd_predict,color=<span class="string">&#x27;b&#x27;</span>,label=<span class="string">&#x27;sgd&#x27;</span>)</span><br><span class="line">plt.plot(x,y_ture_test,color=<span class="string">&#x27;g&#x27;</span>)</span><br><span class="line">plt.legend()</span><br><span class="line">plt.grid()</span><br></pre></td></tr></table></figure>
+<h4 id="LogisticRegression回归案例"><a href="#LogisticRegression回归案例" class="headerlink" title="LogisticRegression回归案例"></a>LogisticRegression回归案例</h4><p>原始数据的下载地址：</p>
+<p><a target="_blank" rel="noopener" href="https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/">https://archive.ics.uci.edu/ml/machine-learning-databases/</a></p>
+<p>数据描述：</p>
+<p>1、699条样本，共11列数据，第一列用语检索的id，后9列分别是与肿瘤相关的医学特征，最后一列表示肿瘤类型的数值。</p>
+<p>2、包含16个缺失值，用”?”标出。</p>
+<p>良／恶性乳腺癌肿分类流程：</p>
+<p>1、网上获取数据（工具pandas）</p>
+<p>2、数据缺失值处理、标准化</p>
+<p>3、LogisticRegression估计器流程</p>
+<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_boston</span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LinearRegression, SGDRegressor,  Ridge, LogisticRegression</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> mean_squared_error, classification_report</span><br><span class="line"><span class="keyword">from</span> sklearn.externals <span class="keyword">import</span> joblib</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">logistic</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    逻辑回归做二分类进行癌症预测（根据细胞的属性特征）</span></span><br><span class="line"><span class="string">    :return: NOne</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 构造列标签名字</span></span><br><span class="line">    column = [<span class="string">&#x27;Sample code number&#x27;</span>,<span class="string">&#x27;Clump Thickness&#x27;</span>, <span class="string">&#x27;Uniformity of Cell Size&#x27;</span>,<span class="string">&#x27;Uniformity of Cell Shape&#x27;</span>,<span class="string">&#x27;Marginal Adhesion&#x27;</span>, <span class="string">&#x27;Single Epithelial Cell Size&#x27;</span>,<span class="string">&#x27;Bare Nuclei&#x27;</span>,<span class="string">&#x27;Bland Chromatin&#x27;</span>,<span class="string">&#x27;Normal Nucleoli&#x27;</span>,<span class="string">&#x27;Mitoses&#x27;</span>,<span class="string">&#x27;Class&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 读取数据</span></span><br><span class="line">    data = pd.read_csv(<span class="string">&quot;https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data&quot;</span>, names=column)</span><br><span class="line"></span><br><span class="line">    print(data)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 缺失值进行处理</span></span><br><span class="line">    data = data.replace(to_replace=<span class="string">&#x27;?&#x27;</span>, value=np.nan)</span><br><span class="line"></span><br><span class="line">    data = data.dropna()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行数据的分割</span></span><br><span class="line">    x_train, x_test, y_train, y_test = train_test_split(data[column[<span class="number">1</span>:<span class="number">10</span>]], data[column[<span class="number">10</span>]], test_size=<span class="number">0.25</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行标准化处理</span></span><br><span class="line">    std = StandardScaler()</span><br><span class="line"></span><br><span class="line">    x_train = std.fit_transform(x_train)</span><br><span class="line">    x_test = std.transform(x_test)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 逻辑回归预测</span></span><br><span class="line">    lg = LogisticRegression(C=<span class="number">1.0</span>)</span><br><span class="line"></span><br><span class="line">    lg.fit(x_train, y_train)</span><br><span class="line"></span><br><span class="line">    print(lg.coef_)</span><br><span class="line"></span><br><span class="line">    y_predict = lg.predict(x_test)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;准确率：&quot;</span>, lg.score(x_test, y_test))</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;召回率：&quot;</span>, classification_report(y_test, y_predict, labels=[<span class="number">2</span>, <span class="number">4</span>], target_names=[<span class="string">&quot;良性&quot;</span>, <span class="string">&quot;恶性&quot;</span>]))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
 
-<p>2、波士顿房价数据集分析流程</p>
-<p>1、波士顿地区房价数据获取</p>
-<p>2、波士顿地区房价数据分割</p>
-<p>3、训练与测试数据标准化处理</p>
-<p>4、使用最简单的线性回归模型LinearRegression和</p>
-<p>梯度下降估计SGDRegressor对房价进行预测</p>
-<h4 id="回归性能评估API"><a href="#回归性能评估API" class="headerlink" title="回归性能评估API"></a>回归性能评估API</h4><p>均方误差(Mean Squared Error(MSE) 评价机制</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200901092726.png" alt="image-20200901092421309"></p>
-<p>mean_squared_error(<em>y_true</em>, <em>y_pred</em>)</p>
-<p>均方误差回归损失</p>
-<ul>
-<li><p>y_true:真实值</p>
-</li>
-<li><p>y_pred:预测值</p>
-</li>
-<li><p>return:浮点数结果</p>
-</li>
-</ul>
-<h4 id="回归性能对比"><a href="#回归性能对比" class="headerlink" title="回归性能对比"></a>回归性能对比</h4><p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200901092732.png" alt="image-20200901092534655"></p>
-<p>官方建议</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200901092811.png" alt="image-20200901092811474"></p>
-<h4 id="存在问题"><a href="#存在问题" class="headerlink" title="存在问题"></a>存在问题</h4><p>过拟合与欠拟合</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200901092931.png" alt="image-20200901092931394"></p>
-<p>经过训练后，知道了天鹅是有翅膀的，天鹅的嘴巴是长长的。简单的认为有这些特征的都是天鹅。因为机器学习到的天鹅特征太少了，导致区分标准太粗糙，不能准确识别出天鹅。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200901092940.png" alt="image-20200901092940655"></p>
-<p>机器通过这些图片来学习天鹅的特征，经过训练后，知道了天鹅是有翅膀的，天鹅的嘴巴是长长的弯曲的，天鹅的脖子是长长的有点曲度，天鹅的整个体型像一个”2”且略大于鸭子。这时候机器已经基本能区别天鹅和其他动物了。然后，很不巧已有的天鹅图片全是白天鹅的，于是机器经过学习后，会认为天鹅的羽毛都是白的，以后看到羽毛是黑的天鹅就会认为那不是天鹅。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200901093018.png" alt="image-20200901093018044"></p>
-<p><strong>过拟合：</strong>一个假设在训练数据上能够获得比其他假设更好的拟合， 但是在训练数据外的数据集上却不能很好地拟合数据，此时认为这个假设出现了过拟合的现象。(模型过于复杂)</p>
-<p><strong>欠拟合：</strong>一个假设在训练数据上不能获得更好的拟合， 但是在训练数据外的数据集上也不能很好地拟合数据，此时认为这个假设出现了欠拟合的现象。(模型过于简单)</p>
-<p>对线性模型进行训练学习会变成复杂模型</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200901093101.png" alt="image-20200901093101833"></p>
-<p><strong>欠拟合原因以及解决办法</strong></p>
-<p> 原因：学习到数据的特征过少</p>
-<p>解决办法：增加数据的特征数量</p>
-<p><strong>过拟合原因以及解决办法</strong></p>
-<p>原因：原始特征过多，存在一些嘈杂特征， 模型过于复杂是因为模型尝试去兼顾各个测试数据点</p>
-<p>解决办法：</p>
-<p>1、进行特征选择，消除关联性大的特征(很难做)</p>
-<p>2、交叉验证(让所有数据都有过训练)</p>
-<p>3、正则化(了解)</p>
-<h4 id="L2正则化"><a href="#L2正则化" class="headerlink" title="L2正则化"></a>L2正则化</h4><p>作用：可以使得W的每个元素都很小，都接近于0</p>
-<p>优点：越小的参数说明模型越简单，越简单的模型则越不容易产生过拟合现象</p>
-<h4 id="带有正则化的线性回归-Ridge"><a href="#带有正则化的线性回归-Ridge" class="headerlink" title="带有正则化的线性回归-Ridge"></a>带有正则化的线性回归-Ridge</h4><p>sklearn.linear_model.Ridge(<em>alpha=1.0</em>)</p>
-<p>具有l2正则化的线性最小二乘法</p>
-<ul>
-<li><p>alpha:正则化力度</p>
-</li>
-<li><p>coef_:回归系数</p>
-</li>
-</ul>
-<p><font color='orange'>观察正则化程度的变化，对结果的影响？</font></p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200901093523.png" alt="image-20200901093523075"></p>
-<p>线性回归 LinearRegression与Ridge对比</p>
-<ul>
-<li>岭回归：回归得到的回归系数更符合实际，更可靠。另外，能让估计参数的波动范围变小，变的更稳定。在存在病态数据偏多的研究中有较大的实用价值。</li>
-</ul>
+<h4 id="LogisticRegression总结"><a href="#LogisticRegression总结" class="headerlink" title="LogisticRegression总结"></a>LogisticRegression总结</h4><p>应用：广告点击率预测、电商购物搭配推荐</p>
+<p>优点：适合需要得到一个分类概率的场景</p>
+<p>缺点：当特征空间很大时，逻辑回归的性能不是很好（看硬件能力）</p>
  
       <!-- reward -->
       
@@ -293,7 +240,7 @@ var _hmt = _hmt || [];
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://siwuxei.github.io/articles/6ca58d10/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://siwuxei.github.io/articles/bef7ea7d/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -306,19 +253,19 @@ var _hmt = _hmt || [];
    
   <nav class="article-nav">
     
-      <a href="/articles/bef7ea7d/" class="article-nav-link">
+      <a href="/articles/d5f776c8/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-             sklearn学习之逻辑回归
+            sklearn学习之k-means算法
           
         </div>
       </a>
     
     
-      <a href="/articles/4918f98a/" class="article-nav-link">
+      <a href="/articles/6ca58d10/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Sklearn学习之集成学习方法-随机森林</div>
+        <div class="article-nav-title">Sklearn学习之线性回归</div>
       </a>
     
   </nav>
