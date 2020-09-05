@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="代码，思考，生活" />
+   
+  <meta name="description" content="常思而无邪" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    tensorflow学习之基础知识 |  常思而无邪
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-176674222-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+
+  
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?581bc7270e2981957f87162b72bbf30a";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<link rel="alternate" href="/atom.xml" title="思" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-tensorflow学习之基础知识"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  tensorflow学习之基础知识
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/articles/d6af5694/" class="article-date">
+  <time datetime="2020-09-06T00:00:00.000Z" itemprop="datePublished">2020-09-06</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">2k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">8 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <blockquote>
+<p>tensorflow学习之基础知识。<a id="more"></a></p>
+</blockquote>
+<h4 id="tensorflow特点"><a href="#tensorflow特点" class="headerlink" title="tensorflow特点"></a>tensorflow特点</h4><p>1、真正的可移植性</p>
+<p>引入各种计算设备的支持包括CPU/GPU/TPU，以及能够很好地运行在移动端，</p>
+<p>如安卓设备、ios、树莓派等等</p>
+<p>2、多语言支持</p>
+<p>Tensorflow 有一个合理的c++使用界面，也有一个易用的python使用界面来构建和</p>
+<p>执行你的graphs，你可以直接写python/c++程序。</p>
+<p>3、高度的灵活性与效率</p>
+<p>TensorFlow是一个采用数据流图（data flow graphs），用于数值计算的开源软件库，能够灵活进行组装图，执行图。随着开发的进展，Tensorflow的效率不算在提高</p>
+<p>4、支持<br> TensorFlow 由谷歌提供支持，谷歌投入了大量精力开发 TensorFlow，它希望 </p>
+<p>TensorFlow 成为机器学习研究人员和开发人员的通用语言</p>
+<h4 id="图"><a href="#图" class="headerlink" title="图"></a>图</h4><p>图默认已经注册，一组表示 tf.Operation计算单位的对象和tf.Tensor，表示操作之间流动的数据单元的对象</p>
+<p>获取调用：</p>
+<p>1、tf.get_default_graph()</p>
+<p>2、op、sess或者tensor 的graph属性</p>
+<h4 id="OP"><a href="#OP" class="headerlink" title="OP"></a>OP</h4><p><img src="https://i.loli.net/2020/09/06/I5wAR7xpQnD3ksg.png" alt="image-20200904122531769"></p>
+<h4 id="图的创建"><a href="#图的创建" class="headerlink" title="图的创建"></a>图的创建</h4><p>tf.Graph()</p>
+<p>使用新创建的图</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">g = tf.Graph() </span><br><span class="line"><span class="keyword">with</span> g.as_default(): </span><br><span class="line">	a = tf.constant(<span class="number">1.0</span>) </span><br><span class="line">	<span class="keyword">assert</span> c.graph <span class="keyword">is</span> g</span><br></pre></td></tr></table></figure>
+
+<h4 id="会话"><a href="#会话" class="headerlink" title="会话"></a>会话</h4><p>tf.Session()</p>
+<p>运行TensorFlow操作图的类，使用默认注册的图（可以指定运行图）</p>
+<p>会话资源</p>
+<p>会话可能拥有很多资源，如 tf.Variable，tf.QueueBase和tf.ReaderBase，会话结束后需要进行资源释放</p>
+<p>1、sess = tf.Session()   sess.run(…)   sess.close() </p>
+<p>2、使用上下文管理器</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> tf.Session() <span class="keyword">as</span> sess: </span><br><span class="line">	sess.run(...)</span><br></pre></td></tr></table></figure>
+
+<p>3、config=tf.ConfigProto(log_device_placement=True)</p>
+<ul>
+<li>交互式：tf.InteractiveSession()</li>
+</ul>
+<h4 id="会话的run-方法"><a href="#会话的run-方法" class="headerlink" title="会话的run()方法"></a>会话的run()方法</h4><p>run(fetches, feed_dict=None,graph=None)</p>
+<p>运行ops和计算tensor</p>
+<ul>
+<li><p>嵌套列表，元组，namedtuple，dict或OrderedDict(重载的运算符也能运行)</p>
+</li>
+<li><p>feed_dict 允许调用者覆盖图中指定张量的值,提供给</p>
+</li>
+</ul>
+<p>placeholder使用</p>
+<ul>
+<li>返回值异常</li>
+<li>RuntimeError：如果它Session处于无效状态（例如已关闭）。 </li>
+<li>TypeError：如果fetches或feed_dict键是不合适的类型。</li>
+<li>ValueError：如果fetches或feed_dict键无效或引用 Tensor不存在。</li>
+</ul>
+<h4 id="Tensorflow-Feed操作"><a href="#Tensorflow-Feed操作" class="headerlink" title="Tensorflow Feed操作"></a>Tensorflow Feed操作</h4><p>意义：在程序执行的时候,不确定输入的是什么，提前“占个坑”</p>
+<p>语法：placeholder提供占位符，run时候通过feed_dict指定参数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># placeholder相当于一个占位符,feed_dict是一个字典</span></span><br><span class="line"><span class="comment"># plt=tf.placeholder(tf.float32,[2,3])</span></span><br><span class="line">plt=tf.placeholder(tf.float32,[<span class="literal">None</span>,<span class="number">3</span>])</span><br><span class="line">print(plt)</span><br><span class="line"><span class="keyword">with</span> tf.Session(config=tf.ConfigProto(log_device_placement=<span class="literal">True</span>)) <span class="keyword">as</span> sess:</span><br><span class="line">    print(sess.run(plt,feed_dict=&#123;plt:[[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],[<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]]&#125;))</span><br><span class="line">    print(<span class="string">&#x27;*&#x27;</span>*<span class="number">20</span>)</span><br><span class="line">    print(a.shape)</span><br><span class="line">    print(<span class="string">&#x27;*&#x27;</span>*<span class="number">20</span>)</span><br><span class="line">    print(plt.shape)</span><br><span class="line">    print(<span class="string">&#x27;*&#x27;</span>*<span class="number">20</span>)</span><br><span class="line">    print(a.name)</span><br><span class="line">    print(<span class="string">&#x27;*&#x27;</span>*<span class="number">20</span>)</span><br><span class="line">    print(a.op)</span><br></pre></td></tr></table></figure>
+
+<h4 id="张量"><a href="#张量" class="headerlink" title="张量"></a>张量</h4><h5 id="张量的阶和数据类型："><a href="#张量的阶和数据类型：" class="headerlink" title="张量的阶和数据类型："></a>张量的阶和数据类型：</h5><ul>
+<li><p>Tensorflow基本的数据格式</p>
+</li>
+<li><p>一个类型化的N维度数组（tf.Tensor）</p>
+</li>
+<li><p>三部分，名字，形状，数据类型</p>
+</li>
+</ul>
+<h5 id="张量的阶："><a href="#张量的阶：" class="headerlink" title="张量的阶："></a>张量的阶：</h5><p><img src="https://i.loli.net/2020/09/06/lBPskeJSAzraKQc.png" alt="image-20200906065836799"></p>
+<h5 id="张量的数据类型："><a href="#张量的数据类型：" class="headerlink" title="张量的数据类型："></a>张量的数据类型：</h5><p><img src="https://i.loli.net/2020/09/06/msJrPxXpQSWj42L.png" alt="image-20200906065859997"></p>
+<h5 id="张量属性："><a href="#张量属性：" class="headerlink" title="张量属性："></a>张量属性：</h5><ul>
+<li><p>graph  张量所属的默认图</p>
+</li>
+<li><p>op 张量的操作名</p>
+</li>
+<li><p>name 张量的字符串描述</p>
+</li>
+<li><p>shape 张量形状</p>
+</li>
+</ul>
+<h5 id="张量的动态形状与静态形状："><a href="#张量的动态形状与静态形状：" class="headerlink" title="张量的动态形状与静态形状："></a>张量的动态形状与静态形状：</h5><p>TensorFlow中，张量具有静态形状和动态形状</p>
+<p><strong>静态形状</strong>：  创建一个张量或者由操作推导出一个张量时,初始状态的形状</p>
+<ul>
+<li><p>tf.Tensor.get_shape:获取静态形状</p>
+</li>
+<li><p>tf.Tensor.set_shape():更新Tensor对象的静态形状，通常用于在不能直接推断的情况下</p>
+</li>
+</ul>
+<p><strong>动态形状</strong>：一种描述原始张量在执行过程中的一种形状</p>
+<ul>
+<li>tf.reshape:创建一个具有不同动态形状的新张量  </li>
+</ul>
+<p><strong>要点</strong>：</p>
+<p>1、转换静态形状的时候，1-D到1-D，2-D到2-D，不能跨阶数改变形</p>
+<p>2、 对于已经固定或者设置静态形状的张量／变量，不能再次设置静态形状</p>
+<p>3、tf.reshape()动态创建新张量时，元素个数不能不匹配</p>
+<h5 id="张量操作-生成张量"><a href="#张量操作-生成张量" class="headerlink" title="张量操作-生成张量"></a>张量操作-生成张量</h5><p><img src="https://i.loli.net/2020/09/06/ZxGu5I1ELYqHS4c.png" alt="image-20200906072446604"></p>
+<p><img src="https://i.loli.net/2020/09/06/wnzXQs18kExo2CS.png" alt="image-20200906072521578"></p>
+<p><img src="https://i.loli.net/2020/09/06/2mdQXb3CpOli9kr.png" alt="image-20200906072552195"></p>
+<p><img src="https://i.loli.net/2020/09/06/bZA7k8U1TnjVeQc.png" alt="image-20200906072601916"></p>
+<h5 id="提供给Tensor运算的数学函数"><a href="#提供给Tensor运算的数学函数" class="headerlink" title="提供给Tensor运算的数学函数"></a><a target="_blank" rel="noopener" href="https://www.tensorflow.org/versions/r1.0/api_guides/python/math_ops">提供给Tensor运算的数学函数</a></h5><ul>
+<li>算术运算符</li>
+<li>基本数学函数</li>
+<li>矩阵运算</li>
+<li>减少维度的运算(求均值)</li>
+<li>序列运算</li>
+</ul>
+<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><p>变量也是一种OP，是一种特殊的张量，能够进行存储持久化，<strong>它的值就是张量</strong></p>
+<h5 id="变量的创建"><a href="#变量的创建" class="headerlink" title="变量的创建"></a>变量的创建</h5><p>tf.Variable(initial_value=None,name=None)</p>
+<ul>
+<li><p>创建一个带值initial_value的新变量</p>
+</li>
+<li><p>assign(value)：为变量分配一个新值，返回新值</p>
+</li>
+<li><p>eval(session=None：计算并返回此变量的值</p>
+</li>
+<li><p>name：属性表示变量名字</p>
+</li>
+</ul>
+<h5 id="变量的初始化"><a href="#变量的初始化" class="headerlink" title="变量的初始化"></a>变量的初始化</h5><ul>
+<li>tf.global_variables_initializer()：添加一个初始化所有变量的op，在会话中开启</li>
+</ul>
+<h4 id="可视化学习Tensorboard"><a href="#可视化学习Tensorboard" class="headerlink" title="可视化学习Tensorboard"></a>可视化学习Tensorboard</h4><p>数据序列化-events文件</p>
+<p>TensorBoard 通过读取 TensorFlow 的事件文件来运行</p>
+<ul>
+<li><p>tf.summary.FileWriter(‘/tmp/tensorflow/summary/test/‘, graph=default_graph)</p>
+</li>
+<li><p>返回filewriter,写入事件文件到指定目录(最好用绝对路径)，以提供给tensorboard使用</p>
+</li>
+</ul>
+<p>开启</p>
+<p>tensorboard  –logdir=/tmp/tensorflow/summary/test/</p>
+<p>一般浏览器打开为127.0.0.1:6006</p>
+<blockquote>
+<p>注：修改程序后，再保存一遍会有新的事件文件，打开默认为最新</p>
+</blockquote>
+<h5 id="图中的符号意义"><a href="#图中的符号意义" class="headerlink" title="图中的符号意义"></a>图中的符号意义</h5><p><img src="https://i.loli.net/2020/09/06/gjaVuCN9IAFmJP1.png" alt="image-20200906073401602"></p>
+<h5 id="增加变量显示"><a href="#增加变量显示" class="headerlink" title="增加变量显示"></a>增加变量显示</h5><p>目的：观察模型的参数、损失值等变量值的变化</p>
+<p>1、收集变量</p>
+<ul>
+<li><p>tf.summary.scalar(name=’’,tensor) 收集对于损失函数和准确率等单值变量,name为变量的名字，tensor为值</p>
+</li>
+<li><p>tf.summary.histogram(name=‘’,tensor) 收集高维度的变量参数</p>
+</li>
+<li><p>tf.summary.image(name=‘’,tensor) 收集输入的图片张量能显示图片</p>
+</li>
+</ul>
+<p>2、合并变量写入事件文件</p>
+<ul>
+<li><p>merged = tf.summary.merge_all()</p>
+</li>
+<li><p>运行合并：summary = sess.run(merged)，每次迭代都需运行</p>
+</li>
+<li><p>添加：FileWriter.add_summary(summary,i),i表示第几次的值</p>
+</li>
+</ul>
+<h4 id="案例-基于Notebook"><a href="#案例-基于Notebook" class="headerlink" title="案例(基于Notebook)"></a>案例(基于Notebook)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一张图,上下文环境</span></span><br><span class="line">g=tf.Graph()</span><br><span class="line"></span><br><span class="line">print(g)</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> g.as_default():</span><br><span class="line">    c=tf.constant(<span class="number">11.0</span>)</span><br><span class="line">    print(c.graph)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 实现一个加法运算</span></span><br><span class="line">a=tf.constant(<span class="number">5.0</span>)</span><br><span class="line">b=tf.constant(<span class="number">6.0</span>)</span><br><span class="line">sum1=tf.add(a,b)</span><br><span class="line"></span><br><span class="line">tf.get_default_graph()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 只能运行一个图结构</span></span><br><span class="line"><span class="keyword">with</span> tf.Session() <span class="keyword">as</span> sess:</span><br><span class="line">    print(sess.run(sum1))</span><br><span class="line">    </span><br><span class="line"><span class="comment"># 可以在会话中指定一张图</span></span><br><span class="line"><span class="keyword">with</span> tf.Session(graph=g) <span class="keyword">as</span> sess:</span><br><span class="line">    print(sess.run(c))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义命令行参数</span></span><br><span class="line"><span class="comment"># 第一个参数：名字，第二个参数：默认值，第三个参数：说明</span></span><br><span class="line">tf.app.flags.DEFINE_integer(<span class="string">&#x27;max_step&#x27;</span>,<span class="string">&#x27;200&#x27;</span>,<span class="string">&#x27;模型训练的部数&#x27;</span>)</span><br><span class="line">tf.app.flags.DEFINE_string(<span class="string">&#x27;mode_dir&#x27;</span>,<span class="string">&#x27;&#x27;</span>,<span class="string">&#x27;模型加载路径&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义获取命令行参数</span></span><br><span class="line">FLAGS=tf.app.flags.FLAGS</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> tf.variable_scope(<span class="string">&#x27;data&#x27;</span>):</span><br><span class="line">    tf.InteractiveSession()</span><br><span class="line">    <span class="comment"># 准备数据 x 特征值[100,10]  y 目标值[100]</span></span><br><span class="line">    x=tf.random_normal([<span class="number">100</span>,<span class="number">1</span>],mean=<span class="number">1.75</span>,stddev=<span class="number">0.5</span>,name=<span class="string">&#x27;x_data&#x27;</span>)</span><br><span class="line">    <span class="comment"># 矩阵相乘必须是二维的</span></span><br><span class="line">    y_ture=tf.matmul(x,[[<span class="number">0.7</span>]])+<span class="number">0.8</span></span><br><span class="line">    </span><br><span class="line"><span class="keyword">with</span> tf.variable_scope(<span class="string">&#x27;model&#x27;</span>):</span><br><span class="line">    <span class="comment"># 建立线性回归模型 1个特征，1个权重，一个偏置</span></span><br><span class="line">    <span class="comment"># 随机给权重和偏置的值，进行优化,注意用变量定义才能够优化</span></span><br><span class="line">    weight=tf.Variable(tf.random_normal([<span class="number">1</span>,<span class="number">1</span>],mean=</span><br><span class="line">    <span class="number">0.0</span>,stddev=<span class="number">1.0</span>),name=<span class="string">&#x27;w&#x27;</span>)</span><br><span class="line">    bias=tf.Variable(<span class="number">0.0</span>,name=<span class="string">&#x27;b&#x27;</span>)</span><br><span class="line">    y_predict=tf.matmul(x,weight)+bias</span><br><span class="line">    </span><br><span class="line"><span class="keyword">with</span> tf.variable_scope(<span class="string">&#x27;loss&#x27;</span>):</span><br><span class="line">    <span class="comment"># 建立损失函数，均方根误差</span></span><br><span class="line">    loss=tf.reduce_mean(tf.square(y_ture-y_predict))</span><br><span class="line">    </span><br><span class="line"><span class="keyword">with</span> tf.variable_scope(<span class="string">&#x27;optimizer&#x27;</span>):</span><br><span class="line">    <span class="comment"># 梯度下降优化损失</span></span><br><span class="line">    train_op=tf.train.GradientDescentOptimizer(<span class="number">0.1</span>).minimize(loss)</span><br><span class="line">    </span><br><span class="line"><span class="comment"># 定义一个保存模型的实例</span></span><br><span class="line">saver=tf.train.Saver()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 收集tensor</span></span><br><span class="line">tf.summary.scalar(<span class="string">&#x27;losses&#x27;</span>,loss)</span><br><span class="line">tf.summary.histogram(<span class="string">&#x27;weights&#x27;</span>,weight)</span><br><span class="line"><span class="comment"># 合并变量tensor</span></span><br><span class="line">merged=tf.summary.merge_all()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义一个初始化的Op</span></span><br><span class="line">init_op=tf.global_variables_initializer()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过会话运行程序</span></span><br><span class="line"><span class="keyword">with</span> tf.Session() <span class="keyword">as</span> sess:</span><br><span class="line">    <span class="comment"># 初始化变量</span></span><br><span class="line">    sess.run(init_op)</span><br><span class="line">    <span class="comment"># 打印随机初始化的权重和偏置</span></span><br><span class="line">    print(<span class="string">&#x27;随机初始化的参数权重维：%f ，随机偏置为：%f&#x27;</span> % (weight.eval(),bias.eval()))</span><br><span class="line">    <span class="comment"># 建立事件文件</span></span><br><span class="line">    filewriter=tf.summary.FileWriter(<span class="string">&#x27;Data/tem/&#x27;</span>,graph=sess.graph)</span><br><span class="line">    <span class="comment"># 加载模型，覆盖模型中当中定义的参数，从上次训练的开始</span></span><br><span class="line">    <span class="keyword">if</span> os.path.exists(<span class="string">&#x27;Data/tem/ckpt/gd/checkpoint&#x27;</span>):</span><br><span class="line">        saver.restore(sess,FLAGS.mode_dir)</span><br><span class="line">    <span class="comment"># 运行优化op 循环训练</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(FLAGS.max_step):</span><br><span class="line">        sess.run(train_op)</span><br><span class="line">        <span class="comment"># 运行合并的tensor</span></span><br><span class="line">        summary=sess.run(merged)</span><br><span class="line">        <span class="comment"># 写入</span></span><br><span class="line">        filewriter.add_summary(summary,i)</span><br><span class="line">        print(<span class="string">&#x27;第%d次优化的参数权重为：%f ，偏置为：%f&#x27;</span> % (i,weight.eval(),bias.eval()))</span><br><span class="line">    <span class="comment"># 保存模型</span></span><br><span class="line">    saver.save(sess,<span class="string">&#x27;Data/tem/ckpt/gd&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://siwuxei.github.io/articles/d6af5694/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tensorflow/" rel="tag">Tensorflow</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/articles/d5f776c8/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">sklearn学习之k-means算法</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "FBOzeot0YAjnTPknJOFBdymN-gzGzoHsz",
+    app_key: "DybLJnUVj5L3Hg13bATfYrig",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+     
+</article>
+
+</section>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+  </script>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2015-2020
+        <i class="ri-heart-fill heart_icon"></i> WuXei Si
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        由 <a href="https://hexo.io" target="_blank">Hexo</a> 强力驱动
+        <span class="division">|</span>
+        主题 - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></s>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="思"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://siwuxiephoto.lofter.com">摄影</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://siwuxei.github.io/articles/9c4101a6/">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+
+<script src="/js/clickBoom2.js"></script>
+
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+    
+  </div>
+</body>
+
+</html>

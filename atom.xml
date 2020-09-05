@@ -6,7 +6,7 @@
   <link href="https://siwuxei.github.io/atom.xml" rel="self"/>
   
   <link href="https://siwuxei.github.io/"/>
-  <updated>2020-09-02T19:07:01.505Z</updated>
+  <updated>2020-09-05T23:48:43.460Z</updated>
   <id>https://siwuxei.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>tensorflow学习之基础知识</title>
+    <link href="https://siwuxei.github.io/articles/d6af5694/"/>
+    <id>https://siwuxei.github.io/articles/d6af5694/</id>
+    <published>2020-09-06T00:00:00.000Z</published>
+    <updated>2020-09-05T23:48:43.460Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;tensorflow学习之基础知识。</summary>
+    
+    
+    
+    <category term="学习" scheme="https://siwuxei.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Tensorflow" scheme="https://siwuxei.github.io/tags/Tensorflow/"/>
+    
+  </entry>
   
   <entry>
     <title>sklearn学习之k-means算法</title>
