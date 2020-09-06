@@ -6,7 +6,7 @@
   <link href="https://siwuxei.github.io/atom.xml" rel="self"/>
   
   <link href="https://siwuxei.github.io/"/>
-  <updated>2020-09-06T01:14:45.529Z</updated>
+  <updated>2020-09-06T01:28:50.776Z</updated>
   <id>https://siwuxei.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>tensorflow学习之线程队列与IO操作</title>
+    <title>Tensorflow学习之线程队列与IO操作</title>
     <link href="https://siwuxei.github.io/articles/5b5ec892/"/>
     <id>https://siwuxei.github.io/articles/5b5ec892/</id>
     <published>2020-09-06T01:00:00.000Z</published>
-    <updated>2020-09-06T01:14:45.529Z</updated>
+    <updated>2020-09-06T01:28:50.776Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -37,11 +37,11 @@
   </entry>
   
   <entry>
-    <title>tensorflow学习之图像的读取</title>
+    <title>Tensorflow学习之图像的读取</title>
     <link href="https://siwuxei.github.io/articles/9c332744/"/>
     <id>https://siwuxei.github.io/articles/9c332744/</id>
     <published>2020-09-06T00:30:02.000Z</published>
-    <updated>2020-09-06T01:14:45.515Z</updated>
+    <updated>2020-09-06T01:28:33.295Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -57,11 +57,11 @@
   </entry>
   
   <entry>
-    <title>tensorflow学习之神经网络基础知识</title>
+    <title>Tensorflow学习之神经网络基础知识</title>
     <link href="https://siwuxei.github.io/articles/e8a76fca/"/>
     <id>https://siwuxei.github.io/articles/e8a76fca/</id>
     <published>2020-09-06T00:30:00.000Z</published>
-    <updated>2020-09-06T01:19:15.509Z</updated>
+    <updated>2020-09-06T01:28:16.944Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -77,11 +77,11 @@
   </entry>
   
   <entry>
-    <title>tensorflow学习之基础知识</title>
+    <title>Tensorflow学习之基础知识</title>
     <link href="https://siwuxei.github.io/articles/d6af5694/"/>
     <id>https://siwuxei.github.io/articles/d6af5694/</id>
     <published>2020-09-06T00:00:05.000Z</published>
-    <updated>2020-09-06T01:14:45.506Z</updated>
+    <updated>2020-09-06T01:27:57.707Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -97,35 +97,15 @@
   </entry>
   
   <entry>
-    <title>sklearn学习之k-means算法</title>
+    <title>Sklearn学习之k-means算法</title>
     <link href="https://siwuxei.github.io/articles/d5f776c8/"/>
     <id>https://siwuxei.github.io/articles/d5f776c8/</id>
     <published>2020-09-02T01:00:00.000Z</published>
-    <updated>2020-09-02T19:07:01.505Z</updated>
+    <updated>2020-09-06T01:27:13.461Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;sklearn学习之k-means算法。</summary>
-    
-    
-    
-    <category term="学习" scheme="https://siwuxei.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="Sklearn" scheme="https://siwuxei.github.io/tags/Sklearn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title> sklearn学习之逻辑回归</title>
-    <link href="https://siwuxei.github.io/articles/bef7ea7d/"/>
-    <id>https://siwuxei.github.io/articles/bef7ea7d/</id>
-    <published>2020-09-02T00:00:41.000Z</published>
-    <updated>2020-09-02T19:07:01.514Z</updated>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;sklearn学习之逻辑回归。</summary>
     
     
     

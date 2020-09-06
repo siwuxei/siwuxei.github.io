@@ -36,7 +36,7 @@
       </tags>
   </entry>
   <entry>
-    <title>tensorflow学习之线程队列与IO操作</title>
+    <title>Tensorflow学习之线程队列与IO操作</title>
     <url>/articles/5b5ec892/</url>
     <content><![CDATA[<blockquote>
 <p>tensorflow学习之线程队列与IO操作。<a id="more"></a></p>
@@ -187,7 +187,7 @@
       </tags>
   </entry>
   <entry>
-    <title>tensorflow学习之图像的读取</title>
+    <title>Tensorflow学习之图像的读取</title>
     <url>/articles/9c332744/</url>
     <content><![CDATA[<blockquote>
 <p>tensorflow学习之图像的读取。<a id="more"></a></p>
@@ -255,7 +255,7 @@
       </tags>
   </entry>
   <entry>
-    <title>tensorflow学习之神经网络基础知识</title>
+    <title>Tensorflow学习之神经网络基础知识</title>
     <url>/articles/e8a76fca/</url>
     <content><![CDATA[<blockquote>
 <p>tensorflow学习之神经网络基础知识。<a id="more"></a></p>
@@ -340,7 +340,7 @@
       </tags>
   </entry>
   <entry>
-    <title>tensorflow学习之基础知识</title>
+    <title>Tensorflow学习之基础知识</title>
     <url>/articles/d6af5694/</url>
     <content><![CDATA[<blockquote>
 <p>tensorflow学习之基础知识。<a id="more"></a></p>
@@ -506,7 +506,7 @@
       </tags>
   </entry>
   <entry>
-    <title>sklearn学习之k-means算法</title>
+    <title>Sklearn学习之k-means算法</title>
     <url>/articles/d5f776c8/</url>
     <content><![CDATA[<blockquote>
 <p>sklearn学习之k-means算法。<a id="more"></a></p>
@@ -554,60 +554,6 @@
 <p>缺点：容易收敛到局部最优解(多次聚类)，需要预先设定簇的数量(k-means++解决)</p>
 <h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">from</span> sklearn.decomposition <span class="keyword">import</span> PCA</span><br><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> KMeans</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> silhouette_score</span><br><span class="line"></span><br><span class="line"><span class="comment"># 读取四张表的数据</span></span><br><span class="line">prior = pd.read_csv(<span class="string">&quot;./data/instacart/order_products__prior.csv&quot;</span>)</span><br><span class="line">products = pd.read_csv(<span class="string">&quot;./data/instacart/products.csv&quot;</span>)</span><br><span class="line">orders = pd.read_csv(<span class="string">&quot;./data/instacart/orders.csv&quot;</span>)</span><br><span class="line">aisles = pd.read_csv(<span class="string">&quot;./data/instacart/aisles.csv&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 合并四张表到一张表  （用户-物品类别）</span></span><br><span class="line">_mg = pd.merge(prior, products, on=[<span class="string">&#x27;product_id&#x27;</span>, <span class="string">&#x27;product_id&#x27;</span>])</span><br><span class="line">_mg = pd.merge(_mg, orders, on=[<span class="string">&#x27;order_id&#x27;</span>, <span class="string">&#x27;order_id&#x27;</span>])</span><br><span class="line">mt = pd.merge(_mg, aisles, on=[<span class="string">&#x27;aisle_id&#x27;</span>, <span class="string">&#x27;aisle_id&#x27;</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 交叉表（特殊的分组工具）</span></span><br><span class="line">cross = pd.crosstab(mt[<span class="string">&#x27;user_id&#x27;</span>], mt[<span class="string">&#x27;aisle&#x27;</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 进行主成分分析</span></span><br><span class="line">pca = PCA(n_components=<span class="number">0.9</span>)</span><br><span class="line"></span><br><span class="line">data = pca.fit_transform(cross)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 把样本数量减少</span></span><br><span class="line">x = data[:<span class="number">500</span>]</span><br><span class="line">x.shape</span><br><span class="line"></span><br><span class="line"><span class="comment"># 假设用户一共分为四个类别</span></span><br><span class="line">km = KMeans(n_clusters=<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line">km.fit(x)</span><br><span class="line"></span><br><span class="line">predict = km.predict(x)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示聚类的结果</span></span><br><span class="line">plt.figure(figsize=(<span class="number">10</span>,<span class="number">10</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 建立四个颜色的列表</span></span><br><span class="line">colored = [<span class="string">&#x27;orange&#x27;</span>, <span class="string">&#x27;green&#x27;</span>, <span class="string">&#x27;blue&#x27;</span>, <span class="string">&#x27;purple&#x27;</span>]</span><br><span class="line">colr = [colored[i] <span class="keyword">for</span> i <span class="keyword">in</span> predict]</span><br><span class="line">plt.scatter(x[:, <span class="number">1</span>], x[:, <span class="number">20</span>], color=colr)</span><br><span class="line"></span><br><span class="line">plt.xlabel(<span class="string">&quot;1&quot;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&quot;20&quot;</span>)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 评判聚类效果，轮廓系数</span></span><br><span class="line">silhouette_score(x, predict)</span><br></pre></td></tr></table></figure>
 
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>Sklearn</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title> sklearn学习之逻辑回归</title>
-    <url>/articles/bef7ea7d/</url>
-    <content><![CDATA[<blockquote>
-<p>sklearn学习之逻辑回归。<a id="more"></a></p>
-</blockquote>
-<h4 id="逻辑回归原理"><a href="#逻辑回归原理" class="headerlink" title="逻辑回归原理"></a>逻辑回归原理</h4><p>逻辑回归是解决<strong>二分类</strong>问题的利器</p>
-<p>输入：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903021905.png" alt="image-20200903021856493"></p>
-<p>sigmoid函数</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903022047.png" alt="image-20200903022046969"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903022713.png" alt="image-20200903022713663"></p>
-<p>回归公式</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903022115.png" alt="image-20200903022115282"></p>
-<p>输出：[0,1]区间的概率值，默认0.5作为阀值，g(z)为sigmoid函数</p>
-<h4 id="逻辑回归的损失函数、优化"><a href="#逻辑回归的损失函数、优化" class="headerlink" title="逻辑回归的损失函数、优化"></a>逻辑回归的损失函数、优化</h4><p>与线性回归原理相同,但由于是分类问题，<font color='orange'>损失函数</font>不一样，只能通过<font color='orange'>梯度下降</font>求解。</p>
-<p>对数似然损失函数：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903022308.png" alt="image-20200903022308858"></p>
-<p>完整的损失函数：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903022356.png" alt="image-20200903022356372"></p>
-<p><font color='orange'>cost损失的值越小，那么预测的类别准确度更高</font></p>
-<p>当y=1时：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903022514.png" alt="image-20200903022514591"></p>
-<p>当y=0时：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/siwuxei/image/img/20200903022601.png" alt="image-20200903022601016"></p>
-<h4 id="sklearn逻辑回归API"><a href="#sklearn逻辑回归API" class="headerlink" title="sklearn逻辑回归API"></a>sklearn逻辑回归API</h4><p>sklearn.linear_model.LogisticRegression(<em>penalty=‘l2’,</em> <em>C = 1.0</em>)</p>
-<ul>
-<li><p>Logistic回归分类器</p>
-</li>
-<li><p>coef_：回归系数</p>
-</li>
-</ul>
-<h4 id="LogisticRegression回归案例"><a href="#LogisticRegression回归案例" class="headerlink" title="LogisticRegression回归案例"></a>LogisticRegression回归案例</h4><p>原始数据的下载地址：</p>
-<p><a href="https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/">https://archive.ics.uci.edu/ml/machine-learning-databases/</a></p>
-<p>数据描述：</p>
-<p>1、699条样本，共11列数据，第一列用语检索的id，后9列分别是与肿瘤相关的医学特征，最后一列表示肿瘤类型的数值。</p>
-<p>2、包含16个缺失值，用”?”标出。</p>
-<p>良／恶性乳腺癌肿分类流程：</p>
-<p>1、网上获取数据（工具pandas）</p>
-<p>2、数据缺失值处理、标准化</p>
-<p>3、LogisticRegression估计器流程</p>
-<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_boston</span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LinearRegression, SGDRegressor,  Ridge, LogisticRegression</span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> mean_squared_error, classification_report</span><br><span class="line"><span class="keyword">from</span> sklearn.externals <span class="keyword">import</span> joblib</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">logistic</span>():</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    逻辑回归做二分类进行癌症预测（根据细胞的属性特征）</span></span><br><span class="line"><span class="string">    :return: NOne</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 构造列标签名字</span></span><br><span class="line">    column = [<span class="string">&#x27;Sample code number&#x27;</span>,<span class="string">&#x27;Clump Thickness&#x27;</span>, <span class="string">&#x27;Uniformity of Cell Size&#x27;</span>,<span class="string">&#x27;Uniformity of Cell Shape&#x27;</span>,<span class="string">&#x27;Marginal Adhesion&#x27;</span>, <span class="string">&#x27;Single Epithelial Cell Size&#x27;</span>,<span class="string">&#x27;Bare Nuclei&#x27;</span>,<span class="string">&#x27;Bland Chromatin&#x27;</span>,<span class="string">&#x27;Normal Nucleoli&#x27;</span>,<span class="string">&#x27;Mitoses&#x27;</span>,<span class="string">&#x27;Class&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 读取数据</span></span><br><span class="line">    data = pd.read_csv(<span class="string">&quot;https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data&quot;</span>, names=column)</span><br><span class="line"></span><br><span class="line">    print(data)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 缺失值进行处理</span></span><br><span class="line">    data = data.replace(to_replace=<span class="string">&#x27;?&#x27;</span>, value=np.nan)</span><br><span class="line"></span><br><span class="line">    data = data.dropna()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行数据的分割</span></span><br><span class="line">    x_train, x_test, y_train, y_test = train_test_split(data[column[<span class="number">1</span>:<span class="number">10</span>]], data[column[<span class="number">10</span>]], test_size=<span class="number">0.25</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行标准化处理</span></span><br><span class="line">    std = StandardScaler()</span><br><span class="line"></span><br><span class="line">    x_train = std.fit_transform(x_train)</span><br><span class="line">    x_test = std.transform(x_test)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 逻辑回归预测</span></span><br><span class="line">    lg = LogisticRegression(C=<span class="number">1.0</span>)</span><br><span class="line"></span><br><span class="line">    lg.fit(x_train, y_train)</span><br><span class="line"></span><br><span class="line">    print(lg.coef_)</span><br><span class="line"></span><br><span class="line">    y_predict = lg.predict(x_test)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;准确率：&quot;</span>, lg.score(x_test, y_test))</span><br><span class="line"></span><br><span class="line">    print(<span class="string">&quot;召回率：&quot;</span>, classification_report(y_test, y_predict, labels=[<span class="number">2</span>, <span class="number">4</span>], target_names=[<span class="string">&quot;良性&quot;</span>, <span class="string">&quot;恶性&quot;</span>]))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="LogisticRegression总结"><a href="#LogisticRegression总结" class="headerlink" title="LogisticRegression总结"></a>LogisticRegression总结</h4><p>应用：广告点击率预测、电商购物搭配推荐</p>
-<p>优点：适合需要得到一个分类概率的场景</p>
-<p>缺点：当特征空间很大时，逻辑回归的性能不是很好（看硬件能力）</p>
 ]]></content>
       <categories>
         <category>学习</category>
